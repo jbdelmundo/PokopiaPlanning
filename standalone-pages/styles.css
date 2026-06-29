@@ -22,12 +22,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  /* Tell the UA to render form controls, scrollbars, and any
+     default-styled text in dark mode. Without this, native widgets
+     (search input value/placeholder, clear button, scrollbars) fall
+     back to light-mode defaults — i.e. black text on our dark bg. */
+  color-scheme: dark;
+
   --color-bg:          #121212;
   --color-surface:     #1E1E1E;
   --color-surface2:    #2A2A2A;
-  --color-border:      #333;
-  --color-text:        #E0E0E0;
-  --color-text-muted:  #9E9E9E;
+  --color-border:      #3A3A3A;
+  --color-text:        #ECECEC;
+  --color-text-muted:  #B0B0B0;
   --color-accent:      #BB86FC;
 
   /* Habitat badge colors */
@@ -126,7 +132,10 @@ body {
   min-height: var(--tap-min);
   appearance: none;
   -webkit-appearance: none;
+  color-scheme: dark;
 }
+/* Keep the native search clear ("×") button visible on dark bg */
+.search-input::-webkit-search-cancel-button { filter: invert(0.8); }
 .search-input:focus { border-color: var(--color-accent); }
 .search-input::placeholder { color: var(--color-text-muted); }
 .result-count {
