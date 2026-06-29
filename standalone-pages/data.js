@@ -229,9 +229,10 @@ window.POKOPIA_DATA = {
       "dex": "#201",
       "habitat": "Warm",
       "specialties": [
-        "Burn"
+        "Burn",
+        "Trade"
       ],
-      "trade_specialty": false,
+      "trade_specialty": true,
       "favorites": {
         "categories": [
           "Lots of Fire",
@@ -654,9 +655,10 @@ window.POKOPIA_DATA = {
       "dex": "#202",
       "habitat": "Warm",
       "specialties": [
-        "Burn"
+        "Burn",
+        "Trade"
       ],
-      "trade_specialty": false,
+      "trade_specialty": true,
       "favorites": {
         "categories": [
           "Lots of Fire",
@@ -1926,6 +1928,29 @@ window.POKOPIA_DATA = {
       "data_note": null
     },
     {
+      "name": "Farfetch'd",
+      "dex": "#090",
+      "habitat": "Warm",
+      "specialties": [
+        "Chop",
+        "Build"
+      ],
+      "trade_specialty": false,
+      "favorites": {
+        "categories": [
+          "Soft Stuff",
+          "Nice Breezes",
+          "Wooden Stuff",
+          "Slender Objects",
+          "Exercise"
+        ],
+        "flavors": [
+          "Spicy"
+        ]
+      },
+      "data_note": null
+    },
+    {
       "name": "Farigiraf",
       "dex": "#230",
       "habitat": "Warm",
@@ -2857,7 +2882,7 @@ window.POKOPIA_DATA = {
       "favorites": {
         "categories": [
           "Lots of Dirt",
-          "Strange Stuff",
+          "Stone Stuff",
           "Lots of Nature",
           "Watching Stuff",
           "Sharp Stuff"
@@ -3341,7 +3366,8 @@ window.POKOPIA_DATA = {
       "dex": "#183",
       "habitat": "Dry",
       "specialties": [
-        "Burn"
+        "Burn",
+        "Litter"
       ],
       "trade_specialty": false,
       "favorites": {
@@ -4012,6 +4038,28 @@ window.POKOPIA_DATA = {
       "data_note": null
     },
     {
+      "name": "Mime Jr.",
+      "dex": "#216",
+      "habitat": "Bright",
+      "specialties": [
+        "Gather"
+      ],
+      "trade_specialty": false,
+      "favorites": {
+        "categories": [
+          "Strange Stuff",
+          "Cute Stuff",
+          "Rides",
+          "Play Spaces",
+          "Colorful Stuff"
+        ],
+        "flavors": [
+          "Sweet"
+        ]
+      },
+      "data_note": null
+    },
+    {
       "name": "Mimikyu",
       "dex": "#141",
       "habitat": "Dark",
@@ -4140,6 +4188,29 @@ window.POKOPIA_DATA = {
         ],
         "flavors": [
           "Spicy"
+        ]
+      },
+      "data_note": null
+    },
+    {
+      "name": "Mr. Mime",
+      "dex": "#217",
+      "habitat": "Bright",
+      "specialties": [
+        "Gather",
+        "Build"
+      ],
+      "trade_specialty": false,
+      "favorites": {
+        "categories": [
+          "Strange Stuff",
+          "Cute Stuff",
+          "Rides",
+          "Wobbly Stuff",
+          "Watching Stuff"
+        ],
+        "flavors": [
+          "Bitter"
         ]
       },
       "data_note": null
@@ -5538,7 +5609,8 @@ window.POKOPIA_DATA = {
       "dex": "#248",
       "habitat": "Humid",
       "specialties": [
-        "Grow"
+        "Grow",
+        "Litter"
       ],
       "trade_specialty": false,
       "favorites": {
@@ -5557,7 +5629,7 @@ window.POKOPIA_DATA = {
     },
     {
       "name": "Snorlax",
-      "dex": "#109",
+      "dex": "#108",
       "habitat": "Warm",
       "specialties": [
         "Trade",
@@ -5854,10 +5926,18 @@ window.POKOPIA_DATA = {
       ],
       "trade_specialty": true,
       "favorites": {
-        "categories": [],
-        "flavors": []
+        "categories": [
+          "Lots of Water",
+          "Ocean Vibes",
+          "Group Activities",
+          "Slender Objects",
+          "Gatherings"
+        ],
+        "flavors": [
+          "Sweet"
+        ]
       },
-      "data_note": "no favorites recorded"
+      "data_note": null
     },
     {
       "name": "Tatsugiri Droopy Form",
@@ -6083,7 +6163,7 @@ window.POKOPIA_DATA = {
     },
     {
       "name": "Toxtricity Low Key Form",
-      "dex": "#00",
+      "dex": "#197",
       "habitat": "Humid",
       "specialties": [
         "Generate",
@@ -6138,7 +6218,7 @@ window.POKOPIA_DATA = {
       "favorites": {
         "categories": [
           "Garbage",
-          "Construction",
+          "Containers",
           "Complicated Stuff",
           "Shiny Stuff",
           "Gatherings"
@@ -6668,7 +6748,7 @@ window.POKOPIA_DATA = {
       "dex": "#039",
       "habitat": "Dark",
       "specialties": [
-        "Recyvle"
+        "Recycle"
       ],
       "trade_specialty": false,
       "favorites": {
@@ -6876,19 +6956,14 @@ window.POKOPIA_DATA = {
   "items": {
     "Blocky Stuff": [
       {
-        "name": "Storage box",
-        "description": "A convenient box you can store items in. It's made of wood and easy to move things in and out of.",
-        "recipe": [
-          {
-            "material": "Lumber",
-            "qty": 1
-          }
-        ],
-        "slug": "storagebox"
+        "name": "Paper",
+        "description": "Pristine white paper made from recycled wastepaper",
+        "recipe": null,
+        "slug": "paper"
       },
       {
         "name": "Wall storage box",
-        "description": "It may be small, but it can store lots of stuff. Try mounting it on a wall.",
+        "description": "It may be small, but it can store lots of stuff. Try mounting it on a wall",
         "recipe": [
           {
             "material": "Pokémetal",
@@ -6898,27 +6973,502 @@ window.POKOPIA_DATA = {
         "slug": "wallstoragebox"
       },
       {
-        "name": "Big storage box",
-        "description": "Roughly three times bigger than your standard storage box. You can put a lot of things inside.",
+        "name": "Plain chest",
+        "description": "A chest with a simple design. It can be used to store items.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainchest"
+      },
+      {
+        "name": "Office cabinet",
+        "description": "Compacy furniture that's surprisingly spacious. Open the sliding door to put items inside",
         "recipe": [
           {
             "material": "Pokémetal",
-            "qty": 3
+            "qty": 1
           }
         ],
-        "slug": "bigstoragebox"
+        "slug": "officecabinet"
       },
       {
-        "name": "Polygonal Shelf",
-        "description": "A stylish, eye-catching shelf. Looks hard to use but still functions as a shelf just fine.",
+        "name": "Antique chest",
+        "description": "Its four curvy legs are adorable. Try putting lots of different things in the draw",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Iron Ore",
+            "qty": 1
+          }
+        ],
+        "slug": "antiquechest"
+      },
+      {
+        "name": "Plain closet",
+        "description": "Open the curtains and store your stuff! You don't actually need the hangers-but they're there anyway!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plaincloset"
+      },
+      {
+        "name": "Office locker",
+        "description": "A large locker that can even hold clothing. Try storing lots of different things in it!",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          }
+        ],
+        "slug": "officelocker"
+      },
+      {
+        "name": "Antique closet",
+        "description": "A large bulky closet. Try storing different things in it!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Iron Ore",
+            "qty": 2
+          }
+        ],
+        "slug": "antiquecloset"
+      },
+      {
+        "name": "Office shelf",
+        "description": "This is jam-packed with so many files that it can't hold anything else",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 2
+          }
+        ],
+        "slug": "officeshelf"
+      },
+      {
+        "name": "Plain stand",
+        "description": "This low table has a simple design and is perfect for displaying items",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainstand"
+      },
+      {
+        "name": "Iron stand",
+        "description": "An impressively stury iron stand. Effortlessly supports even heavy items",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "ironstand"
+      },
+      {
+        "name": "Wooden stool",
+        "description": "It's a little chipped but surprisingly sturdyy. Even if a Pokémon sits on it, it won't break. Probably.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "woodenstool"
+      },
+      {
+        "name": "Iron chair",
+        "description": "Though small, this seat is very sturdy. It doesn't look like it would break easily.",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "ironchair"
+      },
+      {
+        "name": "Public seat",
+        "description": "A simple chair without a backrest. Try arranging a bunch of 'em together",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          }
+        ],
+        "slug": "publicseat"
+      },
+      {
+        "name": "Soft seat",
+        "description": "A cushioned seat that's soft and fluffy-perfect for waiting rooms, relaxation spaces, and the like!",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "softseat"
+      },
+      {
+        "name": "Box Sofa",
+        "description": "A small square sofa. Line up several of them to make a wide chic sofa",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "boxsofa"
+      },
+      {
+        "name": "Log Bed",
+        "description": "A bed made from small logs. You'll sleep soundly enveloped by a woodsy aroma",
+        "recipe": [
+          {
+            "material": "Small log",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "logbed"
+      },
+      {
+        "name": "Mini plain bed",
+        "description": "A small, plain bed. Great for solo sleepers!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "miniplainbed"
+      },
+      {
+        "name": "Wall mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "wallmirror"
+      },
+      {
+        "name": "Large mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "largemirror"
+      },
+      {
+        "name": "Picnic basket",
+        "description": "Try putting some food inside, and hungry Pokémon might stop by for a bite",
         "recipe": null,
-        "slug": "polygonalshelf"
+        "slug": "picnicbasket"
+      },
+      {
+        "name": "Sandwiches",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "sandwiches"
+      },
+      {
+        "name": "Berry basket",
+        "description": "A basket packed with berries. Line up a few to make your very own fruit stand!",
+        "recipe": null,
+        "slug": "berrybasket"
+      },
+      {
+        "name": "Letter",
+        "description": "A simple sealed letter. It has a Poké Ball stamp on it",
+        "recipe": null,
+        "slug": "letter"
+      },
+      {
+        "name": "Notepad",
+        "description": "It's full of important-looking notes, so there's no space to write anything else!",
+        "recipe": null,
+        "slug": "notepad"
+      },
+      {
+        "name": "Book",
+        "description": "A thick hardcover book. The pages inside were written in small print",
+        "recipe": null,
+        "slug": "book"
+      },
+      {
+        "name": "Open Book",
+        "description": "A classic hardcover book. It's probably got a lot of difficult words inside",
+        "recipe": null,
+        "slug": "openbook"
+      },
+      {
+        "name": "Papers",
+        "description": "Lots of tiny words are written on the white pages along with drawings of colorful shapes",
+        "recipe": null,
+        "slug": "papers"
+      },
+      {
+        "name": "Newspaper",
+        "description": "Its pages are filled with small, tightly-packed letters. What could be written here?",
+        "recipe": null,
+        "slug": "newspaper"
+      },
+      {
+        "name": "Photo frame",
+        "description": "You can put one of your photos in this frame and place it on a table or stand",
+        "recipe": null,
+        "slug": "photoframe"
+      },
+      {
+        "name": "Wall photo frame",
+        "description": "You can put one of your photos in this frame and hang it on a wall.",
+        "recipe": null,
+        "slug": "wallphotoframe"
+      },
+      {
+        "name": "Corkboard",
+        "description": "Choose one of your favorite photos to hang on this corkboard!",
+        "recipe": null,
+        "slug": "corkboard"
+      },
+      {
+        "name": "Mini bookcase",
+        "description": "A small bookcase packed with books. It's tiny enough to fit in tight spaces!",
+        "recipe": null,
+        "slug": "minibookcase"
+      },
+      {
+        "name": "Bookcase",
+        "description": "Furniture with colorful books arranged on the shelves. It looks like there's room for even MORE books!",
+        "recipe": null,
+        "slug": "bookcase"
+      },
+      {
+        "name": "Stone fireplace",
+        "description": "A huge fireplace. Light this up to make a space feel warm and cozy",
+        "recipe": null,
+        "slug": "stonefireplace"
+      },
+      {
+        "name": "Modern sink",
+        "description": "A state-of-the-art sink that even has a drain. Turn the handle to make water flow out",
+        "recipe": null,
+        "slug": "modernsink"
+      },
+      {
+        "name": "Cooking stove",
+        "description": "A simple stylish stove. Turn the dial and flames will shoot right out of it",
+        "recipe": null,
+        "slug": "cookingstove"
+      },
+      {
+        "name": "Microwave oven",
+        "description": "This lights up when powered on, but it doesn't seem like it can heat anything...",
+        "recipe": null,
+        "slug": "microwaveoven"
+      },
+      {
+        "name": "Refrigerator",
+        "description": "It emits a slight chill, but it doesn't seem like it can keep anything cold",
+        "recipe": null,
+        "slug": "refrigerator"
+      },
+      {
+        "name": "Washing machine",
+        "description": "While this does make noise when powered on, it doesn't seem to actually wash clothes...",
+        "recipe": null,
+        "slug": "washingmachine"
+      },
+      {
+        "name": "Sink",
+        "description": "A stylish sink on a wooden stand. Turn on the faucet to make water pour out.",
+        "recipe": null,
+        "slug": "sink"
+      },
+      {
+        "name": "Tablet",
+        "description": "A convenient, easy-to-carry computer. It's got a hard case so no worries if you drop it!",
+        "recipe": null,
+        "slug": "tablet"
+      },
+      {
+        "name": "Cell phone",
+        "description": "A device carefully protected inside a hard case. It can't make calls, even when powered on",
+        "recipe": null,
+        "slug": "cellphone"
+      },
+      {
+        "name": "Laptop",
+        "description": "A sleek, easy-to-carry laptop. Try displaying some photos on the monitor.",
+        "recipe": null,
+        "slug": "laptop"
+      },
+      {
+        "name": "Television",
+        "description": "A large television that can be easily viewed from far away. It's a flatscreen, so carrying it is easy-peasy.",
+        "recipe": null,
+        "slug": "television"
+      },
+      {
+        "name": "Wall monitor",
+        "description": "A monitor that emits blue light when powered on. Try displaying your photographs on it",
+        "recipe": null,
+        "slug": "wallmonitor"
+      },
+      {
+        "name": "Arcade machine",
+        "description": "A game machine from a facility somewhere. It looks brand-new, so it probably can still be turned on",
+        "recipe": null,
+        "slug": "arcademachine"
+      },
+      {
+        "name": "Game Boy system",
+        "description": "A very sturdy-looking game console. It's old but it still seems to start up",
+        "recipe": null,
+        "slug": "gameboysystem"
+      },
+      {
+        "name": "Speaker",
+        "description": "Putting this next to a stage or an audio mixer ought to create an electrifying atmosphere!",
+        "recipe": null,
+        "slug": "speaker"
+      },
+      {
+        "name": "Boo-in-the-box",
+        "description": "Open the box, and -BOING!-out pops the Gengar!",
+        "recipe": null,
+        "slug": "boointhebox"
       },
       {
         "name": "Cardboard boxes",
-        "description": "Light cardboard boxes. It doesn't look like they have anything inside.",
+        "description": "Light cardboard boxes. It doesn't look like they have anything inside",
         "recipe": null,
         "slug": "cardboardboxes"
+      },
+      {
+        "name": "Whiteboard",
+        "description": "A whiteboard covered in writing and sticky notes that looks like it belongs in a lab",
+        "recipe": null,
+        "slug": "whiteboard"
+      },
+      {
+        "name": "Control unit",
+        "description": "This has a bunch of switches, but it doesn't look like any of them do anything",
+        "recipe": null,
+        "slug": "controlunit"
+      },
+      {
+        "name": "Wall Calendar",
+        "description": "A calendar that's simple and easy to use. It meshes well with pretty much any wall.",
+        "recipe": null,
+        "slug": "wallcalendar"
+      },
+      {
+        "name": "Hanging scroll",
+        "description": "A scrol with phenomenal brushwork. Hang it on a wall to create a solemn atmosphere",
+        "recipe": null,
+        "slug": "hangingscroll"
+      },
+      {
+        "name": "Sandbox",
+        "description": "Place this to set up a fun space for playing with sand. Discover what you can create here!",
+        "recipe": null,
+        "slug": "sandbox"
+      },
+      {
+        "name": "Vending machine",
+        "description": "Connect this to electricity to make it light up! Looks like it still has some things inside for sale.",
+        "recipe": null,
+        "slug": "vendingmachine"
+      },
+      {
+        "name": "Chansey plant",
+        "description": "A tree that looks just like a Chansey! Looking at it seems to fill you with a gentle energy",
+        "recipe": null,
+        "slug": "chanseyplant"
+      },
+      {
+        "name": "Inflatable boat",
+        "description": "Feels great whether you lie down on it like a bed, or float it on the water like a boat.",
+        "recipe": null,
+        "slug": "inflatableboat"
+      },
+      {
+        "name": "Menu board",
+        "description": "Specials are written on this board, but it doesn't seem like Pokémon can actually read them.",
+        "recipe": null,
+        "slug": "menuboard"
       },
       {
         "name": "Worn wooden crate",
@@ -6931,12 +7481,101 @@ window.POKOPIA_DATA = {
         "description": "You have absolutely no idea how to open this box...But you can put stuff on top of it at least!",
         "recipe": null,
         "slug": "woodencrate"
+      },
+      {
+        "name": "Large ventilation fan",
+        "description": "A huge, flat ventilation fan-the kind you'd find on top of a building or a house.",
+        "recipe": null,
+        "slug": "largeventilationfan"
+      },
+      {
+        "name": "Frame",
+        "description": "A frame for hanging an item on a wall. Try putting different things inside!",
+        "recipe": null,
+        "slug": "frame"
+      },
+      {
+        "name": "Mini generator",
+        "description": "Place this anywhere, and it will generate electricity all on its own. What a remarkable machine!",
+        "recipe": null,
+        "slug": "minigenerator"
+      },
+      {
+        "name": "Wall light",
+        "description": "A light that can be fixed to a wall. Power it on and it'll light the area with a warm glow",
+        "recipe": null,
+        "slug": "walllight"
+      },
+      {
+        "name": "Town map",
+        "description": "A map of...somewhere. You can't make heads or tails of it but it looks pretty nice on a wall",
+        "recipe": null,
+        "slug": "townmap"
+      },
+      {
+        "name": "Team Rocket Wall Hanging",
+        "description": "The symbol of a certain organization. Just looking at it makes you want to get up to some mischief",
+        "recipe": null,
+        "slug": "teamrocketwallhanging"
+      },
+      {
+        "name": "Star closet",
+        "description": "A closet with many stars painted on it. Open the doors and store your stuff inside",
+        "recipe": null,
+        "slug": "starcloset"
+      },
+      {
+        "name": "Starry-sky bed",
+        "description": "A bed covered in sparkling stars. Sleeping in it might make you dream of flying through a starry sky.",
+        "recipe": null,
+        "slug": "starryskybed"
       }
     ],
     "Cleanliness": [
       {
+        "name": "Waterproof seat",
+        "description": "A smooth waterproof chair. Place it near a bathtub or shower",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          }
+        ],
+        "slug": "waterproofseat"
+      },
+      {
+        "name": "Modern sink",
+        "description": "A state-of-the-art sink that even has a drain. Turn the handle to make water flow out",
+        "recipe": null,
+        "slug": "modernsink"
+      },
+      {
+        "name": "Washing machine",
+        "description": "While this does make noise when powered on, it doesn't seem to actually wash clothes...",
+        "recipe": null,
+        "slug": "washingmachine"
+      },
+      {
+        "name": "Toilet",
+        "description": "Lift the cover and sit on the toilet for as long as you like",
+        "recipe": null,
+        "slug": "toilet"
+      },
+      {
+        "name": "Sink",
+        "description": "A stylish sink on a wooden stand. Turn on the faucet to make water pour out.",
+        "recipe": null,
+        "slug": "sink"
+      },
+      {
+        "name": "Towel rack",
+        "description": "A simple wall rack with a towel hanging on it. This would look great next to a sink",
+        "recipe": null,
+        "slug": "towelrack"
+      },
+      {
         "name": "Bathtime set",
-        "description": "Shampoo, towels and a toy — everything you need to make bath time a blast!",
+        "description": "Shampoo, towels and a toy-everything you need to make bath time a blast!",
         "recipe": null,
         "slug": "bathtimeset"
       },
@@ -6948,13 +7587,13 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Shower",
-        "description": "A shower with a simple design. Place it next to a bathtub to make your bathroom complete.",
+        "description": "A shower with a simple design. Place it next to a bathtub to make your bathroom complete",
         "recipe": null,
         "slug": "shower"
       },
       {
         "name": "Bathtub",
-        "description": "A bathtub with a simple design. Fill it up with water to enjoy a nice soak.",
+        "description": "A bathtub with a simple design. Fill it up with water to enjoy a nice soak",
         "recipe": null,
         "slug": "bathtub"
       },
@@ -6966,18 +7605,12 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Water basin",
-        "description": "Fill this with water so Pokémon can do some watering for you.",
+        "description": "Fill this with water so Pokémon can do some watering for you",
         "recipe": null,
         "slug": "waterbasin"
       }
     ],
     "Colorful Stuff": [
-      {
-        "name": "Pokémetal",
-        "description": "Made from smelted Pokémetal fragmants, these can be used to make various items.",
-        "recipe": null,
-        "slug": "pokemetal"
-      },
       {
         "name": "Red paint",
         "description": "Colorful paint made from crushed berries. A must-have when painting.",
@@ -7046,6 +7679,55 @@ window.POKOPIA_DATA = {
         "slug": "gamingfridge"
       },
       {
+        "name": "Stylish stool",
+        "description": "A small, round stool with a stylish three-color cushion.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "stylishstool"
+      },
+      {
+        "name": "Antique chair",
+        "description": "A chair with a charming retro design. Its cushions are soft and fluffy",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "antiquechair"
+      },
+      {
+        "name": "Pop art chair",
+        "description": "A chair with a soft design and rounded corners. The colors of the backrest and cushion can be changed",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "popartchair"
+      },
+      {
         "name": "Gaming chair",
         "description": "With its large backrest and cushions, you could sit comfortable in this chair for a long time.",
         "recipe": [
@@ -7059,6 +7741,65 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "gamingchair"
+      },
+      {
+        "name": "Antique sofa",
+        "description": "A retro sofa with Poké Ball designs here and there",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "antiquesofa"
+      },
+      {
+        "name": "Pop art sofa",
+        "description": "A soft-looking sofa with cute, rounded edges.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "popartsofa"
+      },
+      {
+        "name": "Pikachu sofa",
+        "description": "Pikachu's face is front and center. On the back, you can find a little tail sticking out.",
+        "recipe": null,
+        "slug": "pikachusofa"
+      },
+      {
+        "name": "Log Bed",
+        "description": "A bed made from small logs. You'll sleep soundly enveloped by a woodsy aroma",
+        "recipe": [
+          {
+            "material": "Small log",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "logbed"
       },
       {
         "name": "Gaming bed",
@@ -7080,16 +7821,196 @@ window.POKOPIA_DATA = {
         "slug": "gamingbed"
       },
       {
+        "name": "Pizza",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "pizza"
+      },
+      {
+        "name": "Fried potatoes",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "friedpotatoes"
+      },
+      {
+        "name": "Soda float",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "sodafloat"
+      },
+      {
+        "name": "Afternoon tea set",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "afternoonteaset"
+      },
+      {
+        "name": "Chocolate cookies",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "chocolatecookies"
+      },
+      {
+        "name": "Sandwiches",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "sandwiches"
+      },
+      {
+        "name": "Shaved ice",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "shavedice"
+      },
+      {
+        "name": "Ribbon cake",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "ribboncake"
+      },
+      {
+        "name": "CD rack",
+        "description": "A rack with CDs on it. Sure to appeal to music lovers",
+        "recipe": null,
+        "slug": "cdrack"
+      },
+      {
+        "name": "Magazine rack",
+        "description": "This stand has a great selection of weekly magazines and photo books.",
+        "recipe": null,
+        "slug": "magazinerack"
+      },
+      {
+        "name": "Mini bookcase",
+        "description": "A small bookcase packed with books. It's tiny enough to fit in tight spaces!",
+        "recipe": null,
+        "slug": "minibookcase"
+      },
+      {
+        "name": "Bookcase",
+        "description": "Furniture with colorful books arranged on the shelves. It looks like there's room for even MORE books!",
+        "recipe": null,
+        "slug": "bookcase"
+      },
+      {
+        "name": "Stone fireplace",
+        "description": "A huge fireplace. Light this up to make a space feel warm and cozy",
+        "recipe": null,
+        "slug": "stonefireplace"
+      },
+      {
         "name": "Gaming PC",
         "description": "A PC rig that even includes a headset. The monitor can display photos when powered on",
         "recipe": null,
         "slug": "gamingpc"
       },
       {
+        "name": "Pinwheels",
+        "description": "Pokémon like to spin these round and round. Wind-producing Pokémon especially like them!",
+        "recipe": null,
+        "slug": "pinwheels"
+      },
+      {
         "name": "Knitting supplies",
         "description": "Tools for knitting hats, sweaters and the like. Pokémon are captivated by the round balls of yarn",
         "recipe": null,
         "slug": "knittingsupplies"
+      },
+      {
+        "name": "First aid kit",
+        "description": "A box with lots of medicines and supplies for treating injuries",
+        "recipe": null,
+        "slug": "firstaidkit"
+      },
+      {
+        "name": "Balloons",
+        "description": "Balloons of many vibrant colors. They sway back and forth even in the most gentle of breezes",
+        "recipe": null,
+        "slug": "balloons"
+      },
+      {
+        "name": "Punching game",
+        "description": "Slug this machine real good with your first, and it'll tell you how strong your punch is",
+        "recipe": null,
+        "slug": "punchinggame"
+      },
+      {
+        "name": "Hanging banner",
+        "description": "Cloth you might find on a department store's wall. Stack several to make 'em even longer",
+        "recipe": null,
+        "slug": "hangingbanner"
+      },
+      {
+        "name": "Party bunting",
+        "description": "These make perfect party decorations. Hang a bunch to create a festive mood!",
+        "recipe": null,
+        "slug": "partybunting"
+      },
+      {
+        "name": "Berry wall decoration",
+        "description": "The six swaying berries look incredibly tasty. Alas, they're inedible",
+        "recipe": null,
+        "slug": "berrywalldecoration"
+      },
+      {
+        "name": "Wall-mounted flowers",
+        "description": "A planter with colorful flowers. Hang one on a wall to create a vibrant space.",
+        "recipe": null,
+        "slug": "wallmountedflowers"
+      },
+      {
+        "name": "Garden flowers",
+        "description": "A styish flower pot with cute flowers in full bloom. It would look great as a desk ornament",
+        "recipe": null,
+        "slug": "gardenflowers"
+      },
+      {
+        "name": "Painting (landscape)",
+        "description": "One of Smearguru's passion prjects. The contrast betwee the forest and the mountain is beautiful",
+        "recipe": null,
+        "slug": "paintinglandscape"
+      },
+      {
+        "name": "Painting (portrait)",
+        "description": "One of Smearguru's passion projects. The subject has been masterfully recreated, wobbliness and all.",
+        "recipe": null,
+        "slug": "paintingportrait"
+      },
+      {
+        "name": "Painting (still life)",
+        "description": "One of Smearguru's passion projects. Each and every object looks just like the real thing",
+        "recipe": null,
+        "slug": "paintingstilllife"
+      },
+      {
+        "name": "Water basin",
+        "description": "Fill this with water so Pokémon can do some watering for you",
+        "recipe": null,
+        "slug": "waterbasin"
+      },
+      {
+        "name": "Raichu sign",
+        "description": "A sign depicting Raichu discharging electricity. When powered up, the neon lighting glows brightly",
+        "recipe": null,
+        "slug": "raichusign"
+      },
+      {
+        "name": "Photo cutout board",
+        "description": "Put your fac through the hole to become Plusle or Minun!",
+        "recipe": null,
+        "slug": "photocutoutboard"
+      },
+      {
+        "name": "Poké Ball light",
+        "description": "A neon light that glows red and white when powered on. It would look great on top of a table",
+        "recipe": null,
+        "slug": "pokeballlight"
+      },
+      {
+        "name": "Model planet",
+        "description": "A model of some unexplored faraway planet. It looks jut like a piece of yummy candy",
+        "recipe": null,
+        "slug": "modelplanet"
       },
       {
         "name": "Gaming light",
@@ -7204,9 +8125,99 @@ window.POKOPIA_DATA = {
         "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
         "recipe": null,
         "slug": "paintballoonaquamarine"
+      },
+      {
+        "name": "Flowery table setting",
+        "description": "A set of cute tableward. The placemat has a Jumpluff pattern!",
+        "recipe": null,
+        "slug": "flowerytablesetting"
+      },
+      {
+        "name": "Lunch box",
+        "description": "A lunch box packed with Pokémon-shaped food. The perfect meal for a picnic lunch",
+        "recipe": null,
+        "slug": "lunchbox"
+      },
+      {
+        "name": "Hoppip water bottle",
+        "description": "This water bottle with a shoulder strap is perfect for picnics! The Hoopip pattern is very cute.",
+        "recipe": null,
+        "slug": "hoppipwaterbottle"
+      },
+      {
+        "name": "Juice trio",
+        "description": "Bottles of colored juices. One of them is capped off nicely with a flower-shaped lid.",
+        "recipe": null,
+        "slug": "juicetrio"
+      },
+      {
+        "name": "Flower garland",
+        "description": "An adorable wall decoration made with a variety of colorful flowers",
+        "recipe": null,
+        "slug": "flowergarland"
+      },
+      {
+        "name": "Jewel wall decoration",
+        "description": "Put these multi-colored jewels up on the wall to add a little sparkle to your decore",
+        "recipe": null,
+        "slug": "jewelwalldecoration"
+      },
+      {
+        "name": "Treasure",
+        "description": "A pile of golden accessories and sparkling jewels. Use this as decor to add an air of luxury.",
+        "recipe": null,
+        "slug": "treasure"
       }
     ],
     "Complicated Stuff": [
+      {
+        "name": "Pencil holder",
+        "description": "A pencil holder with lots of poencils in it. Try putting this on top of a study desk",
+        "recipe": null,
+        "slug": "pencilholder"
+      },
+      {
+        "name": "Fancy pen",
+        "description": "A high-class ballpoint pen that exudes luxury. A very important person could have used this",
+        "recipe": null,
+        "slug": "fancypen"
+      },
+      {
+        "name": "Letter",
+        "description": "A simple sealed letter. It has a Poké Ball stamp on it",
+        "recipe": null,
+        "slug": "letter"
+      },
+      {
+        "name": "Notepad",
+        "description": "It's full of important-looking notes, so there's no space to write anything else!",
+        "recipe": null,
+        "slug": "notepad"
+      },
+      {
+        "name": "Book",
+        "description": "A thick hardcover book. The pages inside were written in small print",
+        "recipe": null,
+        "slug": "book"
+      },
+      {
+        "name": "Open Book",
+        "description": "A classic hardcover book. It's probably got a lot of difficult words inside",
+        "recipe": null,
+        "slug": "openbook"
+      },
+      {
+        "name": "Papers",
+        "description": "Lots of tiny words are written on the white pages along with drawings of colorful shapes",
+        "recipe": null,
+        "slug": "papers"
+      },
+      {
+        "name": "Newspaper",
+        "description": "Its pages are filled with small, tightly-packed letters. What could be written here?",
+        "recipe": null,
+        "slug": "newspaper"
+      },
       {
         "name": "CD rack",
         "description": "A rack with CDs on it. Sure to appeal to music lovers",
@@ -7218,15 +8229,183 @@ window.POKOPIA_DATA = {
         "description": "This stand has a great selection of weekly magazines and photo books.",
         "recipe": null,
         "slug": "magazinerack"
+      },
+      {
+        "name": "Mini bookcase",
+        "description": "A small bookcase packed with books. It's tiny enough to fit in tight spaces!",
+        "recipe": null,
+        "slug": "minibookcase"
+      },
+      {
+        "name": "Bookcase",
+        "description": "Furniture with colorful books arranged on the shelves. It looks like there's room for even MORE books!",
+        "recipe": null,
+        "slug": "bookcase"
+      },
+      {
+        "name": "Printer",
+        "description": "A large printer used by businesses. Perfect for an office or other workspaces!",
+        "recipe": null,
+        "slug": "printer"
+      },
+      {
+        "name": "Computer",
+        "description": "A computer that looks like it belongs in a laboratory. Some notes have been stuck to it here and there",
+        "recipe": null,
+        "slug": "computer"
+      },
+      {
+        "name": "Microscope",
+        "description": "A microscope often found in chemistry labs and research institutions. Essential for experiments!",
+        "recipe": null,
+        "slug": "microscope"
+      },
+      {
+        "name": "Science experiment",
+        "description": "Chemicals, testing equipment, and a clipboard... OK! The experiment is ready to begin!",
+        "recipe": null,
+        "slug": "scienceexperiment"
+      },
+      {
+        "name": "Jumbled cords",
+        "description": "These cords are all tangled up and cannot be separated",
+        "recipe": null,
+        "slug": "jumbledcords"
+      },
+      {
+        "name": "Audio mixer",
+        "description": "Plug it in and switch on the screen. DJ Ditto is in the house!",
+        "recipe": null,
+        "slug": "audiomixer"
+      },
+      {
+        "name": "Whiteboard",
+        "description": "A whiteboard covered in writing and sticky notes that looks like it belongs in a lab",
+        "recipe": null,
+        "slug": "whiteboard"
+      },
+      {
+        "name": "Control unit",
+        "description": "This has a bunch of switches, but it doesn't look like any of them do anything",
+        "recipe": null,
+        "slug": "controlunit"
+      },
+      {
+        "name": "Spacesuit",
+        "description": "Clothing designed for living in outer space. Keeps the wearer safe even in an airless environment",
+        "recipe": null,
+        "slug": "spacesuit"
+      },
+      {
+        "name": "Wall Calendar",
+        "description": "A calendar that's simple and easy to use. It meshes well with pretty much any wall.",
+        "recipe": null,
+        "slug": "wallcalendar"
+      },
+      {
+        "name": "Antique clock",
+        "description": "This clock ticks away the hours. It lets out a loud bong at designated times",
+        "recipe": null,
+        "slug": "antiqueclock"
+      },
+      {
+        "name": "Rowlet clock",
+        "description": "A wall clock shaped like a small house. Rowlet will pop out to let you know what time it is",
+        "recipe": null,
+        "slug": "rowletclock"
+      },
+      {
+        "name": "Grubby letter",
+        "description": "A yellowed letter, still sealed. It's got a postage stamp with a Poké Ball pattern on it.",
+        "recipe": null,
+        "slug": "grubbyletter"
+      },
+      {
+        "name": "Grubby notepad",
+        "description": "It looks like there's some pretty important stuff written on this, but it's a little grimy",
+        "recipe": null,
+        "slug": "grubbynotepad"
+      },
+      {
+        "name": "Grubby book",
+        "description": "",
+        "recipe": null,
+        "slug": "grubbybook"
+      },
+      {
+        "name": "Grubby papers",
+        "description": "Lots of tiny words are written on the yellowed pages along with drawings of colorful shapess.",
+        "recipe": null,
+        "slug": "grubbypapers"
+      },
+      {
+        "name": "Grubby newspaper",
+        "description": "A newspaper with noticeable dirt and grime. It smells like old paper",
+        "recipe": null,
+        "slug": "grubbynewspaper"
+      },
+      {
+        "name": "Bike",
+        "description": "A cool bicycle that looks high-end. It sparkles as if it's brand-new",
+        "recipe": null,
+        "slug": "bike"
+      },
+      {
+        "name": "Menu board",
+        "description": "Specials are written on this board, but it doesn't seem like Pokémon can actually read them.",
+        "recipe": null,
+        "slug": "menuboard"
+      },
+      {
+        "name": "Signpost",
+        "description": "A sign that looks like it belongs at a bus stop. It could serve as a guiding landmark in cities or on roads!",
+        "recipe": null,
+        "slug": "signpost"
+      },
+      {
+        "name": "Information board",
+        "description": "A sign with information about the town written on it. Nobody knows what town it's for, though.",
+        "recipe": null,
+        "slug": "informationboard"
+      },
+      {
+        "name": "Cash register",
+        "description": "Place this on a table and power it on, and Pokémon will come by to conduct trades!",
+        "recipe": null,
+        "slug": "cashregister"
+      },
+      {
+        "name": "Mini generator",
+        "description": "Place this anywhere, and it will generate electricity all on its own. What a remarkable machine!",
+        "recipe": null,
+        "slug": "minigenerator"
+      },
+      {
+        "name": "Card reader",
+        "description": "A machine that reads key cards or Pokédexes. Mount it to a wall.",
+        "recipe": null,
+        "slug": "cardreader"
+      },
+      {
+        "name": "Town map",
+        "description": "A map of...somewhere. You can't make heads or tails of it but it looks pretty nice on a wall",
+        "recipe": null,
+        "slug": "townmap"
+      },
+      {
+        "name": "Team Rocket Wall Hanging",
+        "description": "The symbol of a certain organization. Just looking at it makes you want to get up to some mischief",
+        "recipe": null,
+        "slug": "teamrocketwallhanging"
+      },
+      {
+        "name": "Digital camera",
+        "description": "A single-lens digital camera. It's so high-tech that it looks tricky to use",
+        "recipe": null,
+        "slug": "digitalcamera"
       }
     ],
     "Construction": [
-      {
-        "name": "Toy blocks",
-        "description": "Stacking toys that are fun to play with. Discover all the different combinations you can make!",
-        "recipe": null,
-        "slug": "toyblocks"
-      },
       {
         "name": "Sandbags",
         "description": "A cloth sack filled with dirt and sand. It's pretty bulky and looks heavy",
@@ -7272,17 +8451,6 @@ window.POKOPIA_DATA = {
     ],
     "Containers": [
       {
-        "name": "Storage box",
-        "description": "A convenient box you can store items in. It's made of wood and easy to move things in and out of.",
-        "recipe": [
-          {
-            "material": "Lumber",
-            "qty": 1
-          }
-        ],
-        "slug": "storagebox"
-      },
-      {
         "name": "Wall storage box",
         "description": "It may be small, but it can store lots of stuff. Try mounting it on a wall",
         "recipe": [
@@ -7292,17 +8460,6 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "wallstoragebox"
-      },
-      {
-        "name": "Big storage box",
-        "description": "Roughly three times bigger than your standard storage box. You can put a lot of things inside.",
-        "recipe": [
-          {
-            "material": "Pokémetal",
-            "qty": 3
-          }
-        ],
-        "slug": "bigstoragebox"
       },
       {
         "name": "Plain chest",
@@ -7450,10 +8607,146 @@ window.POKOPIA_DATA = {
         "slug": "officeshelf"
       },
       {
+        "name": "Polygonal Shelf",
+        "description": "A stylish, eye-catching shelf. Looks hard to use but still functions as a shelf just fine,",
+        "recipe": null,
+        "slug": "polygonalshelf"
+      },
+      {
+        "name": "Plain stand",
+        "description": "This low table has a simple design and is perfect for displaying items",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainstand"
+      },
+      {
+        "name": "Iron stand",
+        "description": "An impressively stury iron stand. Effortlessly supports even heavy items",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "ironstand"
+      },
+      {
+        "name": "Luxury dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Limestone",
+            "qty": 4
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurydresser"
+      },
+      {
+        "name": "Cute dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "cutedresser"
+      },
+      {
+        "name": "Picnic basket",
+        "description": "Try putting some food inside, and hungry Pokémon might stop by for a bite",
+        "recipe": null,
+        "slug": "picnicbasket"
+      },
+      {
         "name": "Mug",
         "description": "A simple, easy-to-use mug. You could change up the colors, and it would still look great.",
         "recipe": null,
         "slug": "mug"
+      },
+      {
+        "name": "Tea set",
+        "description": "Enjoy an elegant teatime with this gorgeous set that includes a teapot and teacups",
+        "recipe": null,
+        "slug": "teaset"
+      },
+      {
+        "name": "Berry basket",
+        "description": "A basket packed with berries. Line up a few to make your very own fruit stand!",
+        "recipe": null,
+        "slug": "berrybasket"
+      },
+      {
+        "name": "Small vase",
+        "description": "A vase with a single cute flower inside. Put it anywhere to add a splash of color to your life",
+        "recipe": null,
+        "slug": "smallvase"
+      },
+      {
+        "name": "Leafy plant",
+        "description": "A plant with glossy leaves. It's actually related to the taro root",
+        "recipe": null,
+        "slug": "leafyplant"
+      },
+      {
+        "name": "Pitcher-plant pot",
+        "description": "A flower vase with a pink lip that resembles a Pokémon's mouth. It emanates a faintly sweet aroma",
+        "recipe": null,
+        "slug": "pitcherplantpot"
+      },
+      {
+        "name": "Extravagant flowers",
+        "description": "With robust orange flowers in full bloom, using this decoration is sure to add some color to an area",
+        "recipe": null,
+        "slug": "extravagantflowers"
+      },
+      {
+        "name": "Tall potted plant",
+        "description": "A small, thin palm tree. It comes in a planter so it won't make a mess even if it's placed indoors",
+        "recipe": null,
+        "slug": "tallpottedplant"
+      },
+      {
+        "name": "Flat-leaf plant",
+        "description": "A plant with flat leaves that look like planks. It's actually a type of succulent",
+        "recipe": null,
+        "slug": "flatleafplant"
+      },
+      {
+        "name": "Twisted potted plant",
+        "description": "A plant with a winding, twisted trunk. It doesn't look like it will get any bigger than it already is.",
+        "recipe": null,
+        "slug": "twistedpottedplant"
+      },
+      {
+        "name": "Small garbage can",
+        "description": "A simple, colorful trash can, perfect for indoor use",
+        "recipe": null,
+        "slug": "smallgarbagecan"
       },
       {
         "name": "Munna bank",
@@ -7462,19 +8755,232 @@ window.POKOPIA_DATA = {
         "slug": "munnabank"
       },
       {
+        "name": "Pencil holder",
+        "description": "A pencil holder with lots of poencils in it. Try putting this on top of a study desk",
+        "recipe": null,
+        "slug": "pencilholder"
+      },
+      {
+        "name": "Photo frame",
+        "description": "You can put one of your photos in this frame and place it on a table or stand",
+        "recipe": null,
+        "slug": "photoframe"
+      },
+      {
+        "name": "Wall photo frame",
+        "description": "You can put one of your photos in this frame and hang it on a wall.",
+        "recipe": null,
+        "slug": "wallphotoframe"
+      },
+      {
+        "name": "CD rack",
+        "description": "A rack with CDs on it. Sure to appeal to music lovers",
+        "recipe": null,
+        "slug": "cdrack"
+      },
+      {
+        "name": "Magazine rack",
+        "description": "This stand has a great selection of weekly magazines and photo books.",
+        "recipe": null,
+        "slug": "magazinerack"
+      },
+      {
+        "name": "Mini bookcase",
+        "description": "A small bookcase packed with books. It's tiny enough to fit in tight spaces!",
+        "recipe": null,
+        "slug": "minibookcase"
+      },
+      {
+        "name": "Bookcase",
+        "description": "Furniture with colorful books arranged on the shelves. It looks like there's room for even MORE books!",
+        "recipe": null,
+        "slug": "bookcase"
+      },
+      {
+        "name": "Dining cabinet",
+        "description": "A cupboard packed full of plates, cups-even a tea set",
+        "recipe": null,
+        "slug": "diningcabinet"
+      },
+      {
+        "name": "Refrigerator",
+        "description": "It emits a slight chill, but it doesn't seem like it can keep anything cold",
+        "recipe": null,
+        "slug": "refrigerator"
+      },
+      {
+        "name": "Washing machine",
+        "description": "While this does make noise when powered on, it doesn't seem to actually wash clothes...",
+        "recipe": null,
+        "slug": "washingmachine"
+      },
+      {
+        "name": "First aid kit",
+        "description": "A box with lots of medicines and supplies for treating injuries",
+        "recipe": null,
+        "slug": "firstaidkit"
+      },
+      {
+        "name": "Jumbled cords",
+        "description": "These cords are all tangled up and cannot be separated",
+        "recipe": null,
+        "slug": "jumbledcords"
+      },
+      {
+        "name": "Boo-in-the-box",
+        "description": "Open the box, and -BOING!-out pops the Gengar!",
+        "recipe": null,
+        "slug": "boointhebox"
+      },
+      {
+        "name": "Cardboard boxes",
+        "description": "Light cardboard boxes. It doesn't look like they have anything inside",
+        "recipe": null,
+        "slug": "cardboardboxes"
+      },
+      {
+        "name": "Wooden birdhouse",
+        "description": "A birdhouse filled with dry, soft grass. Bird Pokémon would probably love lounging here.",
+        "recipe": null,
+        "slug": "woodenbirdhouse"
+      },
+      {
+        "name": "Mailbox",
+        "description": "A box for receiving letters. It'd look really nice in front of a house!",
+        "recipe": null,
+        "slug": "mailbox"
+      },
+      {
+        "name": "Worn wooden crate",
+        "description": "A sturdy but somewhat shabby box. Stack a bunch of them to create a warehouse vibe.",
+        "recipe": null,
+        "slug": "wornwoodencrate"
+      },
+      {
+        "name": "Wooden crate",
+        "description": "You have absolutely no idea how to open this box...But you can put stuff on top of it at least!",
+        "recipe": null,
+        "slug": "woodencrate"
+      },
+      {
+        "name": "Barrel",
+        "description": "It's totally empty inside. You could put something on top to make it look nice",
+        "recipe": null,
+        "slug": "barrel"
+      },
+      {
         "name": "Garbage bin",
         "description": "This trash can is big enough that a Pokémon could probably fit inside!",
         "recipe": null,
         "slug": "garbagebin"
       },
       {
+        "name": "Recycling bin",
+        "description": "A bin for disposing of empty cans. It's just big enough for a Pokémon to fit inside",
+        "recipe": null,
+        "slug": "recyclingbin"
+      },
+      {
         "name": "Metal drum",
         "description": "A smooth, clean canister. It's empty, so it's actually quite light",
         "recipe": null,
         "slug": "metaldrum"
+      },
+      {
+        "name": "Construction supplies",
+        "description": "Construction tools stored in a meta drum. Great for factories or warehouses.",
+        "recipe": null,
+        "slug": "constructionsupplies"
+      },
+      {
+        "name": "Wheelbarrow",
+        "description": "A wheelbarrow carrying a large mound of dirt. A lot of construction sites probably have these!",
+        "recipe": null,
+        "slug": "wheelbarrow"
+      },
+      {
+        "name": "Frame",
+        "description": "A frame for hanging an item on a wall. Try putting different things inside!",
+        "recipe": null,
+        "slug": "frame"
+      },
+      {
+        "name": "Cash register",
+        "description": "Place this on a table and power it on, and Pokémon will come by to conduct trades!",
+        "recipe": null,
+        "slug": "cashregister"
+      },
+      {
+        "name": "Hoppip water bottle",
+        "description": "This water bottle with a shoulder strap is perfect for picnics! The Hoopip pattern is very cute.",
+        "recipe": null,
+        "slug": "hoppipwaterbottle"
+      },
+      {
+        "name": "Juice trio",
+        "description": "Bottles of colored juices. One of them is capped off nicely with a flower-shaped lid.",
+        "recipe": null,
+        "slug": "juicetrio"
+      },
+      {
+        "name": "Flower backpack",
+        "description": "The big flower makes this backpack stand out! Looks like it could hold everything you need for a picnic",
+        "recipe": null,
+        "slug": "flowerbackpack"
+      },
+      {
+        "name": "Adventure kit",
+        "description": "A sleeping bag, a hat and a backpack stuffed full of supplies. All you need for an adventure is right here!",
+        "recipe": null,
+        "slug": "adventurekit"
+      },
+      {
+        "name": "Oil lantern",
+        "description": "A lantern that provides a dim glow when lit. Perfect for exploring dark places!",
+        "recipe": null,
+        "slug": "oillantern"
+      },
+      {
+        "name": "Star closet",
+        "description": "A closet with many stars painted on it. Open the doors and store your stuff inside",
+        "recipe": null,
+        "slug": "starcloset"
+      },
+      {
+        "name": "Star-shaped Dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look",
+        "recipe": null,
+        "slug": "starshapeddresser"
       }
     ],
     "Cute Stuff": [
+      {
+        "name": "Poké Ball Chest",
+        "description": "This looks like a giant Poké Ball. It opens wide for you to store things inside",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Iron Ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "pokeballchest"
+      },
+      {
+        "name": "Berry case",
+        "description": "At a glance, this looks just like a glossy Cheri Berry. It opens wide for you to store things inside",
+        "recipe": null,
+        "slug": "berrycase"
+      },
+      {
+        "name": "Polygonal Shelf",
+        "description": "A stylish, eye-catching shelf. Looks hard to use but still functions as a shelf just fine,",
+        "recipe": null,
+        "slug": "polygonalshelf"
+      },
       {
         "name": "Cute table",
         "description": "A table with cute lace and frills. It somehow reminds you of Fairy types",
@@ -7500,6 +9006,29 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "poparttable"
+      },
+      {
+        "name": "Berry chair",
+        "description": "When placed on the ground, it looks just like a buried Leppa Berry. The steam and leaves are a backrest.",
+        "recipe": [
+          {
+            "material": "Leppa Berry",
+            "qty": 1
+          },
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Copper ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "berrychair"
       },
       {
         "name": "Stylish stool",
@@ -7581,6 +9110,12 @@ window.POKOPIA_DATA = {
         "slug": "popartsofa"
       },
       {
+        "name": "Pikachu sofa",
+        "description": "Pikachu's face is front and center. On the back, you can find a little tail sticking out.",
+        "recipe": null,
+        "slug": "pikachusofa"
+      },
+      {
         "name": "Pop art bed",
         "description": "lying on tthis bed feels like being inside of a pod. It's soft, fluffy, and easy to sleep on.",
         "recipe": [
@@ -7634,6 +9169,12 @@ window.POKOPIA_DATA = {
         "slug": "cutebed"
       },
       {
+        "name": "Naptime bed",
+        "description": "Kick back right on top of Snorlax's belly. It feels so comfy you could snooze through the whole day",
+        "recipe": null,
+        "slug": "naptimebed"
+      },
+      {
         "name": "Cute dresser",
         "description": "Look into the mirror to change your transformation and perfect your look!",
         "recipe": [
@@ -7651,6 +9192,60 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "cutedresser"
+      },
+      {
+        "name": "Wiggly mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": null,
+        "slug": "wigglymirror"
+      },
+      {
+        "name": "Ribbon cake",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "ribboncake"
+      },
+      {
+        "name": "Munna bank",
+        "description": "An especially heavy money box. It feels like it's full of coins",
+        "recipe": null,
+        "slug": "munnabank"
+      },
+      {
+        "name": "Bathtime set",
+        "description": "Shampoo, towels and a toy-everything you need to make bath time a blast!",
+        "recipe": null,
+        "slug": "bathtimeset"
+      },
+      {
+        "name": "Bouncy blue bathtub",
+        "description": "A bathtub that lets you experience waves and bubbles, even without a single drop of water inside.",
+        "recipe": null,
+        "slug": "bouncybluebathtub"
+      },
+      {
+        "name": "Wobbuffet Wobbler",
+        "description": "An exceptionally durable Wobbuffet doll. It gets back up no matter how many times you knock it over.",
+        "recipe": null,
+        "slug": "wobbuffetwobbler"
+      },
+      {
+        "name": "Berry clock",
+        "description": "A clock that resembles an Oran Berry cross section. Try mounting it on a wall",
+        "recipe": null,
+        "slug": "berryclock"
+      },
+      {
+        "name": "Rowlet clock",
+        "description": "A wall clock shaped like a small house. Rowlet will pop out to let you know what time it is",
+        "recipe": null,
+        "slug": "rowletclock"
+      },
+      {
+        "name": "Castform weather charm",
+        "description": "A reversible Castform doll. Rumor has it, when the doll changes form, the weather changes too!",
+        "recipe": null,
+        "slug": "castformweathercharm"
       },
       {
         "name": "Eevee doll",
@@ -7695,22 +9290,184 @@ window.POKOPIA_DATA = {
         "slug": "substitutedoll"
       },
       {
+        "name": "Eerie candle",
+        "description": "Fwoosh! This candle glows with a bluish flame when lit. It's small enough to fit on top of a desk.",
+        "recipe": null,
+        "slug": "eeriecandle"
+      },
+      {
+        "name": "Chansey plant",
+        "description": "A tree that looks just like a Chansey! Looking at it seems to fill you with a gentle energy",
+        "recipe": null,
+        "slug": "chanseyplant"
+      },
+      {
+        "name": "Photo cutout board",
+        "description": "Put your fac through the hole to become Plusle or Minun!",
+        "recipe": null,
+        "slug": "photocutoutboard"
+      },
+      {
+        "name": "Berry table lamp",
+        "description": "A Rawst Berry made of glass. Power it on to illuminate the area with pale blue light",
+        "recipe": null,
+        "slug": "berrytablelamp"
+      },
+      {
         "name": "Cute lamp",
         "description": "A cute decorative lamp, even when it's turned off. Power it on to make the central heart glow.",
         "recipe": null,
         "slug": "cutelamp"
       },
       {
-        "name": "Pop art lamp",
-        "description": "The bright bulb bounces off a shiny lampshade. Looking at it seems to improve your mood!",
+        "name": "Model planet",
+        "description": "A model of some unexplored faraway planet. It looks jut like a piece of yummy candy",
         "recipe": null,
-        "slug": "popartlamp"
+        "slug": "modelplanet"
+      },
+      {
+        "name": "Red meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "redmeteorlamp"
+      },
+      {
+        "name": "Orange meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "orangemeteorlamp"
+      },
+      {
+        "name": "Yellow meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "yellowmeteorlamp"
+      },
+      {
+        "name": "Green meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "greenmeteorlamp"
+      },
+      {
+        "name": "Blue meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "bluemeteorlamp"
+      },
+      {
+        "name": "Indigo meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "indigometeorlamp"
+      },
+      {
+        "name": "Violet meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "violetmeteorlamp"
+      },
+      {
+        "name": "Luxury lamp",
+        "description": "When this lamp is powered on, it emits a gentle light, illuminating its surroundings",
+        "recipe": null,
+        "slug": "luxurylamp"
+      },
+      {
+        "name": "Shell lamp",
+        "description": "It looks like a simple seashell at first glance, but hang it up and power it on, and it emits a gentle light",
+        "recipe": null,
+        "slug": "shelllamp"
+      },
+      {
+        "name": "Berry hanging lamp",
+        "description": "When hung from the ceiling and powered on, the tip of the Chesto Berry emits a gentle light",
+        "recipe": null,
+        "slug": "berryhanginglamp"
       },
       {
         "name": "Cute flower",
-        "description": "Cute flowers that bloom in port towns. They would surely be a delisghtful gift to any Pokémon",
+        "description": "Cute flowers that bloom in port towns. They would surely be a delightful gift to any Pokémon",
         "recipe": null,
         "slug": "cuteflower"
+      },
+      {
+        "name": "Heart Scale",
+        "description": "An extremely rare scale. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "heartscale"
+      },
+      {
+        "name": "Fairy Feather",
+        "description": "A feather that gleams faintly when hit by light. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "fairyfeather"
+      },
+      {
+        "name": "Flower cushion",
+        "description": "A cute flower-shaped cushion. It would look nice on some grassy ground.",
+        "recipe": null,
+        "slug": "flowercushion"
+      },
+      {
+        "name": "Flowery table setting",
+        "description": "A set of cute tableward. The placemat has a Jumpluff pattern!",
+        "recipe": null,
+        "slug": "flowerytablesetting"
+      },
+      {
+        "name": "Lunch box",
+        "description": "A lunch box packed with Pokémon-shaped food. The perfect meal for a picnic lunch",
+        "recipe": null,
+        "slug": "lunchbox"
+      },
+      {
+        "name": "Hoppip water bottle",
+        "description": "This water bottle with a shoulder strap is perfect for picnics! The Hoopip pattern is very cute.",
+        "recipe": null,
+        "slug": "hoppipwaterbottle"
+      },
+      {
+        "name": "Flower backpack",
+        "description": "The big flower makes this backpack stand out! Looks like it could hold everything you need for a picnic",
+        "recipe": null,
+        "slug": "flowerbackpack"
+      },
+      {
+        "name": "Star closet",
+        "description": "A closet with many stars painted on it. Open the doors and store your stuff inside",
+        "recipe": null,
+        "slug": "starcloset"
+      },
+      {
+        "name": "Starry-sky bed",
+        "description": "A bed covered in sparkling stars. Sleeping in it might make you dream of flying through a starry sky.",
+        "recipe": null,
+        "slug": "starryskybed"
+      },
+      {
+        "name": "Star-shaped Dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look",
+        "recipe": null,
+        "slug": "starshapeddresser"
+      },
+      {
+        "name": "Moon clock",
+        "description": "A moon-shaped clock with a swaying pendulum. What will happen when it strikes the hour?",
+        "recipe": null,
+        "slug": "moonclock"
+      },
+      {
+        "name": "Star wall decoration",
+        "description": "A set of twinking stars. Decorate your wall with these for a touch of cuteness!",
+        "recipe": null,
+        "slug": "starwalldecoration"
+      },
+      {
+        "name": "Jirachi lamp",
+        "description": "A lamp with a sleeping Jirachi perched on top. Perfect for placing by your bedside!",
+        "recipe": null,
+        "slug": "jirachilamp"
       }
     ],
     "Electronics": [
@@ -8186,14 +9943,38 @@ window.POKOPIA_DATA = {
         "description": "Hang this from the ceiling to illuminate a room with gentle light. Perfeect for a mansion aesthetic!",
         "recipe": null,
         "slug": "antiquechandelier"
+      },
+      {
+        "name": "Jirachi lamp",
+        "description": "A lamp with a sleeping Jirachi perched on top. Perfect for placing by your bedside!",
+        "recipe": null,
+        "slug": "jirachilamp"
       }
     ],
     "Exercise": [
       {
+        "name": "Punching game",
+        "description": "Slug this machine real good with your first, and it'll tell you how strong your punch is",
+        "recipe": null,
+        "slug": "punchinggame"
+      },
+      {
+        "name": "Wobbuffet Wobbler",
+        "description": "An exceptionally durable Wobbuffet doll. It gets back up no matter how many times you knock it over.",
+        "recipe": null,
+        "slug": "wobbuffetwobbler"
+      },
+      {
         "name": "Punching bag",
-        "description": "Heavy and packed full of sand. Perfect for practicing punches and kicks",
+        "description": "Heavy and packed full of sand. Perfect for practicing punches and kicks!",
         "recipe": null,
         "slug": "punchingbag"
+      },
+      {
+        "name": "Bike",
+        "description": "A cool bicycle that looks high-end. It sparkles as if it's brand-new",
+        "recipe": null,
+        "slug": "bike"
       }
     ],
     "Fabric": [
@@ -8202,6 +9983,81 @@ window.POKOPIA_DATA = {
         "description": "An irresistibly soft tuft of fluff. Pokémon with the Litter specialty may scatter this",
         "recipe": null,
         "slug": "fluff"
+      },
+      {
+        "name": "Plain chest",
+        "description": "A chest with a simple design. It can be used to store items.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainchest"
+      },
+      {
+        "name": "Plain closet",
+        "description": "Open the curtains and store your stuff! You don't actually need the hangers-but they're there anyway!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plaincloset"
+      },
+      {
+        "name": "Plain stand",
+        "description": "This low table has a simple design and is perfect for displaying items",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainstand"
+      },
+      {
+        "name": "Simple cushion",
+        "description": "A simple practical cusion. It's filled with cotton and provides a soft seat.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "simplecushion"
+      },
+      {
+        "name": "Plain stool",
+        "description": "A stool with a simple design. Small Pokémon can use this as a seat",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainstool"
       },
       {
         "name": "Resort stool",
@@ -8221,6 +10077,51 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "resortstool"
+      },
+      {
+        "name": "Stylish stool",
+        "description": "A small, round stool with a stylish three-color cushion.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "stylishstool"
+      },
+      {
+        "name": "Soft seat",
+        "description": "A cushioned seat that's soft and fluffy-perfect for waiting rooms, relaxation spaces, and the like!",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "softseat"
+      },
+      {
+        "name": "Box Sofa",
+        "description": "A small square sofa. Line up several of them to make a wide chic sofa",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "boxsofa"
       },
       {
         "name": "Plain chair",
@@ -8257,6 +10158,108 @@ window.POKOPIA_DATA = {
         "slug": "resortchair"
       },
       {
+        "name": "Chic chair",
+        "description": "A luxurious loung chair. Sitting on its soft cushions is absolutely beyond compare!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "chicchair"
+      },
+      {
+        "name": "Fancy chair",
+        "description": "A high-class chair with a real dignified feel to it. Just sitting here will make you feel important.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "fancychair"
+      },
+      {
+        "name": "Antique chair",
+        "description": "A chair with a charming retro design. Its cushions are soft and fluffy",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "antiquechair"
+      },
+      {
+        "name": "Luxury chair",
+        "description": "A classy-looking seat with a gemstone embedded in it. Just sitting on it makes you feel rich.",
+        "recipe": [
+          {
+            "material": "Linestone",
+            "qty": 2
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurychair"
+      },
+      {
+        "name": "Office chair",
+        "description": "With a gentle curve to support the body, this chair was designed to help you sit longer without tiring",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "officechair"
+      },
+      {
+        "name": "Cute chair",
+        "description": "The ruffle skirt is exceptionally cute and lovely",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "cutechair"
+      },
+      {
         "name": "Pop art chair",
         "description": "A chair with a soft design and rounded corners. The colors of the backrest and cushion can be changed",
         "recipe": [
@@ -8270,6 +10273,21 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "popartchair"
+      },
+      {
+        "name": "Gaming chair",
+        "description": "With its large backrest and cushions, you could sit comfortable in this chair for a long time.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "gamingchair"
       },
       {
         "name": "Plain sofa",
@@ -8306,6 +10324,74 @@ window.POKOPIA_DATA = {
         "slug": "resortsofa"
       },
       {
+        "name": "Chic sofa",
+        "description": "A luxurious high-class sofa. It looks exactly like the ones on the S.S. Anne",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "chicsofa"
+      },
+      {
+        "name": "Antique sofa",
+        "description": "A retro sofa with Poké Ball designs here and there",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "antiquesofa"
+      },
+      {
+        "name": "Luxury sofa",
+        "description": "This sofa is sooo fluffy. It's like sitting on a cloud",
+        "recipe": [
+          {
+            "material": "Limestone",
+            "qty": 4
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurysofa"
+      },
+      {
+        "name": "Cute sofa",
+        "description": "A cute, slightly elegant sofa. The backrest is shaped like a Pokémon's wings.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "cutesofa"
+      },
+      {
         "name": "Pop art sofa",
         "description": "A soft-looking sofa with cute, rounded edges.",
         "recipe": [
@@ -8319,6 +10405,46 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "popartsofa"
+      },
+      {
+        "name": "Pikachu sofa",
+        "description": "Pikachu's face is front and center. On the back, you can find a little tail sticking out.",
+        "recipe": null,
+        "slug": "pikachusofa"
+      },
+      {
+        "name": "Log Bed",
+        "description": "A bed made from small logs. You'll sleep soundly enveloped by a woodsy aroma",
+        "recipe": [
+          {
+            "material": "Small log",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "logbed"
+      },
+      {
+        "name": "Mini plain bed",
+        "description": "A small, plain bed. Great for solo sleepers!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "miniplainbed"
       },
       {
         "name": "Resort bed",
@@ -8340,6 +10466,36 @@ window.POKOPIA_DATA = {
         "slug": "resortbed"
       },
       {
+        "name": "Iron bed",
+        "description": "A slightly narrow bed. It's sturdy enough for a good night's sleep!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "ironbed"
+      },
+      {
+        "name": "Beach chair",
+        "description": "Lean back and relax in this chair. It pairs perfectly with a beach parasol",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          }
+        ],
+        "slug": "beachchair"
+      },
+      {
         "name": "Pop art bed",
         "description": "lying on tthis bed feels like being inside of a pod. It's soft, fluffy, and easy to sleep on.",
         "recipe": [
@@ -8353,6 +10509,55 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "popartbed"
+      },
+      {
+        "name": "Poké Ball bed",
+        "description": "A big bed. Even large Pokémon could sprawl out on it.",
+        "recipe": [
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "pokeballbed"
+      },
+      {
+        "name": "Berry bed",
+        "description": "A large Pecha Berry-themed bed. It's springy texture provides ultimate comfort at bedtime.",
+        "recipe": [
+          {
+            "material": "Pecha Berry",
+            "qty": 2
+          },
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Copper ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "berrybed"
+      },
+      {
+        "name": "Plain bed",
+        "description": "A bed with a simple deisng. It looks like it would mesh with a variety of rooms",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "plainbed"
       },
       {
         "name": "Resort hammock",
@@ -8372,6 +10577,128 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "resorthammock"
+      },
+      {
+        "name": "Guest-room bed",
+        "description": "A bed with a rather high-class vibe. It looks like it belongs on a luxury ship or in a fancy hotel.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "guest-roombed"
+      },
+      {
+        "name": "Antique bed",
+        "description": "This bed has a relaxing, nostalgic atmosphere. The blanket is smooth to the touch",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "antiquebed"
+      },
+      {
+        "name": "Industrial bed",
+        "description": "A nice, wide bed that works in any type of room. Even a large Pokémon could sleep in it",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "industrialbed"
+      },
+      {
+        "name": "Cute bed",
+        "description": "You'll feel like royalty sleeping on this cute canopy bed.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 3
+          },
+          {
+            "material": "Fluff",
+            "qty": 3
+          }
+        ],
+        "slug": "cutebed"
+      },
+      {
+        "name": "Naptime bed",
+        "description": "Kick back right on top of Snorlax's belly. It feels so comfy you could snooze through the whole day",
+        "recipe": null,
+        "slug": "naptimebed"
+      },
+      {
+        "name": "Picnic basket",
+        "description": "Try putting some food inside, and hungry Pokémon might stop by for a bite",
+        "recipe": null,
+        "slug": "picnicbasket"
+      },
+      {
+        "name": "Table setting",
+        "description": "This cutlery immediately makes any table look like it belongs in a high-class restaurant",
+        "recipe": null,
+        "slug": "tablesetting"
+      },
+      {
+        "name": "Towel rack",
+        "description": "A simple wall rack with a towel hanging on it. This would look great next to a sink",
+        "recipe": null,
+        "slug": "towelrack"
+      },
+      {
+        "name": "Knitting supplies",
+        "description": "Tools for knitting hats, sweaters and the like. Pokémon are captivated by the round balls of yarn",
+        "recipe": null,
+        "slug": "knittingsupplies"
+      },
+      {
+        "name": "Crystal ball",
+        "description": "A large crystal ball used for fortune-telling. Give it to a Psychic-type Pokémon and see what happens",
+        "recipe": null,
+        "slug": "crystalball"
+      },
+      {
+        "name": "Hanging banner",
+        "description": "Cloth you might find on a department store's wall. Stack several to make 'em even longer",
+        "recipe": null,
+        "slug": "hangingbanner"
+      },
+      {
+        "name": "Party bunting",
+        "description": "These make perfect party decorations. Hang a bunch to create a festive mood!",
+        "recipe": null,
+        "slug": "partybunting"
+      },
+      {
+        "name": "Castform weather charm",
+        "description": "A reversible Castform doll. Rumor has it, when the doll changes form, the weather changes too!",
+        "recipe": null,
+        "slug": "castformweathercharm"
       },
       {
         "name": "Eevee doll",
@@ -8414,6 +10741,90 @@ window.POKOPIA_DATA = {
         "description": "If you set this down and inspect it, Drifloon may fly over and whisk you away to a Dream Island",
         "recipe": null,
         "slug": "substitutedoll"
+      },
+      {
+        "name": "Punching bag",
+        "description": "Heavy and packed full of sand. Perfect for practicing punches and kicks!",
+        "recipe": null,
+        "slug": "punchingbag"
+      },
+      {
+        "name": "Blank canvas",
+        "description": "A completely empty canvas. A Pokémon artist might be inspired to paint something on it.",
+        "recipe": null,
+        "slug": "blankcanvas"
+      },
+      {
+        "name": "Painting (landscape)",
+        "description": "One of Smearguru's passion prjects. The contrast betwee the forest and the mountain is beautiful",
+        "recipe": null,
+        "slug": "paintinglandscape"
+      },
+      {
+        "name": "Painting (portrait)",
+        "description": "One of Smearguru's passion projects. The subject has been masterfully recreated, wobbliness and all.",
+        "recipe": null,
+        "slug": "paintingportrait"
+      },
+      {
+        "name": "Painting (still life)",
+        "description": "One of Smearguru's passion projects. Each and every object looks just like the real thing",
+        "recipe": null,
+        "slug": "paintingstilllife"
+      },
+      {
+        "name": "Beach parasol",
+        "description": "Place one of these on the beach for protection from scorching sunbeams",
+        "recipe": null,
+        "slug": "beachparasol"
+      },
+      {
+        "name": "Sandbags",
+        "description": "A cloth sack filled with dirt and sand. It's pretty bulky and looks heavy",
+        "recipe": null,
+        "slug": "sandbags"
+      },
+      {
+        "name": "Plain lamp",
+        "description": "Powering this on illuminates the surroundings with warm light",
+        "recipe": null,
+        "slug": "plainlamp"
+      },
+      {
+        "name": "Luxury lamp",
+        "description": "When this lamp is powered on, it emits a gentle light, illuminating its surroundings",
+        "recipe": null,
+        "slug": "luxurylamp"
+      },
+      {
+        "name": "Room Service",
+        "description": "A luxurious cart with a metal cloche. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "roomservice"
+      },
+      {
+        "name": "Camping chair",
+        "description": "A simple seat that's perfect for resting on while camping or adventuring.",
+        "recipe": null,
+        "slug": "campingchair"
+      },
+      {
+        "name": "Sleeping bag",
+        "description": "A comfy sleeping bag with lots of soft, fluffy padding. Even on cold days, you'll feel warm and toasty inside!",
+        "recipe": null,
+        "slug": "sleepingbag"
+      },
+      {
+        "name": "Adventure kit",
+        "description": "A sleeping bag, a hat and a backpack stuffed full of supplies. All you need for an adventure is right here!",
+        "recipe": null,
+        "slug": "adventurekit"
+      },
+      {
+        "name": "Starry-sky bed",
+        "description": "A bed covered in sparkling stars. Sleeping in it might make you dream of flying through a starry sky.",
+        "recipe": null,
+        "slug": "starryskybed"
       }
     ],
     "Garbage": [
@@ -8430,10 +10841,58 @@ window.POKOPIA_DATA = {
         "slug": "wastepaper"
       },
       {
-        "name": "Munna bank",
-        "description": "An especially heavy money box. It feels like it's full of coins",
+        "name": "Small garbage can",
+        "description": "A simple, colorful trash can, perfect for indoor use",
         "recipe": null,
-        "slug": "munnabank"
+        "slug": "smallgarbagecan"
+      },
+      {
+        "name": "Jumbled cords",
+        "description": "These cords are all tangled up and cannot be separated",
+        "recipe": null,
+        "slug": "jumbledcords"
+      },
+      {
+        "name": "Grubby letter",
+        "description": "A yellowed letter, still sealed. It's got a postage stamp with a Poké Ball pattern on it.",
+        "recipe": null,
+        "slug": "grubbyletter"
+      },
+      {
+        "name": "Grubby notepad",
+        "description": "It looks like there's some pretty important stuff written on this, but it's a little grimy",
+        "recipe": null,
+        "slug": "grubbynotepad"
+      },
+      {
+        "name": "Grubby book",
+        "description": "",
+        "recipe": null,
+        "slug": "grubbybook"
+      },
+      {
+        "name": "Grubby papers",
+        "description": "Lots of tiny words are written on the yellowed pages along with drawings of colorful shapess.",
+        "recipe": null,
+        "slug": "grubbypapers"
+      },
+      {
+        "name": "Grubby newspaper",
+        "description": "A newspaper with noticeable dirt and grime. It smells like old paper",
+        "recipe": null,
+        "slug": "grubbynewspaper"
+      },
+      {
+        "name": "Grubby tablet",
+        "description": "A convenient, easy-to-carry deivce. Even though it's inside a hard case, the screen is cracked",
+        "recipe": null,
+        "slug": "grubbytablet"
+      },
+      {
+        "name": "Grubby cell phone",
+        "description": "A device with a cracked screen. It can't make any calls, even when powered on.",
+        "recipe": null,
+        "slug": "grubbycellphone"
       },
       {
         "name": "Garbage bags",
@@ -8448,13 +10907,106 @@ window.POKOPIA_DATA = {
         "slug": "garbagebin"
       },
       {
+        "name": "Recycling bin",
+        "description": "A bin for disposing of empty cans. It's just big enough for a Pokémon to fit inside",
+        "recipe": null,
+        "slug": "recyclingbin"
+      },
+      {
         "name": "Nonburnable garbage (outdoor)",
-        "description": "Obtained through a special method, thwese can be placed just as they are now",
+        "description": "Obtained through a special method, these can be placed just as they are now",
         "recipe": null,
         "slug": "nonburnablegarbageoutdoor"
       }
     ],
     "Gatherings": [
+      {
+        "name": "Office shelf",
+        "description": "This is jam-packed with so many files that it can't hold anything else",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 2
+          }
+        ],
+        "slug": "officeshelf"
+      },
+      {
+        "name": "Tea set",
+        "description": "Enjoy an elegant teatime with this gorgeous set that includes a teapot and teacups",
+        "recipe": null,
+        "slug": "teaset"
+      },
+      {
+        "name": "Table setting",
+        "description": "This cutlery immediately makes any table look like it belongs in a high-class restaurant",
+        "recipe": null,
+        "slug": "tablesetting"
+      },
+      {
+        "name": "Paper Party cups",
+        "description": "Paper cups that are easy to carry- perfect for hosting a party!",
+        "recipe": null,
+        "slug": "paperpartycups"
+      },
+      {
+        "name": "Fried potatoes",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "friedpotatoes"
+      },
+      {
+        "name": "Afternoon tea set",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "afternoonteaset"
+      },
+      {
+        "name": "Chocolate cookies",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "chocolatecookies"
+      },
+      {
+        "name": "Sandwiches",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "sandwiches"
+      },
+      {
+        "name": "Pencil holder",
+        "description": "A pencil holder with lots of poencils in it. Try putting this on top of a study desk",
+        "recipe": null,
+        "slug": "pencilholder"
+      },
+      {
+        "name": "Corkboard",
+        "description": "Choose one of your favorite photos to hang on this corkboard!",
+        "recipe": null,
+        "slug": "corkboard"
+      },
+      {
+        "name": "CD rack",
+        "description": "A rack with CDs on it. Sure to appeal to music lovers",
+        "recipe": null,
+        "slug": "cdrack"
+      },
+      {
+        "name": "Magazine rack",
+        "description": "This stand has a great selection of weekly magazines and photo books.",
+        "recipe": null,
+        "slug": "magazinerack"
+      },
+      {
+        "name": "Dining cabinet",
+        "description": "A cupboard packed full of plates, cups-even a tea set",
+        "recipe": null,
+        "slug": "diningcabinet"
+      },
       {
         "name": "Toy blocks",
         "description": "Stacking toys that are fun to play with. Discover all the different combinations you can make!",
@@ -8462,13 +11014,378 @@ window.POKOPIA_DATA = {
         "slug": "toyblocks"
       },
       {
+        "name": "Pinwheels",
+        "description": "Pokémon like to spin these round and round. Wind-producing Pokémon especially like them!",
+        "recipe": null,
+        "slug": "pinwheels"
+      },
+      {
+        "name": "Knitting supplies",
+        "description": "Tools for knitting hats, sweaters and the like. Pokémon are captivated by the round balls of yarn",
+        "recipe": null,
+        "slug": "knittingsupplies"
+      },
+      {
+        "name": "Science experiment",
+        "description": "Chemicals, testing equipment, and a clipboard... OK! The experiment is ready to begin!",
+        "recipe": null,
+        "slug": "scienceexperiment"
+      },
+      {
+        "name": "Jumbled cords",
+        "description": "These cords are all tangled up and cannot be separated",
+        "recipe": null,
+        "slug": "jumbledcords"
+      },
+      {
+        "name": "Balloons",
+        "description": "Balloons of many vibrant colors. They sway back and forth even in the most gentle of breezes",
+        "recipe": null,
+        "slug": "balloons"
+      },
+      {
+        "name": "Cardboard boxes",
+        "description": "Light cardboard boxes. It doesn't look like they have anything inside",
+        "recipe": null,
+        "slug": "cardboardboxes"
+      },
+      {
+        "name": "Whiteboard",
+        "description": "A whiteboard covered in writing and sticky notes that looks like it belongs in a lab",
+        "recipe": null,
+        "slug": "whiteboard"
+      },
+      {
+        "name": "Decorative bookshelf",
+        "description": "A decorative shelf with colorful books on it. Perfect for livening up any wall!",
+        "recipe": null,
+        "slug": "decorativebookshelf"
+      },
+      {
+        "name": "Decorative storage shelf",
+        "description": "A decorative shelf lined with ceramic bottles. Attach it to a wall to liven up any space!",
+        "recipe": null,
+        "slug": "decorativestorageshelf"
+      },
+      {
+        "name": "Decorative plant shelf",
+        "description": "A long vine droops from the potted plant on this decorative shelf. Perfect for livening up any wall!",
+        "recipe": null,
+        "slug": "decorativeplantshelf"
+      },
+      {
+        "name": "Berry wall decoration",
+        "description": "The six swaying berries look incredibly tasty. Alas, they're inedible",
+        "recipe": null,
+        "slug": "berrywalldecoration"
+      },
+      {
+        "name": "Garden ornament",
+        "description": "This decoration looks like Maushold spending quality time on a log.",
+        "recipe": null,
+        "slug": "gardenornament"
+      },
+      {
+        "name": "Photo cutout board",
+        "description": "Put your fac through the hole to become Plusle or Minun!",
+        "recipe": null,
+        "slug": "photocutoutboard"
+      },
+      {
+        "name": "Garbage bags",
+        "description": "Trash bags found most anywhere. Certain Pokémon find their odor irresistible",
+        "recipe": null,
+        "slug": "garbagebags"
+      },
+      {
         "name": "Sandbags",
         "description": "A cloth sack filled with dirt and sand. It's pretty bulky and looks heavy",
         "recipe": null,
         "slug": "sandbags"
+      },
+      {
+        "name": "Tires",
+        "description": "This tire stack looks like it could collapse at any moment, but oddly enough it stays upright",
+        "recipe": null,
+        "slug": "tires"
+      },
+      {
+        "name": "Construction supplies",
+        "description": "Construction tools stored in a meta drum. Great for factories or warehouses.",
+        "recipe": null,
+        "slug": "constructionsupplies"
+      },
+      {
+        "name": "Iron pipes",
+        "description": "A pile of iron pipes that looks like it belongs at a construction site",
+        "recipe": null,
+        "slug": "ironpipes"
+      },
+      {
+        "name": "Gaming light",
+        "description": "Emits rainbow light when mounted to a wall and powered on.",
+        "recipe": null,
+        "slug": "gaminglight"
+      },
+      {
+        "name": "String lights",
+        "description": "Hang these lights on the wall and power them on to create a lively atmosphere",
+        "recipe": null,
+        "slug": "stringlights"
+      },
+      {
+        "name": "Flowery table setting",
+        "description": "A set of cute tableward. The placemat has a Jumpluff pattern!",
+        "recipe": null,
+        "slug": "flowerytablesetting"
+      },
+      {
+        "name": "Lunch box",
+        "description": "A lunch box packed with Pokémon-shaped food. The perfect meal for a picnic lunch",
+        "recipe": null,
+        "slug": "lunchbox"
+      },
+      {
+        "name": "Juice trio",
+        "description": "Bottles of colored juices. One of them is capped off nicely with a flower-shaped lid.",
+        "recipe": null,
+        "slug": "juicetrio"
+      },
+      {
+        "name": "Flower garland",
+        "description": "An adorable wall decoration made with a variety of colorful flowers",
+        "recipe": null,
+        "slug": "flowergarland"
       }
     ],
     "Glass Stuff": [
+      {
+        "name": "Sea glass fragments",
+        "description": "Pieces of glass that have been polished and buffed by ocean waves. They're used to make glass objects.",
+        "recipe": null,
+        "slug": "seaglassfragments"
+      },
+      {
+        "name": "Glass",
+        "description": "You can make glass by melting sand or sandstone in a furnace, or obtain it by smashing broken windos",
+        "recipe": null,
+        "slug": "glass"
+      },
+      {
+        "name": "Gaming fridge",
+        "description": "A chest that's slightly cold to the touch. Ice-type Pokémon will probably enjoy this.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "gamingfridge"
+      },
+      {
+        "name": "Office shelf",
+        "description": "This is jam-packed with so many files that it can't hold anything else",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 2
+          }
+        ],
+        "slug": "officeshelf"
+      },
+      {
+        "name": "Wall mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "wallmirror"
+      },
+      {
+        "name": "Large mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "largemirror"
+      },
+      {
+        "name": "Antique dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Iron ore",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "antiquedresser"
+      },
+      {
+        "name": "Luxury dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Limestone",
+            "qty": 4
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurydresser"
+      },
+      {
+        "name": "Cute dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "cutedresser"
+      },
+      {
+        "name": "Wiggly mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": null,
+        "slug": "wigglymirror"
+      },
+      {
+        "name": "Dining cabinet",
+        "description": "A cupboard packed full of plates, cups-even a tea set",
+        "recipe": null,
+        "slug": "diningcabinet"
+      },
+      {
+        "name": "Microwave oven",
+        "description": "This lights up when powered on, but it doesn't seem like it can heat anything...",
+        "recipe": null,
+        "slug": "microwaveoven"
+      },
+      {
+        "name": "Printer",
+        "description": "A large printer used by businesses. Perfect for an office or other workspaces!",
+        "recipe": null,
+        "slug": "printer"
+      },
+      {
+        "name": "Washing machine",
+        "description": "While this does make noise when powered on, it doesn't seem to actually wash clothes...",
+        "recipe": null,
+        "slug": "washingmachine"
+      },
+      {
+        "name": "Tablet",
+        "description": "A convenient, easy-to-carry computer. It's got a hard case so no worries if you drop it!",
+        "recipe": null,
+        "slug": "tablet"
+      },
+      {
+        "name": "Cell phone",
+        "description": "A device carefully protected inside a hard case. It can't make calls, even when powered on",
+        "recipe": null,
+        "slug": "cellphone"
+      },
+      {
+        "name": "Laptop",
+        "description": "A sleek, easy-to-carry laptop. Try displaying some photos on the monitor.",
+        "recipe": null,
+        "slug": "laptop"
+      },
+      {
+        "name": "Computer",
+        "description": "A computer that looks like it belongs in a laboratory. Some notes have been stuck to it here and there",
+        "recipe": null,
+        "slug": "computer"
+      },
+      {
+        "name": "Gaming PC",
+        "description": "A PC rig that even includes a headset. The monitor can display photos when powered on",
+        "recipe": null,
+        "slug": "gamingpc"
+      },
+      {
+        "name": "Television",
+        "description": "A large television that can be easily viewed from far away. It's a flatscreen, so carrying it is easy-peasy.",
+        "recipe": null,
+        "slug": "television"
+      },
+      {
+        "name": "Wall monitor",
+        "description": "A monitor that emits blue light when powered on. Try displaying your photographs on it",
+        "recipe": null,
+        "slug": "wallmonitor"
+      },
+      {
+        "name": "Arcade machine",
+        "description": "A game machine from a facility somewhere. It looks brand-new, so it probably can still be turned on",
+        "recipe": null,
+        "slug": "arcademachine"
+      },
+      {
+        "name": "Alarm Clock",
+        "description": "A loud noise rings out when you press this. Be careful! You might accidentally wake someone up",
+        "recipe": null,
+        "slug": "alarmclock"
+      },
+      {
+        "name": "Humidifier",
+        "description": "A humidifier with a distinct round shape. Turn it on to increase the humidity level nearby.",
+        "recipe": null,
+        "slug": "humidifier"
+      },
       {
         "name": "Crystal ball",
         "description": "A large crystal ball used for fortune-telling. Give it to a Psychic-type Pokémon and see what happens",
@@ -8476,10 +11393,250 @@ window.POKOPIA_DATA = {
         "slug": "crystalball"
       },
       {
+        "name": "Microscope",
+        "description": "A microscope often found in chemistry labs and research institutions. Essential for experiments!",
+        "recipe": null,
+        "slug": "microscope"
+      },
+      {
+        "name": "Science experiment",
+        "description": "Chemicals, testing equipment, and a clipboard... OK! The experiment is ready to begin!",
+        "recipe": null,
+        "slug": "scienceexperiment"
+      },
+      {
+        "name": "Spacesuit",
+        "description": "Clothing designed for living in outer space. Keeps the wearer safe even in an airless environment",
+        "recipe": null,
+        "slug": "spacesuit"
+      },
+      {
+        "name": "Spaceship",
+        "description": "a vehicle meant for traveling to outerspace. Hermetically sealed so air doesn't escape.",
+        "recipe": null,
+        "slug": "spaceship"
+      },
+      {
+        "name": "Antique clock",
+        "description": "This clock ticks away the hours. It lets out a loud bong at designated times",
+        "recipe": null,
+        "slug": "antiqueclock"
+      },
+      {
+        "name": "Vending machine",
+        "description": "Connect this to electricity to make it light up! Looks like it still has some things inside for sale.",
+        "recipe": null,
+        "slug": "vendingmachine"
+      },
+      {
+        "name": "Raichu sign",
+        "description": "A sign depicting Raichu discharging electricity. When powered up, the neon lighting glows brightly",
+        "recipe": null,
+        "slug": "raichusign"
+      },
+      {
+        "name": "Card reader",
+        "description": "A machine that reads key cards or Pokédexes. Mount it to a wall.",
+        "recipe": null,
+        "slug": "cardreader"
+      },
+      {
+        "name": "Town streetlight",
+        "description": "Power this with electricity to illuminate the area with gentle light",
+        "recipe": null,
+        "slug": "townstreetlight"
+      },
+      {
+        "name": "Harbor streetlight",
+        "description": "A streetlight that invokes harbor vibes. The life buoy stands out as the main highlight.",
+        "recipe": null,
+        "slug": "harborstreetlight"
+      },
+      {
+        "name": "Chic streetlight",
+        "description": "When powered on, this light emits a gentle glow that faintly illuminates its surroundings",
+        "recipe": null,
+        "slug": "chicstreetlight"
+      },
+      {
+        "name": "Double streetlight",
+        "description": "When pwoered on, both lamps shine brightly to illuminate their surroundings",
+        "recipe": null,
+        "slug": "doublestreetlight"
+      },
+      {
+        "name": "Plain lamp",
+        "description": "Powering this on illuminates the surroundings with warm light",
+        "recipe": null,
+        "slug": "plainlamp"
+      },
+      {
+        "name": "Desk light",
+        "description": "A light with a simple design. Perfect for brightening up your desk when you need to focus on work.",
+        "recipe": null,
+        "slug": "desklight"
+      },
+      {
+        "name": "Poké Ball light",
+        "description": "A neon light that glows red and white when powered on. It would look great on top of a table",
+        "recipe": null,
+        "slug": "pokeballlight"
+      },
+      {
+        "name": "Berry table lamp",
+        "description": "A Rawst Berry made of glass. Power it on to illuminate the area with pale blue light",
+        "recipe": null,
+        "slug": "berrytablelamp"
+      },
+      {
+        "name": "Cute lamp",
+        "description": "A cute decorative lamp, even when it's turned off. Power it on to make the central heart glow.",
+        "recipe": null,
+        "slug": "cutelamp"
+      },
+      {
+        "name": "Poké Ball lamp",
+        "description": "Emits a brilliant light when powered on. This would look great on a shelf",
+        "recipe": null,
+        "slug": "pokeballlamp"
+      },
+      {
+        "name": "Red meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "redmeteorlamp"
+      },
+      {
+        "name": "Orange meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "orangemeteorlamp"
+      },
+      {
+        "name": "Yellow meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "yellowmeteorlamp"
+      },
+      {
+        "name": "Green meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "greenmeteorlamp"
+      },
+      {
+        "name": "Blue meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "bluemeteorlamp"
+      },
+      {
+        "name": "Indigo meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "indigometeorlamp"
+      },
+      {
+        "name": "Violet meteor lamp",
+        "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
+        "recipe": null,
+        "slug": "violetmeteorlamp"
+      },
+      {
+        "name": "Luxury lamp",
+        "description": "When this lamp is powered on, it emits a gentle light, illuminating its surroundings",
+        "recipe": null,
+        "slug": "luxurylamp"
+      },
+      {
+        "name": "Garden light",
+        "description": "A light that's perfect for a garden. Beautifully illuminates flowers-even at night",
+        "recipe": null,
+        "slug": "gardenlight"
+      },
+      {
+        "name": "Lantern",
+        "description": "This emits bright light when powered on. You'll feel safe if you have this, even in a dark cave",
+        "recipe": null,
+        "slug": "lantern"
+      },
+      {
+        "name": "Seedot Lamp",
+        "description": "When mounted to a wall, this looks just like a Seedot hanging from a branch!",
+        "recipe": null,
+        "slug": "seedotlamp"
+      },
+      {
         "name": "Mirror ball",
         "description": "Sparkles and twinkles when powered on. Quickly turns the whole area into a party zone",
         "recipe": null,
         "slug": "mirrorball"
+      },
+      {
+        "name": "Wall light",
+        "description": "A light that can be fixed to a wall. Power it on and it'll light the area with a warm glow",
+        "recipe": null,
+        "slug": "walllight"
+      },
+      {
+        "name": "Shell lamp",
+        "description": "It looks like a simple seashell at first glance, but hang it up and power it on, and it emits a gentle light",
+        "recipe": null,
+        "slug": "shelllamp"
+      },
+      {
+        "name": "Fluorescent light",
+        "description": "Shines brilliantly when powered on. Even nighttime feels like noon when this light is on",
+        "recipe": null,
+        "slug": "fluorescentlight"
+      },
+      {
+        "name": "Gaming light",
+        "description": "Emits rainbow light when mounted to a wall and powered on.",
+        "recipe": null,
+        "slug": "gaminglight"
+      },
+      {
+        "name": "String lights",
+        "description": "Hang these lights on the wall and power them on to create a lively atmosphere",
+        "recipe": null,
+        "slug": "stringlights"
+      },
+      {
+        "name": "Pop art lamp",
+        "description": "The bright bulb bounces off a shiny lampshade. Looking at it seems to improve your mood!",
+        "recipe": null,
+        "slug": "popartlamp"
+      },
+      {
+        "name": "Berry hanging lamp",
+        "description": "When hung from the ceiling and powered on, the tip of the Chesto Berry emits a gentle light",
+        "recipe": null,
+        "slug": "berryhanginglamp"
+      },
+      {
+        "name": "Surface light",
+        "description": "Simple inconspicuous lights. You can embed them in ceilings and walls.",
+        "recipe": null,
+        "slug": "surfacelight"
+      },
+      {
+        "name": "Spotlight",
+        "description": "When powered on, this light shines brightly on whatever is in front of it",
+        "recipe": null,
+        "slug": "spotlight"
+      },
+      {
+        "name": "Antique chandelier",
+        "description": "Hang this from the ceiling to illuminate a room with gentle light. Perfeect for a mansion aesthetic!",
+        "recipe": null,
+        "slug": "antiquechandelier"
+      },
+      {
+        "name": "Clear Amulet",
+        "description": "An amulent that always stays clear and sparkling. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "clearamulet"
       },
       {
         "name": "Modern door",
@@ -8522,9 +11679,128 @@ window.POKOPIA_DATA = {
         "description": "A long, vertical window with a cute cross trim. Try opening up the bottom half",
         "recipe": null,
         "slug": "sashwindow"
+      },
+      {
+        "name": "Water pillar quarter",
+        "description": "A fancy pillar filled with water. Its faint glow is beautiful, even in darkness",
+        "recipe": null,
+        "slug": "waterpillarquarter"
+      },
+      {
+        "name": "Juice trio",
+        "description": "Bottles of colored juices. One of them is capped off nicely with a flower-shaped lid.",
+        "recipe": null,
+        "slug": "juicetrio"
+      },
+      {
+        "name": "Digital camera",
+        "description": "A single-lens digital camera. It's so high-tech that it looks tricky to use",
+        "recipe": null,
+        "slug": "digitalcamera"
+      },
+      {
+        "name": "Oil lantern",
+        "description": "A lantern that provides a dim glow when lit. Perfect for exploring dark places!",
+        "recipe": null,
+        "slug": "oillantern"
+      },
+      {
+        "name": "Star-shaped Dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look",
+        "recipe": null,
+        "slug": "starshapeddresser"
+      },
+      {
+        "name": "Telescope",
+        "description": "A tool for seeing faraway things. Place it outside and try taking a peek through it!",
+        "recipe": null,
+        "slug": "telescope"
+      },
+      {
+        "name": "Star wall decoration",
+        "description": "A set of twinking stars. Decorate your wall with these for a touch of cuteness!",
+        "recipe": null,
+        "slug": "starwalldecoration"
+      },
+      {
+        "name": "Jirachi lamp",
+        "description": "A lamp with a sleeping Jirachi perched on top. Perfect for placing by your bedside!",
+        "recipe": null,
+        "slug": "jirachilamp"
       }
     ],
     "Group Activities": [
+      {
+        "name": "Office shelf",
+        "description": "This is jam-packed with so many files that it can't hold anything else",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 2
+          }
+        ],
+        "slug": "officeshelf"
+      },
+      {
+        "name": "Wooden bench",
+        "description": "A long bench that's perfect for taking a break. Pokémon might sit next to each other here.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "woodenbench"
+      },
+      {
+        "name": "Stone bench",
+        "description": "A wide, rock-solid seat. This would make a great park bench",
+        "recipe": [
+          {
+            "material": "Stone",
+            "qty": 2
+          }
+        ],
+        "slug": "stonebench"
+      },
+      {
+        "name": "Plain sofa",
+        "description": "If you see small Pokémon on this sofa, try sitting down next to them",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "plainsofa"
+      },
+      {
+        "name": "Resort sofa",
+        "description": "Sitting on this makes you feel like you're in the tropics! Feel free to just laze the day away...",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine rope",
+            "qty": 2
+          }
+        ],
+        "slug": "resortsofa"
+      },
       {
         "name": "Chic sofa",
         "description": "A luxurious high-class sofa. It looks exactly like the ones on the S.S. Anne",
@@ -8650,6 +11926,25 @@ window.POKOPIA_DATA = {
         "slug": "popartsofa"
       },
       {
+        "name": "Poké Ball Sofa",
+        "description": "Experience sitting in an open Poké Ball! Seats two comfortably",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "pokeballsofa"
+      },
+      {
         "name": "Pikachu sofa",
         "description": "Pikachu's face is front and center. On the back, you can find a little tail sticking out.",
         "recipe": null,
@@ -8684,6 +11979,21 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "woodenbed"
+      },
+      {
+        "name": "Plain bed",
+        "description": "A bed with a simple deisng. It looks like it would mesh with a variety of rooms",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "plainbed"
       },
       {
         "name": "Guest-room bed",
@@ -8777,6 +12087,12 @@ window.POKOPIA_DATA = {
         "slug": "gamingbed"
       },
       {
+        "name": "Naptime bed",
+        "description": "Kick back right on top of Snorlax's belly. It feels so comfy you could snooze through the whole day",
+        "recipe": null,
+        "slug": "naptimebed"
+      },
+      {
         "name": "Picnic basket",
         "description": "Try putting some food inside, and hungry Pokémon might stop by for a bite",
         "recipe": null,
@@ -8795,10 +12111,40 @@ window.POKOPIA_DATA = {
         "slug": "tablesetting"
       },
       {
-        "name": "Afternoon tea set",
-        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "name": "Paper Party cups",
+        "description": "Paper cups that are easy to carry- perfect for hosting a party!",
         "recipe": null,
-        "slug": "afternoonteaset"
+        "slug": "paperpartycups"
+      },
+      {
+        "name": "Photo frame",
+        "description": "You can put one of your photos in this frame and place it on a table or stand",
+        "recipe": null,
+        "slug": "photoframe"
+      },
+      {
+        "name": "Television",
+        "description": "A large television that can be easily viewed from far away. It's a flatscreen, so carrying it is easy-peasy.",
+        "recipe": null,
+        "slug": "television"
+      },
+      {
+        "name": "Wall monitor",
+        "description": "A monitor that emits blue light when powered on. Try displaying your photographs on it",
+        "recipe": null,
+        "slug": "wallmonitor"
+      },
+      {
+        "name": "Arcade machine",
+        "description": "A game machine from a facility somewhere. It looks brand-new, so it probably can still be turned on",
+        "recipe": null,
+        "slug": "arcademachine"
+      },
+      {
+        "name": "Knitting supplies",
+        "description": "Tools for knitting hats, sweaters and the like. Pokémon are captivated by the round balls of yarn",
+        "recipe": null,
+        "slug": "knittingsupplies"
       },
       {
         "name": "Game Boy system",
@@ -8807,24 +12153,168 @@ window.POKOPIA_DATA = {
         "slug": "gameboysystem"
       },
       {
+        "name": "Jumbled cords",
+        "description": "These cords are all tangled up and cannot be separated",
+        "recipe": null,
+        "slug": "jumbledcords"
+      },
+      {
+        "name": "CD player",
+        "description": "A device that plays music. If you find a CD, try putting it inside",
+        "recipe": null,
+        "slug": "cdplayer"
+      },
+      {
+        "name": "Standing mic",
+        "description": "A microphone meant for the stage. Standing before it makes you want to burst into song",
+        "recipe": null,
+        "slug": "standingmic"
+      },
+      {
+        "name": "Boo-in-the-box",
+        "description": "Open the box, and -BOING!-out pops the Gengar!",
+        "recipe": null,
+        "slug": "boointhebox"
+      },
+      {
+        "name": "Whiteboard",
+        "description": "A whiteboard covered in writing and sticky notes that looks like it belongs in a lab",
+        "recipe": null,
+        "slug": "whiteboard"
+      },
+      {
+        "name": "Campfire",
+        "description": "A campfire made from gathered sticks. When lit, it illuminates the area with a warm light.",
+        "recipe": null,
+        "slug": "campfire"
+      },
+      {
+        "name": "Firepit",
+        "description": "Set this ablaze to illuminate the surroundings with bright light. Fwoosh!",
+        "recipe": null,
+        "slug": "firepit"
+      },
+      {
         "name": "Bonfire",
         "description": "When the wood in the center catches fire, this provides warmth and light to a large nearby area",
         "recipe": null,
         "slug": "bonfire"
       },
       {
+        "name": "Sandbox",
+        "description": "Place this to set up a fun space for playing with sand. Discover what you can create here!",
+        "recipe": null,
+        "slug": "sandbox"
+      },
+      {
+        "name": "Tire toy",
+        "description": "Tires used in parks as playground equipment. Put them on the ground and have fun hopping over them!",
+        "recipe": null,
+        "slug": "tiretoy"
+      },
+      {
+        "name": "Slide",
+        "description": "An essential part of any playground. Its imposing size leaves a real impression",
+        "recipe": null,
+        "slug": "slide"
+      },
+      {
+        "name": "Vending machine",
+        "description": "Connect this to electricity to make it light up! Looks like it still has some things inside for sale.",
+        "recipe": null,
+        "slug": "vendingmachine"
+      },
+      {
+        "name": "Small stage",
+        "description": "Get on and start dancing! You can power on the lights by hooking this up to electricity",
+        "recipe": null,
+        "slug": "smallstage"
+      },
+      {
+        "name": "Canoe",
+        "description": "A paddle, bucket and rope is all you need for a journey out to sea",
+        "recipe": null,
+        "slug": "canoe"
+      },
+      {
         "name": "Inflatable boat",
         "description": "Feels great whether you lie down on it like a bed, or float it on the water like a boat.",
         "recipe": null,
         "slug": "inflatableboat"
+      },
+      {
+        "name": "Photo cutout board",
+        "description": "Put your fac through the hole to become Plusle or Minun!",
+        "recipe": null,
+        "slug": "photocutoutboard"
+      },
+      {
+        "name": "Construction supplies",
+        "description": "Construction tools stored in a meta drum. Great for factories or warehouses.",
+        "recipe": null,
+        "slug": "constructionsupplies"
+      },
+      {
+        "name": "Flower cushion",
+        "description": "A cute flower-shaped cushion. It would look nice on some grassy ground.",
+        "recipe": null,
+        "slug": "flowercushion"
+      },
+      {
+        "name": "Flowery table setting",
+        "description": "A set of cute tableward. The placemat has a Jumpluff pattern!",
+        "recipe": null,
+        "slug": "flowerytablesetting"
+      },
+      {
+        "name": "Map and compass",
+        "description": "A map that indicates the location of treasure, and a compass that shows you the way.",
+        "recipe": null,
+        "slug": "mapandcompass"
+      },
+      {
+        "name": "Treasure",
+        "description": "A pile of golden accessories and sparkling jewels. Use this as decor to add an air of luxury.",
+        "recipe": null,
+        "slug": "treasure"
+      },
+      {
+        "name": "Starry-sky bed",
+        "description": "A bed covered in sparkling stars. Sleeping in it might make you dream of flying through a starry sky.",
+        "recipe": null,
+        "slug": "starryskybed"
       }
     ],
     "Hard Stuff": [
       {
-        "name": "Stone",
-        "description": "Just a normal stone you can find anywhere. It can be used as a material for a lot of things",
+        "name": "Seashell",
+        "description": "A common seashell found on sandy beaches. This is useful material for building houses",
         "recipe": null,
-        "slug": "stone"
+        "slug": "seashell"
+      },
+      {
+        "name": "Brick",
+        "description": "Bricks made by baking clay. They're perfect for making buildings, roads and other structures",
+        "recipe": null,
+        "slug": "brick"
+      },
+      {
+        "name": "Concrete",
+        "description": "Made from a thick liquid that has hardened. This stuff is solid and super sturdy",
+        "recipe": null,
+        "slug": "concrete"
+      },
+      {
+        "name": "Tinkagear",
+        "description": "A cool gear produced by Tinkaton. You can sense their dedication to the craft contained within it",
+        "recipe": null,
+        "slug": "tinkagear"
+      },
+      {
+        "name": "Polygonal Shelf",
+        "description": "A stylish, eye-catching shelf. Looks hard to use but still functions as a shelf just fine,",
+        "recipe": null,
+        "slug": "polygonalshelf"
       },
       {
         "name": "Iron stand",
@@ -8875,6 +12365,73 @@ window.POKOPIA_DATA = {
         "slug": "stonetable"
       },
       {
+        "name": "Industrial chair",
+        "description": "A perfectly round chair that can easily fit anywhere. Surprisingly sturdy, thanks to its iron legs.",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "industrialchair"
+      },
+      {
+        "name": "Iron chair",
+        "description": "Though small, this seat is very sturdy. It doesn't look like it would break easily.",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "ironchair"
+      },
+      {
+        "name": "Public seat",
+        "description": "A simple chair without a backrest. Try arranging a bunch of 'em together",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          }
+        ],
+        "slug": "publicseat"
+      },
+      {
+        "name": "Spectator chair",
+        "description": "Audience seats like those are found at concert halls or stadiums. Try arranging a bunch of 'em in a row!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "spectatorchair"
+      },
+      {
+        "name": "Luxury chair",
+        "description": "A classy-looking seat with a gemstone embedded in it. Just sitting on it makes you feel rich.",
+        "recipe": [
+          {
+            "material": "Linestone",
+            "qty": 2
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurychair"
+      },
+      {
         "name": "Stone bench",
         "description": "A wide, rock-solid seat. This would make a great park bench",
         "recipe": [
@@ -8884,6 +12441,21 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "stonebench"
+      },
+      {
+        "name": "Iron bench",
+        "description": "A seat made of solid hardened iron. It's sturdy enough to support even the heaviest Pokémon",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "ironbench"
       },
       {
         "name": "Stone fireplace",
@@ -8914,6 +12486,12 @@ window.POKOPIA_DATA = {
         "description": "Wallpaper that can be used in larger houses. You can appliy it to walls, floors and even ceilings",
         "recipe": null,
         "slug": "stonebrickwallwallpaper"
+      },
+      {
+        "name": "Iron Ball",
+        "description": "A round, black iron ball. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "ironball"
       },
       {
         "name": "Skull Fossil",
@@ -9007,7 +12585,7 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Despot Fossil (head)",
-        "description": "A fossil of an ancient Pokémon's headf. Its large fangs are as sharp as knives",
+        "description": "A fossil of an ancient Pokémon's head. Its large fangs are as sharp as knives",
         "recipe": null,
         "slug": "despotfossilhead"
       },
@@ -9108,25 +12686,43 @@ window.POKOPIA_DATA = {
         "slug": "stoneroofdecoration"
       },
       {
-        "name": "Stone fencing",
-        "description": "Looks great on its own or arranged in a row.",
-        "recipe": null,
-        "slug": "stonefencing"
-      },
-      {
         "name": "Stone debris",
-        "description": "Sometimes found blocking the road. Break them to obtain stones.",
+        "description": "Sometimes found blocking the road. Break them to obtain stones.Note: Not registered in collection",
         "recipe": null,
         "slug": "stonedebris"
       },
       {
         "name": "Metal Debris",
-        "description": "It's hard to tell what these warn out objects were originally. They look difficult to process as is.",
+        "description": "It's hard to tell what these warn out objects were originally. They look difficult to process as is.Note: Not registered in collection",
         "recipe": null,
         "slug": "metaldebris"
+      },
+      {
+        "name": "Star closet",
+        "description": "A closet with many stars painted on it. Open the doors and store your stuff inside",
+        "recipe": null,
+        "slug": "starcloset"
+      },
+      {
+        "name": "Star wall decoration",
+        "description": "A set of twinking stars. Decorate your wall with these for a touch of cuteness!",
+        "recipe": null,
+        "slug": "starwalldecoration"
+      },
+      {
+        "name": "Jirachi lamp",
+        "description": "A lamp with a sleeping Jirachi perched on top. Perfect for placing by your bedside!",
+        "recipe": null,
+        "slug": "jirachilamp"
       }
     ],
     "Healing": [
+      {
+        "name": "Humidifier",
+        "description": "A humidifier with a distinct round shape. Turn it on to increase the humidity level nearby.",
+        "recipe": null,
+        "slug": "humidifier"
+      },
       {
         "name": "First aid kit",
         "description": "A box with lots of medicines and supplies for treating injuries",
@@ -9135,6 +12731,21 @@ window.POKOPIA_DATA = {
       }
     ],
     "Letters and Words": [
+      {
+        "name": "Office shelf",
+        "description": "This is jam-packed with so many files that it can't hold anything else",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 2
+          }
+        ],
+        "slug": "officeshelf"
+      },
       {
         "name": "Letter",
         "description": "A simple sealed letter. It has a Poké Ball stamp on it",
@@ -9146,6 +12757,12 @@ window.POKOPIA_DATA = {
         "description": "It's full of important-looking notes, so there's no space to write anything else!",
         "recipe": null,
         "slug": "notepad"
+      },
+      {
+        "name": "Book",
+        "description": "A thick hardcover book. The pages inside were written in small print",
+        "recipe": null,
+        "slug": "book"
       },
       {
         "name": "Open Book",
@@ -9166,10 +12783,136 @@ window.POKOPIA_DATA = {
         "slug": "newspaper"
       },
       {
+        "name": "Television",
+        "description": "A large television that can be easily viewed from far away. It's a flatscreen, so carrying it is easy-peasy.",
+        "recipe": null,
+        "slug": "television"
+      },
+      {
+        "name": "Wall monitor",
+        "description": "A monitor that emits blue light when powered on. Try displaying your photographs on it",
+        "recipe": null,
+        "slug": "wallmonitor"
+      },
+      {
+        "name": "Science experiment",
+        "description": "Chemicals, testing equipment, and a clipboard... OK! The experiment is ready to begin!",
+        "recipe": null,
+        "slug": "scienceexperiment"
+      },
+      {
+        "name": "Whiteboard",
+        "description": "A whiteboard covered in writing and sticky notes that looks like it belongs in a lab",
+        "recipe": null,
+        "slug": "whiteboard"
+      },
+      {
+        "name": "Wall Calendar",
+        "description": "A calendar that's simple and easy to use. It meshes well with pretty much any wall.",
+        "recipe": null,
+        "slug": "wallcalendar"
+      },
+      {
+        "name": "Decorative bookshelf",
+        "description": "A decorative shelf with colorful books on it. Perfect for livening up any wall!",
+        "recipe": null,
+        "slug": "decorativebookshelf"
+      },
+      {
+        "name": "Hanging scroll",
+        "description": "A scrol with phenomenal brushwork. Hang it on a wall to create a solemn atmosphere",
+        "recipe": null,
+        "slug": "hangingscroll"
+      },
+      {
+        "name": "Grubby letter",
+        "description": "A yellowed letter, still sealed. It's got a postage stamp with a Poké Ball pattern on it.",
+        "recipe": null,
+        "slug": "grubbyletter"
+      },
+      {
+        "name": "Grubby notepad",
+        "description": "It looks like there's some pretty important stuff written on this, but it's a little grimy",
+        "recipe": null,
+        "slug": "grubbynotepad"
+      },
+      {
+        "name": "Grubby book",
+        "description": "",
+        "recipe": null,
+        "slug": "grubbybook"
+      },
+      {
+        "name": "Grubby papers",
+        "description": "Lots of tiny words are written on the yellowed pages along with drawings of colorful shapess.",
+        "recipe": null,
+        "slug": "grubbypapers"
+      },
+      {
+        "name": "Grubby newspaper",
+        "description": "A newspaper with noticeable dirt and grime. It smells like old paper",
+        "recipe": null,
+        "slug": "grubbynewspaper"
+      },
+      {
+        "name": "Gravestone",
+        "description": "A place where souls can rest in peace. Ghost-type Pokémon might enjoy this",
+        "recipe": null,
+        "slug": "gravestone"
+      },
+      {
+        "name": "Arrow sign",
+        "description": "An arrow-shaped sign. You could use it as a guidepost at forked roads",
+        "recipe": null,
+        "slug": "arrowsign"
+      },
+      {
+        "name": "Menu board",
+        "description": "Specials are written on this board, but it doesn't seem like Pokémon can actually read them.",
+        "recipe": null,
+        "slug": "menuboard"
+      },
+      {
+        "name": "Sign",
+        "description": "A sign made out of wood. There's an important message witten on it... Probably!",
+        "recipe": null,
+        "slug": "sign"
+      },
+      {
+        "name": "Signpost",
+        "description": "A sign that looks like it belongs at a bus stop. It could serve as a guiding landmark in cities or on roads!",
+        "recipe": null,
+        "slug": "signpost"
+      },
+      {
         "name": "Information board",
         "description": "A sign with information about the town written on it. Nobody knows what town it's for, though.",
         "recipe": null,
         "slug": "informationboard"
+      },
+      {
+        "name": "Raichu sign",
+        "description": "A sign depicting Raichu discharging electricity. When powered up, the neon lighting glows brightly",
+        "recipe": null,
+        "slug": "raichusign"
+      },
+      {
+        "name": "Frame",
+        "description": "A frame for hanging an item on a wall. Try putting different things inside!",
+        "recipe": null,
+        "slug": "frame"
+      },
+      {
+        "name": "Weakness Policy",
+        "description": "A piece of paper with clean, neat writing on it. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "weaknesspolicy"
+      },
+      {
+        "name": "Map and compass",
+        "description": "A map that indicates the location of treasure, and a compass that shows you the way.",
+        "recipe": null,
+        "slug": "mapandcompass"
       }
     ],
     "Looks Like Food": [
@@ -9249,6 +12992,60 @@ window.POKOPIA_DATA = {
         "slug": "berrybed"
       },
       {
+        "name": "Table setting",
+        "description": "This cutlery immediately makes any table look like it belongs in a high-class restaurant",
+        "recipe": null,
+        "slug": "tablesetting"
+      },
+      {
+        "name": "Pizza",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "pizza"
+      },
+      {
+        "name": "Fried potatoes",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "friedpotatoes"
+      },
+      {
+        "name": "Soda float",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "sodafloat"
+      },
+      {
+        "name": "Afternoon tea set",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "afternoonteaset"
+      },
+      {
+        "name": "Chocolate cookies",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "chocolatecookies"
+      },
+      {
+        "name": "Sandwiches",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "sandwiches"
+      },
+      {
+        "name": "Shaved ice",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "shavedice"
+      },
+      {
+        "name": "Ribbon cake",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "ribboncake"
+      },
+      {
         "name": "Berry basket",
         "description": "A basket packed with berries. Line up a few to make your very own fruit stand!",
         "recipe": null,
@@ -9285,13 +13082,97 @@ window.POKOPIA_DATA = {
         "slug": "berryprintwallpaper"
       },
       {
+        "name": "Leftovers",
+        "description": "Someone's leftover food. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "leftovers"
+      },
+      {
         "name": "Berry print",
         "description": "Sweeyt berries, spicy berries, bitter berries... This pattern has berry flavors for everyone",
         "recipe": null,
         "slug": "berryprint"
+      },
+      {
+        "name": "Lunch box",
+        "description": "A lunch box packed with Pokémon-shaped food. The perfect meal for a picnic lunch",
+        "recipe": null,
+        "slug": "lunchbox"
+      },
+      {
+        "name": "Juice trio",
+        "description": "Bottles of colored juices. One of them is capped off nicely with a flower-shaped lid.",
+        "recipe": null,
+        "slug": "juicetrio"
       }
     ],
     "Lots of Dirt": [
+      {
+        "name": "Red paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "redpaint"
+      },
+      {
+        "name": "Blue paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "bluepaint"
+      },
+      {
+        "name": "Green paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "greenpaint"
+      },
+      {
+        "name": "Yellow paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "yellowpaint"
+      },
+      {
+        "name": "Pink paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "pinkpaint"
+      },
+      {
+        "name": "Cyan paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "cyanpaint"
+      },
+      {
+        "name": "White paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "whitepaint"
+      },
+      {
+        "name": "Black paint",
+        "description": "Colorful paint made from crushed berries. A must-have when painting.",
+        "recipe": null,
+        "slug": "blackpaint"
+      },
+      {
+        "name": "Knitting supplies",
+        "description": "Tools for knitting hats, sweaters and the like. Pokémon are captivated by the round balls of yarn",
+        "recipe": null,
+        "slug": "knittingsupplies"
+      },
+      {
+        "name": "Sandbox",
+        "description": "Place this to set up a fun space for playing with sand. Discover what you can create here!",
+        "recipe": null,
+        "slug": "sandbox"
+      },
+      {
+        "name": "Punching bag",
+        "description": "Heavy and packed full of sand. Perfect for practicing punches and kicks!",
+        "recipe": null,
+        "slug": "punchingbag"
+      },
       {
         "name": "Sandbags",
         "description": "A cloth sack filled with dirt and sand. It's pretty bulky and looks heavy",
@@ -9299,121 +13180,163 @@ window.POKOPIA_DATA = {
         "slug": "sandbags"
       },
       {
-        "name": "Paint balloon (white)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Wheelbarrow",
+        "description": "A wheelbarrow carrying a large mound of dirt. A lot of construction sites probably have these!",
         "recipe": null,
-        "slug": "paintballoonwhite"
+        "slug": "wheelbarrow"
       },
       {
-        "name": "Paint balloon (red)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Skull Fossil",
+        "description": "An ancient Pokémon fossil. It looks like a hard, sturdy skill",
         "recipe": null,
-        "slug": "paintballoonred"
+        "slug": "skullfossil"
       },
       {
-        "name": "Paint balloon (yellow)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Armor Fossil",
+        "description": "An ancient Pokémon fossil. It looks like a smooth shield",
         "recipe": null,
-        "slug": "paintballoonyellow"
+        "slug": "armorfossil"
       },
       {
-        "name": "Paint balloon (green)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Jaw Fossil",
+        "description": "An ancient Pokémon fossil. It looks like a large jaw",
         "recipe": null,
-        "slug": "paintballoongreen"
+        "slug": "jawfossil"
       },
       {
-        "name": "Paint balloon (rose)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Sail Fossil",
+        "description": "An ancient Pokémon fossil. It looks like a thin sail from a Pokémon's body",
         "recipe": null,
-        "slug": "paintballoonrose"
+        "slug": "sailfossil"
       },
       {
-        "name": "Paint balloon (pink)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Wing Fossil (head)",
+        "description": "A fossil of an ancient Pokémon's head. Its jagged fangs look just likea saw",
         "recipe": null,
-        "slug": "paintballoonpink"
+        "slug": "wingfossilhead"
       },
       {
-        "name": "Paint balloon (orange)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Wing Fossil (right wing)",
+        "description": "A fossil of an ancient Pokémon's right wing. Its finger bones have become part of the wing",
         "recipe": null,
-        "slug": "paintballoonorange"
+        "slug": "wingfossilrightwing"
       },
       {
-        "name": "Paint balloon (purple)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Wing Fossil (left wing)",
+        "description": "A fossil of an ancient Pokémon's left wing. By joining its bones together, you can tell the size of the wing",
         "recipe": null,
-        "slug": "paintballoonpurple"
+        "slug": "wingfossilleftwing"
       },
       {
-        "name": "Paint balloon (brown)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Wing fossil (body)",
+        "description": "A fossil of an ancient Pokémon's body. A hump juts out from the middle of its rickety spine",
         "recipe": null,
-        "slug": "paintballoonbrown"
+        "slug": "wingfossilbody"
       },
       {
-        "name": "Paint balloon (beige)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Wing Fossil (tail)",
+        "description": "A fossil of an ancient Pokémon's tail. Long and slend, it looks like it could bend gracefully",
         "recipe": null,
-        "slug": "paintballoonbeige"
+        "slug": "wingfossiltail"
       },
       {
-        "name": "Paint balloon (black)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Headbutt Fossil (head)",
+        "description": "A fossil of an ancient Pokémon's head. Its skull is dense and bulbous",
         "recipe": null,
-        "slug": "paintballoonblack"
+        "slug": "headbuttfossilhead"
       },
       {
-        "name": "Paint balloon (lime)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Headbutt Fossil (body)",
+        "description": "A fossil of an ancient Pokémon's body. Its torso is big, but its arms are quite small",
         "recipe": null,
-        "slug": "paintballoonlime"
+        "slug": "headbuttfossilbody"
       },
       {
-        "name": "Paint balloon (plum)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Headbutt Fossil (tail)",
+        "description": "A fossil of an ancient Pokémon's tail. Its base is thick and sturdy",
         "recipe": null,
-        "slug": "paintballoonplum"
+        "slug": "headbuttfossiltail"
       },
       {
-        "name": "Paint balloon (navy)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Shield Fossil (Head)",
+        "description": "A fossil of an ancient Pokémon's head. Its sturdy, like a giant shield",
         "recipe": null,
-        "slug": "paintballoonnavy"
+        "slug": "shieldfossilhead"
       },
       {
-        "name": "Paint balloon (blue)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Shield Fossil (body)",
+        "description": "A fossil of an ancient Pokémon's body. Its thick bones supported a heavy head.",
         "recipe": null,
-        "slug": "paintballoonblue"
+        "slug": "shieldfossilbody"
       },
       {
-        "name": "Paint balloon (cyan)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Shield Fossil (tail)",
+        "description": "A fossil of an ancient Pokémon's tail. Its hind hooves are particularly large.",
         "recipe": null,
-        "slug": "paintballooncyan"
+        "slug": "shieldfossiltail"
       },
       {
-        "name": "Paint balloon (gray)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Despot Fossil (head)",
+        "description": "A fossil of an ancient Pokémon's head. Its large fangs are as sharp as knives",
         "recipe": null,
-        "slug": "paintballoongray"
+        "slug": "despotfossilhead"
       },
       {
-        "name": "Paint balloon (aquamarine)",
-        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "name": "Despot Fossil (body)",
+        "description": "A fossil of an ancient Pokémon's body. Its sharp claws look like they could slice through anything",
         "recipe": null,
-        "slug": "paintballoonaquamarine"
+        "slug": "despotfossilbody"
+      },
+      {
+        "name": "Despot Fossil (legs)",
+        "description": "A fossil of an ancient Pokémon's legs. Two stocky legs support the rest of its body.",
+        "recipe": null,
+        "slug": "despotfossillegs"
+      },
+      {
+        "name": "Despot Fossil (tail)",
+        "description": "A fossil of an ancient Pokémon's tail. Even the very tip is spiky like its frill",
+        "recipe": null,
+        "slug": "despotfossiltail"
+      },
+      {
+        "name": "Tundra Fossil (head)",
+        "description": "A fossil of an ancient Pokémon's head. It has sails that resemble an aurora",
+        "recipe": null,
+        "slug": "tundrafossilhead"
+      },
+      {
+        "name": "Tundra Fossil (body)",
+        "description": "A fossil of an ancient Pokémon's body. It must have been pretty tall with a spin like this",
+        "recipe": null,
+        "slug": "tundrafossilbody"
+      },
+      {
+        "name": "Tundra Fossil (tail)",
+        "description": "A fossil of an ancient Pokémon's tail. The tip is curled up and looks like a spring",
+        "recipe": null,
+        "slug": "tundrafossiltail"
       },
       {
         "name": "Mud",
-        "description": "A mass of muddy debris. Spray it with Bubble to clean it up!",
+        "description": "A mass of muddy debris. Spray it with Bubble to clean it up!Note: Not registered in collection",
         "recipe": null,
         "slug": "mud"
       }
     ],
     "Lots of Fire": [
+      {
+        "name": "Cooking stove",
+        "description": "A simple stylish stove. Turn the dial and flames will shoot right out of it",
+        "recipe": null,
+        "slug": "cookingstove"
+      },
+      {
+        "name": "Fiery Magby statue",
+        "description": "If you place a switch nearby and activate it, Magby will shoot fire out of their mouth! Fwooosh!",
+        "recipe": null,
+        "slug": "fierymagbystatue"
+      },
       {
         "name": "Campfire",
         "description": "A campfire made from gathered sticks. When lit, it illuminates the area with a warm light.",
@@ -9455,6 +13378,30 @@ window.POKOPIA_DATA = {
         "description": "When the wood in the center catches fire, this provides warmth and light to a large nearby area",
         "recipe": null,
         "slug": "bonfire"
+      },
+      {
+        "name": "Smelting furnace",
+        "description": "A furnace for processing ore into metals. Get a Pokémon with the Burn specialty to help you out",
+        "recipe": null,
+        "slug": "smeltingfurnace"
+      },
+      {
+        "name": "Metallic smelting furnace",
+        "description": "A high-performance metallic furnace that can quickly process metals and other ingredients",
+        "recipe": null,
+        "slug": "metallicsmeltingfurnace"
+      },
+      {
+        "name": "Charcoal",
+        "description": "Charcoal made by burning wood. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "charcoal"
+      },
+      {
+        "name": "Oil lantern",
+        "description": "A lantern that provides a dim glow when lit. Perfect for exploring dark places!",
+        "recipe": null,
+        "slug": "oillantern"
       }
     ],
     "Lots of Nature": [
@@ -9655,10 +13602,34 @@ window.POKOPIA_DATA = {
         "slug": "berrybasket"
       },
       {
+        "name": "Tall potted plant",
+        "description": "A small, thin palm tree. It comes in a planter so it won't make a mess even if it's placed indoors",
+        "recipe": null,
+        "slug": "tallpottedplant"
+      },
+      {
+        "name": "Flat-leaf plant",
+        "description": "A plant with flat leaves that look like planks. It's actually a type of succulent",
+        "recipe": null,
+        "slug": "flatleafplant"
+      },
+      {
+        "name": "Twisted potted plant",
+        "description": "A plant with a winding, twisted trunk. It doesn't look like it will get any bigger than it already is.",
+        "recipe": null,
+        "slug": "twistedpottedplant"
+      },
+      {
         "name": "Berry clock",
         "description": "A clock that resembles an Oran Berry cross section. Try mounting it on a wall",
         "recipe": null,
         "slug": "berryclock"
+      },
+      {
+        "name": "Vine wall decoration",
+        "description": "With just a few leaves and vine ropes, you can make a stylish wall decoration",
+        "recipe": null,
+        "slug": "vinewalldecoration"
       },
       {
         "name": "Berry wall decoration",
@@ -9673,6 +13644,12 @@ window.POKOPIA_DATA = {
         "slug": "berrytablelamp"
       },
       {
+        "name": "Seedot Lamp",
+        "description": "When mounted to a wall, this looks just like a Seedot hanging from a branch!",
+        "recipe": null,
+        "slug": "seedotlamp"
+      },
+      {
         "name": "Berry hanging lamp",
         "description": "When hung from the ceiling and powered on, the tip of the Chesto Berry emits a gentle light",
         "recipe": null,
@@ -9683,6 +13660,24 @@ window.POKOPIA_DATA = {
         "description": "Wallpaper that can be used in larger houses. You can appliy it to walls, floors and even ceilings",
         "recipe": null,
         "slug": "berryprintwallpaper"
+      },
+      {
+        "name": "Miracle Seed",
+        "description": "A seed imbued with life force. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "miracleseed"
+      },
+      {
+        "name": "Silver Powder",
+        "description": "A shiny silver powder. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "silverpowder"
+      },
+      {
+        "name": "Big Root",
+        "description": "The root of some plant. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "bigroot"
       },
       {
         "name": "Berry print",
@@ -9712,16 +13707,58 @@ window.POKOPIA_DATA = {
         "slug": "resorthammock"
       },
       {
+        "name": "Table setting",
+        "description": "This cutlery immediately makes any table look like it belongs in a high-class restaurant",
+        "recipe": null,
+        "slug": "tablesetting"
+      },
+      {
+        "name": "Paper Party cups",
+        "description": "Paper cups that are easy to carry- perfect for hosting a party!",
+        "recipe": null,
+        "slug": "paperpartycups"
+      },
+      {
+        "name": "Soda float",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "sodafloat"
+      },
+      {
+        "name": "Shaved ice",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "shavedice"
+      },
+      {
         "name": "Modern sink",
         "description": "A state-of-the-art sink that even has a drain. Turn the handle to make water flow out",
         "recipe": null,
         "slug": "modernsink"
       },
       {
+        "name": "Toilet",
+        "description": "Lift the cover and sit on the toilet for as long as you like",
+        "recipe": null,
+        "slug": "toilet"
+      },
+      {
         "name": "Sink",
         "description": "A stylish sink on a wooden stand. Turn on the faucet to make water pour out.",
         "recipe": null,
         "slug": "sink"
+      },
+      {
+        "name": "Bathtime set",
+        "description": "Shampoo, towels and a toy-everything you need to make bath time a blast!",
+        "recipe": null,
+        "slug": "bathtimeset"
+      },
+      {
+        "name": "Cleaning supplies",
+        "description": "Detergent, a dust cloth, and a Mareep sponge are all you need to become a cleaning master!",
+        "recipe": null,
+        "slug": "cleaningsupplies"
       },
       {
         "name": "Shower",
@@ -9740,6 +13777,18 @@ window.POKOPIA_DATA = {
         "description": "A bathtub that lets you experience waves and bubbles, even without a single drop of water inside.",
         "recipe": null,
         "slug": "bouncybluebathtub"
+      },
+      {
+        "name": "Humidifier",
+        "description": "A humidifier with a distinct round shape. Turn it on to increase the humidity level nearby.",
+        "recipe": null,
+        "slug": "humidifier"
+      },
+      {
+        "name": "Funky diffuser",
+        "description": "The symbol on it looks dangerous, but it doesn't seem like this will actually spew out poison gas...",
+        "recipe": null,
+        "slug": "funkydiffuser"
       },
       {
         "name": "Water basin",
@@ -9766,16 +13815,34 @@ window.POKOPIA_DATA = {
         "slug": "horseafountain"
       },
       {
-        "name": "Fishing rod",
-        "description": "A must-have item for fishing up Pokémon. Set one by the water and wait patiently for a bite!",
+        "name": "Fire hydrant",
+        "description": "This device spews water for putting out fires, but you're not really sure how to use it,...",
         "recipe": null,
-        "slug": "fishingrod"
+        "slug": "firehydrant"
+      },
+      {
+        "name": "Sprinkler",
+        "description": "An irrigation device that sprays water in a wide area. Try putting one near the waterside",
+        "recipe": null,
+        "slug": "sprinkler"
       },
       {
         "name": "Mystic Water",
         "description": "A teardrop-shaped gem. Try hanging it up in a frame!",
         "recipe": null,
         "slug": "mysticwater"
+      },
+      {
+        "name": "Water pillar quarter",
+        "description": "A fancy pillar filled with water. Its faint glow is beautiful, even in darkness",
+        "recipe": null,
+        "slug": "waterpillarquarter"
+      },
+      {
+        "name": "Hoppip water bottle",
+        "description": "This water bottle with a shoulder strap is perfect for picnics! The Hoopip pattern is very cute.",
+        "recipe": null,
+        "slug": "hoppipwaterbottle"
       }
     ],
     "Luxury": [
@@ -9882,7 +13949,22 @@ window.POKOPIA_DATA = {
         "slug": "chicchair"
       },
       {
-        "name": "Antique Chair",
+        "name": "Fancy chair",
+        "description": "A high-class chair with a real dignified feel to it. Just sitting here will make you feel important.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "fancychair"
+      },
+      {
+        "name": "Antique chair",
         "description": "A chair with a charming retro design. Its cushions are soft and fluffy",
         "recipe": [
           {
@@ -9918,6 +14000,21 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "luxurychair"
+      },
+      {
+        "name": "Gaming chair",
+        "description": "With its large backrest and cushions, you could sit comfortable in this chair for a long time.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "gamingchair"
       },
       {
         "name": "Chic sofa",
@@ -9973,6 +14070,21 @@ window.POKOPIA_DATA = {
         "slug": "luxurysofa"
       },
       {
+        "name": "Guest-room bed",
+        "description": "A bed with a rather high-class vibe. It looks like it belongs on a luxury ship or in a fancy hotel.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "guest-roombed"
+      },
+      {
         "name": "Antique bed",
         "description": "This bed has a relaxing, nostalgic atmosphere. The blanket is smooth to the touch",
         "recipe": [
@@ -10009,6 +14121,36 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "luxurybed"
+      },
+      {
+        "name": "Wall mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "wallmirror"
+      },
+      {
+        "name": "Large mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "largemirror"
       },
       {
         "name": "Antique dresser",
@@ -10053,16 +14195,64 @@ window.POKOPIA_DATA = {
         "slug": "luxurydresser"
       },
       {
+        "name": "Afternoon tea set",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "afternoonteaset"
+      },
+      {
         "name": "Fancy pen",
         "description": "A high-class ballpoint pen that exudes luxury. A very important person could have used this",
         "recipe": null,
         "slug": "fancypen"
       },
       {
-        "name": "Chic streetlight",
-        "description": "When powered on, this light emits a gentle glow that faintly illuminates its surroundings",
+        "name": "Stone fireplace",
+        "description": "A huge fireplace. Light this up to make a space feel warm and cozy",
         "recipe": null,
-        "slug": "chicstreetlight"
+        "slug": "stonefireplace"
+      },
+      {
+        "name": "Dining cabinet",
+        "description": "A cupboard packed full of plates, cups-even a tea set",
+        "recipe": null,
+        "slug": "diningcabinet"
+      },
+      {
+        "name": "Auspicious Armor",
+        "description": "Heavy armor recreated from armor fragments. Auspicious wishes live within it",
+        "recipe": null,
+        "slug": "auspiciousarmor"
+      },
+      {
+        "name": "Malicious Armor",
+        "description": "Heavy armor recreated from armor fragments. Malicious will lurks within it",
+        "recipe": null,
+        "slug": "maliciousarmor"
+      },
+      {
+        "name": "Antique clock",
+        "description": "This clock ticks away the hours. It lets out a loud bong at designated times",
+        "recipe": null,
+        "slug": "antiqueclock"
+      },
+      {
+        "name": "Chansey plant",
+        "description": "A tree that looks just like a Chansey! Looking at it seems to fill you with a gentle energy",
+        "recipe": null,
+        "slug": "chanseyplant"
+      },
+      {
+        "name": "Poké Ball light",
+        "description": "A neon light that glows red and white when powered on. It would look great on top of a table",
+        "recipe": null,
+        "slug": "pokeballlight"
+      },
+      {
+        "name": "Poké Ball lamp",
+        "description": "Emits a brilliant light when powered on. This would look great on a shelf",
+        "recipe": null,
+        "slug": "pokeballlamp"
       },
       {
         "name": "Luxury lamp",
@@ -10075,6 +14265,18 @@ window.POKOPIA_DATA = {
         "description": "Hang this from the ceiling to illuminate a room with gentle light. Perfeect for a mansion aesthetic!",
         "recipe": null,
         "slug": "antiquechandelier"
+      },
+      {
+        "name": "Jewel wall decoration",
+        "description": "Put these multi-colored jewels up on the wall to add a little sparkle to your decore",
+        "recipe": null,
+        "slug": "jewelwalldecoration"
+      },
+      {
+        "name": "Treasure",
+        "description": "A pile of golden accessories and sparkling jewels. Use this as decor to add an air of luxury.",
+        "recipe": null,
+        "slug": "treasure"
       }
     ],
     "Metal Stuff": [
@@ -10086,7 +14288,7 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Iron ore",
-        "description": "Metal that can be obtained from iron deposis. It can also be found among metal debris",
+        "description": "Metal that can be obtained from iron deposits. It can also be found among metal debris",
         "recipe": null,
         "slug": "ironore"
       },
@@ -10116,7 +14318,7 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Iron ingot",
-        "description": "Iron that has been procesed in a smelting furnace. It's really hard and super heavy.",
+        "description": "Iron that has been processed in a smelting furnace. It's really hard and super heavy.",
         "recipe": null,
         "slug": "ironingot"
       },
@@ -10131,6 +14333,57 @@ window.POKOPIA_DATA = {
         "description": "Made from smelted Pokémetal fragmants, these can be used to make various items.",
         "recipe": null,
         "slug": "pokemetal"
+      },
+      {
+        "name": "Rare Pokémetal",
+        "description": "Made from smelted rare Pokémetal fragments, these can be used to make various items",
+        "recipe": null,
+        "slug": "rarepokemetal"
+      },
+      {
+        "name": "Office cabinet",
+        "description": "Compacy furniture that's surprisingly spacious. Open the sliding door to put items inside",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          }
+        ],
+        "slug": "officecabinet"
+      },
+      {
+        "name": "Gaming fridge",
+        "description": "A chest that's slightly cold to the touch. Ice-type Pokémon will probably enjoy this.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "gamingfridge"
+      },
+      {
+        "name": "Poké Ball Chest",
+        "description": "This looks like a giant Poké Ball. It opens wide for you to store things inside",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Iron Ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "pokeballchest"
       },
       {
         "name": "Office locker",
@@ -10207,6 +14460,21 @@ window.POKOPIA_DATA = {
         "slug": "officedesk"
       },
       {
+        "name": "Industrial chair",
+        "description": "A perfectly round chair that can easily fit anywhere. Surprisingly sturdy, thanks to its iron legs.",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "industrialchair"
+      },
+      {
         "name": "Iron chair",
         "description": "Though small, this seat is very sturdy. It doesn't look like it would break easily.",
         "recipe": [
@@ -10216,6 +14484,103 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "ironchair"
+      },
+      {
+        "name": "Public seat",
+        "description": "A simple chair without a backrest. Try arranging a bunch of 'em together",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          }
+        ],
+        "slug": "publicseat"
+      },
+      {
+        "name": "Spectator chair",
+        "description": "Audience seats like those are found at concert halls or stadiums. Try arranging a bunch of 'em in a row!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "spectatorchair"
+      },
+      {
+        "name": "Luxury chair",
+        "description": "A classy-looking seat with a gemstone embedded in it. Just sitting on it makes you feel rich.",
+        "recipe": [
+          {
+            "material": "Linestone",
+            "qty": 2
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurychair"
+      },
+      {
+        "name": "Garden chair",
+        "description": "A chair that would be perfect in a nice garden. Take a seat and enjoy an elegant afternoon.",
+        "recipe": [
+          {
+            "material": "Iron ore",
+            "qty": 2
+          }
+        ],
+        "slug": "gardenchair"
+      },
+      {
+        "name": "Folding chair",
+        "description": "A foldable chair that's simple and easy to carry. Set these up at event venues or similar spaces!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "foldingchair"
+      },
+      {
+        "name": "Office chair",
+        "description": "With a gentle curve to support the body, this chair was designed to help you sit longer without tiring",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "officechair"
+      },
+      {
+        "name": "Gaming chair",
+        "description": "With its large backrest and cushions, you could sit comfortable in this chair for a long time.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "gamingchair"
       },
       {
         "name": "Iron bench",
@@ -10233,6 +14598,51 @@ window.POKOPIA_DATA = {
         "slug": "ironbench"
       },
       {
+        "name": "Industrial bench",
+        "description": "A simple bench made of wood and iron. The kind you'd expect to find at parks and walking paths.",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "industrialbench"
+      },
+      {
+        "name": "Garden bench",
+        "description": "A stylish bench with a vine pattern. Put one down to instantly add some flair to an area",
+        "recipe": [
+          {
+            "material": "Iron ore",
+            "qty": 3
+          }
+        ],
+        "slug": "gardenbench"
+      },
+      {
+        "name": "Poké Ball Sofa",
+        "description": "Experience sitting in an open Poké Ball! Seats two comfortably",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "pokeballsofa"
+      },
+      {
         "name": "Iron bed",
         "description": "A slightly narrow bed. It's sturdy enough for a good night's sleep!",
         "recipe": [
@@ -10248,10 +14658,142 @@ window.POKOPIA_DATA = {
         "slug": "ironbed"
       },
       {
-        "name": "Munna bank",
-        "description": "An especially heavy money box. It feels like it's full of coins",
+        "name": "Poké Ball bed",
+        "description": "A big bed. Even large Pokémon could sprawl out on it.",
+        "recipe": [
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "pokeballbed"
+      },
+      {
+        "name": "Industrial bed",
+        "description": "A nice, wide bed that works in any type of room. Even a large Pokémon could sleep in it",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "industrialbed"
+      },
+      {
+        "name": "Small garbage can",
+        "description": "A simple, colorful trash can, perfect for indoor use",
         "recipe": null,
-        "slug": "munnabank"
+        "slug": "smallgarbagecan"
+      },
+      {
+        "name": "Fancy pen",
+        "description": "A high-class ballpoint pen that exudes luxury. A very important person could have used this",
+        "recipe": null,
+        "slug": "fancypen"
+      },
+      {
+        "name": "Modern sink",
+        "description": "A state-of-the-art sink that even has a drain. Turn the handle to make water flow out",
+        "recipe": null,
+        "slug": "modernsink"
+      },
+      {
+        "name": "Cooking stove",
+        "description": "A simple stylish stove. Turn the dial and flames will shoot right out of it",
+        "recipe": null,
+        "slug": "cookingstove"
+      },
+      {
+        "name": "Microwave oven",
+        "description": "This lights up when powered on, but it doesn't seem like it can heat anything...",
+        "recipe": null,
+        "slug": "microwaveoven"
+      },
+      {
+        "name": "Refrigerator",
+        "description": "It emits a slight chill, but it doesn't seem like it can keep anything cold",
+        "recipe": null,
+        "slug": "refrigerator"
+      },
+      {
+        "name": "Fan",
+        "description": "Power on this fan to make it swivel. Pokémon might stop by to watch it move",
+        "recipe": null,
+        "slug": "fan"
+      },
+      {
+        "name": "Air conditioner",
+        "description": "A state-of-the-art air conditioner. Press once for cold air, or press twice for hot",
+        "recipe": null,
+        "slug": "airconditioner"
+      },
+      {
+        "name": "Washing machine",
+        "description": "While this does make noise when powered on, it doesn't seem to actually wash clothes...",
+        "recipe": null,
+        "slug": "washingmachine"
+      },
+      {
+        "name": "Shower",
+        "description": "A shower with a simple design. Place it next to a bathtub to make your bathroom complete",
+        "recipe": null,
+        "slug": "shower"
+      },
+      {
+        "name": "Tablet",
+        "description": "A convenient, easy-to-carry computer. It's got a hard case so no worries if you drop it!",
+        "recipe": null,
+        "slug": "tablet"
+      },
+      {
+        "name": "Cell phone",
+        "description": "A device carefully protected inside a hard case. It can't make calls, even when powered on",
+        "recipe": null,
+        "slug": "cellphone"
+      },
+      {
+        "name": "Laptop",
+        "description": "A sleek, easy-to-carry laptop. Try displaying some photos on the monitor.",
+        "recipe": null,
+        "slug": "laptop"
+      },
+      {
+        "name": "Computer",
+        "description": "A computer that looks like it belongs in a laboratory. Some notes have been stuck to it here and there",
+        "recipe": null,
+        "slug": "computer"
+      },
+      {
+        "name": "Gaming PC",
+        "description": "A PC rig that even includes a headset. The monitor can display photos when powered on",
+        "recipe": null,
+        "slug": "gamingpc"
+      },
+      {
+        "name": "Television",
+        "description": "A large television that can be easily viewed from far away. It's a flatscreen, so carrying it is easy-peasy.",
+        "recipe": null,
+        "slug": "television"
+      },
+      {
+        "name": "Wall monitor",
+        "description": "A monitor that emits blue light when powered on. Try displaying your photographs on it",
+        "recipe": null,
+        "slug": "wallmonitor"
+      },
+      {
+        "name": "Alarm Clock",
+        "description": "A loud noise rings out when you press this. Be careful! You might accidentally wake someone up",
+        "recipe": null,
+        "slug": "alarmclock"
       },
       {
         "name": "Funky diffuser",
@@ -10260,10 +14802,142 @@ window.POKOPIA_DATA = {
         "slug": "funkydiffuser"
       },
       {
+        "name": "First aid kit",
+        "description": "A box with lots of medicines and supplies for treating injuries",
+        "recipe": null,
+        "slug": "firstaidkit"
+      },
+      {
+        "name": "Microscope",
+        "description": "A microscope often found in chemistry labs and research institutions. Essential for experiments!",
+        "recipe": null,
+        "slug": "microscope"
+      },
+      {
+        "name": "Science experiment",
+        "description": "Chemicals, testing equipment, and a clipboard... OK! The experiment is ready to begin!",
+        "recipe": null,
+        "slug": "scienceexperiment"
+      },
+      {
+        "name": "Jumbled cords",
+        "description": "These cords are all tangled up and cannot be separated",
+        "recipe": null,
+        "slug": "jumbledcords"
+      },
+      {
+        "name": "Gold Teeth",
+        "description": "Their lustrous golden shine hasn't changed at all. Maybe someone dropped them long ago?",
+        "recipe": null,
+        "slug": "goldteeth"
+      },
+      {
+        "name": "Big Nugget",
+        "description": "It's made of pure gold that gives off a lustrous gleam. It seems like it was popular among enthusiasts.",
+        "recipe": null,
+        "slug": "bignugget"
+      },
+      {
+        "name": "Step stool",
+        "description": "A step stool for reaching things in high places. Try climbing on top of it.",
+        "recipe": null,
+        "slug": "stepstool"
+      },
+      {
+        "name": "Spacesuit",
+        "description": "Clothing designed for living in outer space. Keeps the wearer safe even in an airless environment",
+        "recipe": null,
+        "slug": "spacesuit"
+      },
+      {
+        "name": "Model space shuttle",
+        "description": "A realistic model that looks like it could blast off at any second. Could it have been in some museum?",
+        "recipe": null,
+        "slug": "modelspaceshuttle"
+      },
+      {
+        "name": "Spaceship",
+        "description": "a vehicle meant for traveling to outerspace. Hermetically sealed so air doesn't escape.",
+        "recipe": null,
+        "slug": "spaceship"
+      },
+      {
+        "name": "Vending machine",
+        "description": "Connect this to electricity to make it light up! Looks like it still has some things inside for sale.",
+        "recipe": null,
+        "slug": "vendingmachine"
+      },
+      {
+        "name": "Bike",
+        "description": "A cool bicycle that looks high-end. It sparkles as if it's brand-new",
+        "recipe": null,
+        "slug": "bike"
+      },
+      {
+        "name": "Mailbox",
+        "description": "A box for receiving letters. It'd look really nice in front of a house!",
+        "recipe": null,
+        "slug": "mailbox"
+      },
+      {
+        "name": "Weather vane",
+        "description": "A decoration that spins around and around in the wind. Looks like a bird Pokémon perched on a post.",
+        "recipe": null,
+        "slug": "weathervane"
+      },
+      {
+        "name": "Cannon",
+        "description": "Put fireworks or a Pokémon with the Explode specialty inside, light the fuse, and watch 'em fly!",
+        "recipe": null,
+        "slug": "cannon"
+      },
+      {
+        "name": "Bell",
+        "description": "A golden, wall-mounted bell. When struck, it rings with a pleasant sound.",
+        "recipe": null,
+        "slug": "bell"
+      },
+      {
+        "name": "Small stage",
+        "description": "Get on and start dancing! You can power on the lights by hooking this up to electricity",
+        "recipe": null,
+        "slug": "smallstage"
+      },
+      {
+        "name": "Fishing rod",
+        "description": "A must-have item for fishing up Pokémon. Set one by the water and wait patiently for a bite!",
+        "recipe": null,
+        "slug": "fishingrod"
+      },
+      {
+        "name": "Signpost",
+        "description": "A sign that looks like it belongs at a bus stop. It could serve as a guiding landmark in cities or on roads!",
+        "recipe": null,
+        "slug": "signpost"
+      },
+      {
+        "name": "Information board",
+        "description": "A sign with information about the town written on it. Nobody knows what town it's for, though.",
+        "recipe": null,
+        "slug": "informationboard"
+      },
+      {
+        "name": "Barrel",
+        "description": "It's totally empty inside. You could put something on top to make it look nice",
+        "recipe": null,
+        "slug": "barrel"
+      },
+      {
         "name": "Garbage bin",
         "description": "This trash can is big enough that a Pokémon could probably fit inside!",
         "recipe": null,
         "slug": "garbagebin"
+      },
+      {
+        "name": "Recycling bin",
+        "description": "A bin for disposing of empty cans. It's just big enough for a Pokémon to fit inside",
+        "recipe": null,
+        "slug": "recyclingbin"
       },
       {
         "name": "Fire hydrant",
@@ -10272,10 +14946,22 @@ window.POKOPIA_DATA = {
         "slug": "firehydrant"
       },
       {
+        "name": "Excavation tools",
+        "description": "A sturdy-looking pickax and shovel. They're wasted on any Pokémon who can already dig, though.",
+        "recipe": null,
+        "slug": "excavationtools"
+      },
+      {
         "name": "Metal drum",
         "description": "A smooth, clean canister. It's empty, so it's actually quite light",
         "recipe": null,
         "slug": "metaldrum"
+      },
+      {
+        "name": "Construction supplies",
+        "description": "Construction tools stored in a meta drum. Great for factories or warehouses.",
+        "recipe": null,
+        "slug": "constructionsupplies"
       },
       {
         "name": "Iron pipes",
@@ -10284,10 +14970,124 @@ window.POKOPIA_DATA = {
         "slug": "ironpipes"
       },
       {
+        "name": "Wheelbarrow",
+        "description": "A wheelbarrow carrying a large mound of dirt. A lot of construction sites probably have these!",
+        "recipe": null,
+        "slug": "wheelbarrow"
+      },
+      {
+        "name": "Large ventilation fan",
+        "description": "A huge, flat ventilation fan-the kind you'd find on top of a building or a house.",
+        "recipe": null,
+        "slug": "largeventilationfan"
+      },
+      {
+        "name": "Cash register",
+        "description": "Place this on a table and power it on, and Pokémon will come by to conduct trades!",
+        "recipe": null,
+        "slug": "cashregister"
+      },
+      {
+        "name": "Sprinkler",
+        "description": "An irrigation device that sprays water in a wide area. Try putting one near the waterside",
+        "recipe": null,
+        "slug": "sprinkler"
+      },
+      {
+        "name": "Mini generator",
+        "description": "Place this anywhere, and it will generate electricity all on its own. What a remarkable machine!",
+        "recipe": null,
+        "slug": "minigenerator"
+      },
+      {
+        "name": "Card reader",
+        "description": "A machine that reads key cards or Pokédexes. Mount it to a wall.",
+        "recipe": null,
+        "slug": "cardreader"
+      },
+      {
+        "name": "Town streetlight",
+        "description": "Power this with electricity to illuminate the area with gentle light",
+        "recipe": null,
+        "slug": "townstreetlight"
+      },
+      {
+        "name": "Harbor streetlight",
+        "description": "A streetlight that invokes harbor vibes. The life buoy stands out as the main highlight.",
+        "recipe": null,
+        "slug": "harborstreetlight"
+      },
+      {
+        "name": "Chic streetlight",
+        "description": "When powered on, this light emits a gentle glow that faintly illuminates its surroundings",
+        "recipe": null,
+        "slug": "chicstreetlight"
+      },
+      {
+        "name": "Double streetlight",
+        "description": "When pwoered on, both lamps shine brightly to illuminate their surroundings",
+        "recipe": null,
+        "slug": "doublestreetlight"
+      },
+      {
+        "name": "Desk light",
+        "description": "A light with a simple design. Perfect for brightening up your desk when you need to focus on work.",
+        "recipe": null,
+        "slug": "desklight"
+      },
+      {
+        "name": "Poké Ball light",
+        "description": "A neon light that glows red and white when powered on. It would look great on top of a table",
+        "recipe": null,
+        "slug": "pokeballlight"
+      },
+      {
+        "name": "Model planet",
+        "description": "A model of some unexplored faraway planet. It looks jut like a piece of yummy candy",
+        "recipe": null,
+        "slug": "modelplanet"
+      },
+      {
+        "name": "Garden light",
+        "description": "A light that's perfect for a garden. Beautifully illuminates flowers-even at night",
+        "recipe": null,
+        "slug": "gardenlight"
+      },
+      {
+        "name": "Lantern",
+        "description": "This emits bright light when powered on. You'll feel safe if you have this, even in a dark cave",
+        "recipe": null,
+        "slug": "lantern"
+      },
+      {
+        "name": "Mirror ball",
+        "description": "Sparkles and twinkles when powered on. Quickly turns the whole area into a party zone",
+        "recipe": null,
+        "slug": "mirrorball"
+      },
+      {
+        "name": "Spotlight",
+        "description": "When powered on, this light shines brightly on whatever is in front of it",
+        "recipe": null,
+        "slug": "spotlight"
+      },
+      {
+        "name": "Antique chandelier",
+        "description": "Hang this from the ceiling to illuminate a room with gentle light. Perfeect for a mansion aesthetic!",
+        "recipe": null,
+        "slug": "antiquechandelier"
+      },
+      {
         "name": "Iron-plate flooring (wallpaper)",
         "description": "Wallpaper that can be used in larger houses. You can appliy it to walls, floors and even ceilings",
         "recipe": null,
         "slug": "ironplateflooringwallpaper"
+      },
+      {
+        "name": "Team Rocket Wall Hanging",
+        "description": "The symbol of a certain organization. Just looking at it makes you want to get up to some mischief",
+        "recipe": null,
+        "slug": "teamrocketwallhanging"
       },
       {
         "name": "Iron wall",
@@ -10338,124 +15138,58 @@ window.POKOPIA_DATA = {
         "slug": "irongate"
       },
       {
-        "name": "Iron enclosure",
-        "description": "A single post may be thin and flimsy, but these make a splendid fence when lined up together",
+        "name": "Corrugated metal",
+        "description": "Align several of these to crewate a roof that could probably protect against wind and rain",
         "recipe": null,
-        "slug": "ironenclosure"
-      },
-      {
-        "name": "Metal fencing",
-        "description": "Looks great on its own or arranged in a row.",
-        "recipe": null,
-        "slug": "metalfencing"
-      },
-      {
-        "name": "Iron-scaffold plank",
-        "description": "A plank that rests atop an iron scaffold. Try using it to extend the length of your scaffolding!",
-        "recipe": null,
-        "slug": "ironscaffoldplank"
-      },
-      {
-        "name": "Iron scaffold",
-        "description": "A sturdy scaffold used for constructing buildings. The plank's bumpy surface provides great tractions.",
-        "recipe": null,
-        "slug": "ironscaffold"
-      },
-      {
-        "name": "Iron beam",
-        "description": "These solid, sturdy beams can be used to support floors and roofs.",
-        "recipe": null,
-        "slug": "ironbeam"
-      },
-      {
-        "name": "Iron column",
-        "description": "Stack these up to form a proper iron pillar!",
-        "recipe": null,
-        "slug": "ironcolumn"
-      },
-      {
-        "name": "Iron pillar",
-        "description": "Stack as many as you'd like for a taller pillar. The top platform looks like it can display small items",
-        "recipe": null,
-        "slug": "ironpillar"
-      },
-      {
-        "name": "Iron pipe (horizontal)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipehorizontal"
-      },
-      {
-        "name": "Iron pipe (downward curve)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipedownwardcurve"
-      },
-      {
-        "name": "Iron pipe (vertical cross)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipeverticalcross"
-      },
-      {
-        "name": "Iron pipe (vertical T)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipeverticalt"
-      },
-      {
-        "name": "Iron pipe (vertical)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipevertical"
-      },
-      {
-        "name": "Iron pipe (upward curve)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipeupwardcurve"
-      },
-      {
-        "name": "Iron pipe (upward T)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipeupwardt"
-      },
-      {
-        "name": "Iron pipe (downward T)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipedownwardt"
-      },
-      {
-        "name": "Iron pipe (horizontal curve)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipehorizontalcurve"
-      },
-      {
-        "name": "Iron pipe (horizontal T)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipehorizontalt"
-      },
-      {
-        "name": "Iron pipe (horizontal cross)",
-        "description": "Iron pipes come in all sorts of shapes and sizes. Use them to create looong pipe systems",
-        "recipe": null,
-        "slug": "ironpipehorizontalcross"
+        "slug": "corrugatedmetal"
       },
       {
         "name": "Metal Debris",
-        "description": "It's hard to tell what these warn out objects were originally. They look difficult to process as is.",
+        "description": "It's hard to tell what these warn out objects were originally. They look difficult to process as is.Note: Not registered in collection",
         "recipe": null,
         "slug": "metaldebris"
       },
       {
         "name": "Metal fragments",
-        "description": "Metal fragments found on the ground. They look difficult to process into anything",
+        "description": "Metal fragments found on the ground. They look difficult to process into anythingNote: Not registered in collection",
         "recipe": null,
         "slug": "metalfragments"
+      },
+      {
+        "name": "Camping chair",
+        "description": "A simple seat that's perfect for resting on while camping or adventuring.",
+        "recipe": null,
+        "slug": "campingchair"
+      },
+      {
+        "name": "Digital camera",
+        "description": "A single-lens digital camera. It's so high-tech that it looks tricky to use",
+        "recipe": null,
+        "slug": "digitalcamera"
+      },
+      {
+        "name": "Treasure",
+        "description": "A pile of golden accessories and sparkling jewels. Use this as decor to add an air of luxury.",
+        "recipe": null,
+        "slug": "treasure"
+      },
+      {
+        "name": "Oil lantern",
+        "description": "A lantern that provides a dim glow when lit. Perfect for exploring dark places!",
+        "recipe": null,
+        "slug": "oillantern"
+      },
+      {
+        "name": "Telescope",
+        "description": "A tool for seeing faraway things. Place it outside and try taking a peek through it!",
+        "recipe": null,
+        "slug": "telescope"
+      },
+      {
+        "name": "Cloud cannon",
+        "description": "Put fireworks or a Pokémon with the Explode specialty inside, light the fuse, and watch 'em fly!",
+        "recipe": null,
+        "slug": "cloudcannon"
       }
     ],
     "Nice Breezes": [
@@ -10466,16 +15200,40 @@ window.POKOPIA_DATA = {
         "slug": "fan"
       },
       {
+        "name": "Air conditioner",
+        "description": "A state-of-the-art air conditioner. Press once for cold air, or press twice for hot",
+        "recipe": null,
+        "slug": "airconditioner"
+      },
+      {
         "name": "Pinwheels",
         "description": "Pokémon like to spin these round and round. Wind-producing Pokémon especially like them!",
         "recipe": null,
         "slug": "pinwheels"
       },
       {
+        "name": "Tidal Bell",
+        "description": "A very-old fashioned bell that makes a gentle ringing sound. Ring it in an open space to call Lugia",
+        "recipe": null,
+        "slug": "tidalbell"
+      },
+      {
+        "name": "Model space shuttle",
+        "description": "A realistic model that looks like it could blast off at any second. Could it have been in some museum?",
+        "recipe": null,
+        "slug": "modelspaceshuttle"
+      },
+      {
         "name": "Ceiling fan",
         "description": "Its blades spin round and round when powered on. Great for when you want to circulate air!",
         "recipe": null,
         "slug": "ceilingfan"
+      },
+      {
+        "name": "Weather vane",
+        "description": "A decoration that spins around and around in the wind. Looks like a bird Pokémon perched on a post.",
+        "recipe": null,
+        "slug": "weathervane"
       },
       {
         "name": "Large ventilation fan",
@@ -10490,6 +15248,12 @@ window.POKOPIA_DATA = {
         "description": "A loud noise rings out when you press this. Be careful! You might accidentally wake someone up",
         "recipe": null,
         "slug": "alarmclock"
+      },
+      {
+        "name": "CD player",
+        "description": "A device that plays music. If you find a CD, try putting it inside",
+        "recipe": null,
+        "slug": "cdplayer"
       },
       {
         "name": "Cool electric guitar",
@@ -10568,9 +15332,91 @@ window.POKOPIA_DATA = {
         "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
         "recipe": null,
         "slug": "musicmathighdo"
+      },
+      {
+        "name": "Cloud cannon",
+        "description": "Put fireworks or a Pokémon with the Explode specialty inside, light the fuse, and watch 'em fly!",
+        "recipe": null,
+        "slug": "cloudcannon"
       }
     ],
     "Ocean Vibes": [
+      {
+        "name": "Resort stool",
+        "description": "While this stool looks stiff, the cotton padding inside makes it surprisingly soft",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine rope",
+            "qty": 1
+          }
+        ],
+        "slug": "resortstool"
+      },
+      {
+        "name": "Resort chair",
+        "description": "A chair perfect for relaxing. Kick back on this to taste a bit of the resort life",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine Rope",
+            "qty": 1
+          }
+        ],
+        "slug": "resortchair"
+      },
+      {
+        "name": "Resort sofa",
+        "description": "Sitting on this makes you feel like you're in the tropics! Feel free to just laze the day away...",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine rope",
+            "qty": 2
+          }
+        ],
+        "slug": "resortsofa"
+      },
+      {
+        "name": "Resort bed",
+        "description": "A refreshingly cool bed made of woven vines. Lying down on this makes you feel like you're at a resort",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Vine rope",
+            "qty": 2
+          }
+        ],
+        "slug": "resortbed"
+      },
       {
         "name": "Deck chair",
         "description": "Lean this chair backa nd relax for a bit. It looks great for sunbating.",
@@ -10598,13 +15444,116 @@ window.POKOPIA_DATA = {
         "slug": "beachchair"
       },
       {
+        "name": "Resort hammock",
+        "description": "The breeze feels so nice when you're lying on this hammock. It's perfect for dozing off!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          },
+          {
+            "material": "Vine rope",
+            "qty": 2
+          }
+        ],
+        "slug": "resorthammock"
+      },
+      {
+        "name": "Ship's Wheel",
+        "description": "A wheel used to steer a ship. It spinds round and round when you touch it!",
+        "recipe": null,
+        "slug": "shipswheel"
+      },
+      {
+        "name": "Sandbox",
+        "description": "Place this to set up a fun space for playing with sand. Discover what you can create here!",
+        "recipe": null,
+        "slug": "sandbox"
+      },
+      {
         "name": "Beach parasol",
         "description": "Place one of these on the beach for protection from scorching sunbeams",
         "recipe": null,
         "slug": "beachparasol"
+      },
+      {
+        "name": "Horsea fountain",
+        "description": "Installing this near water should raise the humidity of its surroundings",
+        "recipe": null,
+        "slug": "horseafountain"
+      },
+      {
+        "name": "Fishing rod",
+        "description": "A must-have item for fishing up Pokémon. Set one by the water and wait patiently for a bite!",
+        "recipe": null,
+        "slug": "fishingrod"
+      },
+      {
+        "name": "Harbor streetlight",
+        "description": "A streetlight that invokes harbor vibes. The life buoy stands out as the main highlight.",
+        "recipe": null,
+        "slug": "harborstreetlight"
+      },
+      {
+        "name": "Shell lamp",
+        "description": "It looks like a simple seashell at first glance, but hang it up and power it on, and it emits a gentle light",
+        "recipe": null,
+        "slug": "shelllamp"
+      },
+      {
+        "name": "Resort light",
+        "description": "A light that resembles a ball of tangled string. Its gentle glow creates a fancy atmosphere",
+        "recipe": null,
+        "slug": "resortlight"
       }
     ],
     "Play Spaces": [
+      {
+        "name": "Arcade machine",
+        "description": "A game machine from a facility somewhere. It looks brand-new, so it probably can still be turned on",
+        "recipe": null,
+        "slug": "arcademachine"
+      },
+      {
+        "name": "Toy blocks",
+        "description": "Stacking toys that are fun to play with. Discover all the different combinations you can make!",
+        "recipe": null,
+        "slug": "toyblocks"
+      },
+      {
+        "name": "Pinwheels",
+        "description": "Pokémon like to spin these round and round. Wind-producing Pokémon especially like them!",
+        "recipe": null,
+        "slug": "pinwheels"
+      },
+      {
+        "name": "Balloons",
+        "description": "Balloons of many vibrant colors. They sway back and forth even in the most gentle of breezes",
+        "recipe": null,
+        "slug": "balloons"
+      },
+      {
+        "name": "Punching game",
+        "description": "Slug this machine real good with your first, and it'll tell you how strong your punch is",
+        "recipe": null,
+        "slug": "punchinggame"
+      },
+      {
+        "name": "Boo-in-the-box",
+        "description": "Open the box, and -BOING!-out pops the Gengar!",
+        "recipe": null,
+        "slug": "boointhebox"
+      },
+      {
+        "name": "Wobbuffet Wobbler",
+        "description": "An exceptionally durable Wobbuffet doll. It gets back up no matter how many times you knock it over.",
+        "recipe": null,
+        "slug": "wobbuffetwobbler"
+      },
       {
         "name": "Sandbox",
         "description": "Place this to set up a fun space for playing with sand. Discover what you can create here!",
@@ -10622,6 +15571,60 @@ window.POKOPIA_DATA = {
         "description": "An essential part of any playground. Its imposing size leaves a real impression",
         "recipe": null,
         "slug": "slide"
+      },
+      {
+        "name": "Small stage",
+        "description": "Get on and start dancing! You can power on the lights by hooking this up to electricity",
+        "recipe": null,
+        "slug": "smallstage"
+      },
+      {
+        "name": "Music mat (low do)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmatlowdo"
+      },
+      {
+        "name": "Music mat (Re)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmatre"
+      },
+      {
+        "name": "Music mat (Mi)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmatmi"
+      },
+      {
+        "name": "Music mat (Fa)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmatfa"
+      },
+      {
+        "name": "Music mat (Sol)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmatsol"
+      },
+      {
+        "name": "Music mat (La)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmatla"
+      },
+      {
+        "name": "Music mat (Ti)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmatti"
+      },
+      {
+        "name": "Music mat (High do)",
+        "description": "A strange mat that makes different sounds when you step on it depending on the direction it's facing",
+        "recipe": null,
+        "slug": "musicmathighdo"
       }
     ],
     "Pretty Flowers": [
@@ -10662,10 +15665,22 @@ window.POKOPIA_DATA = {
         "slug": "twistedpottedplant"
       },
       {
-        "name": "Tire toy",
-        "description": "Tires used in parks as playground equipment. Put them on the ground and have fun hopping over them!",
+        "name": "Decorative plant shelf",
+        "description": "A long vine droops from the potted plant on this decorative shelf. Perfect for livening up any wall!",
         "recipe": null,
-        "slug": "tiretoy"
+        "slug": "decorativeplantshelf"
+      },
+      {
+        "name": "Wall-mounted flowers",
+        "description": "A planter with colorful flowers. Hang one on a wall to create a vibrant space.",
+        "recipe": null,
+        "slug": "wallmountedflowers"
+      },
+      {
+        "name": "Chansey plant",
+        "description": "A tree that looks just like a Chansey! Looking at it seems to fill you with a gentle energy",
+        "recipe": null,
+        "slug": "chanseyplant"
       },
       {
         "name": "Garden flowers",
@@ -10705,7 +15720,7 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Cute flower",
-        "description": "Cute flowers that bloom in port towns. They would surely be a delisghtful gift to any Pokémon",
+        "description": "Cute flowers that bloom in port towns. They would surely be a delightful gift to any Pokémon",
         "recipe": null,
         "slug": "cuteflower"
       },
@@ -10912,9 +15927,39 @@ window.POKOPIA_DATA = {
         "description": "Flowers resolutely blooming toward the sky. Looking at them seems to fill you with energy.",
         "recipe": null,
         "slug": "robustflowerwhite"
+      },
+      {
+        "name": "Flower cushion",
+        "description": "A cute flower-shaped cushion. It would look nice on some grassy ground.",
+        "recipe": null,
+        "slug": "flowercushion"
+      },
+      {
+        "name": "Flowery table setting",
+        "description": "A set of cute tableward. The placemat has a Jumpluff pattern!",
+        "recipe": null,
+        "slug": "flowerytablesetting"
+      },
+      {
+        "name": "Flower garland",
+        "description": "An adorable wall decoration made with a variety of colorful flowers",
+        "recipe": null,
+        "slug": "flowergarland"
+      },
+      {
+        "name": "Flower backpack",
+        "description": "The big flower makes this backpack stand out! Looks like it could hold everything you need for a picnic",
+        "recipe": null,
+        "slug": "flowerbackpack"
       }
     ],
     "Rides": [
+      {
+        "name": "Step stool",
+        "description": "A step stool for reaching things in high places. Try climbing on top of it.",
+        "recipe": null,
+        "slug": "stepstool"
+      },
       {
         "name": "Model space shuttle",
         "description": "A realistic model that looks like it could blast off at any second. Could it have been in some museum?",
@@ -10928,6 +15973,12 @@ window.POKOPIA_DATA = {
         "slug": "spaceship"
       },
       {
+        "name": "Bike",
+        "description": "A cool bicycle that looks high-end. It sparkles as if it's brand-new",
+        "recipe": null,
+        "slug": "bike"
+      },
+      {
         "name": "Handcar",
         "description": "These carts clang along atop railway tracks. You can even link a bunch of carts together",
         "recipe": null,
@@ -10935,12 +15986,6 @@ window.POKOPIA_DATA = {
       }
     ],
     "Round Stuff": [
-      {
-        "name": "Fluff",
-        "description": "An irresistibly soft tuft of fluff. Pokémon with the Litter specialty may scatter this",
-        "recipe": null,
-        "slug": "fluff"
-      },
       {
         "name": "Poké Ball Chest",
         "description": "This looks like a giant Poké Ball. It opens wide for you to store things inside",
@@ -10957,10 +16002,152 @@ window.POKOPIA_DATA = {
         "slug": "pokeballchest"
       },
       {
-        "name": "Munna bank",
-        "description": "An especially heavy money box. It feels like it's full of coins",
+        "name": "Straw stool",
+        "description": "This is the perfect size for small Pokémon to take a seat!",
+        "recipe": [
+          {
+            "material": "Leaf",
+            "qty": 1
+          }
+        ],
+        "slug": "strawstool"
+      },
+      {
+        "name": "Berry chair",
+        "description": "When placed on the ground, it looks just like a buried Leppa Berry. The steam and leaves are a backrest.",
+        "recipe": [
+          {
+            "material": "Leppa Berry",
+            "qty": 1
+          },
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Copper ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "berrychair"
+      },
+      {
+        "name": "Log chair",
+        "description": "You can sit on this log to take a quick breather. Other Pokémon might stop by to take a break too.",
+        "recipe": [
+          {
+            "material": "Small log",
+            "qty": 1
+          }
+        ],
+        "slug": "logchair"
+      },
+      {
+        "name": "Plain stool",
+        "description": "A stool with a simple design. Small Pokémon can use this as a seat",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainstool"
+      },
+      {
+        "name": "Resort stool",
+        "description": "While this stool looks stiff, the cotton padding inside makes it surprisingly soft",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine rope",
+            "qty": 1
+          }
+        ],
+        "slug": "resortstool"
+      },
+      {
+        "name": "Stylish stool",
+        "description": "A small, round stool with a stylish three-color cushion.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "stylishstool"
+      },
+      {
+        "name": "Poké Ball Sofa",
+        "description": "Experience sitting in an open Poké Ball! Seats two comfortably",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "pokeballsofa"
+      },
+      {
+        "name": "Poké Ball bed",
+        "description": "A big bed. Even large Pokémon could sprawl out on it.",
+        "recipe": [
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "pokeballbed"
+      },
+      {
+        "name": "Pizza",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
         "recipe": null,
-        "slug": "munnabank"
+        "slug": "pizza"
+      },
+      {
+        "name": "Chocolate cookies",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "chocolatecookies"
+      },
+      {
+        "name": "Ribbon cake",
+        "description": "Food loved by one of Eevee's friends. Be sure to prepare a table and chair too!",
+        "recipe": null,
+        "slug": "ribboncake"
+      },
+      {
+        "name": "Small garbage can",
+        "description": "A simple, colorful trash can, perfect for indoor use",
+        "recipe": null,
+        "slug": "smallgarbagecan"
       },
       {
         "name": "Alarm Clock",
@@ -10969,10 +16156,28 @@ window.POKOPIA_DATA = {
         "slug": "alarmclock"
       },
       {
+        "name": "Knitting supplies",
+        "description": "Tools for knitting hats, sweaters and the like. Pokémon are captivated by the round balls of yarn",
+        "recipe": null,
+        "slug": "knittingsupplies"
+      },
+      {
+        "name": "Humidifier",
+        "description": "A humidifier with a distinct round shape. Turn it on to increase the humidity level nearby.",
+        "recipe": null,
+        "slug": "humidifier"
+      },
+      {
         "name": "Crystal ball",
         "description": "A large crystal ball used for fortune-telling. Give it to a Psychic-type Pokémon and see what happens",
         "recipe": null,
         "slug": "crystalball"
+      },
+      {
+        "name": "Big drum",
+        "description": "A very impessive drum. Beat it to produce a loud, invigorating da-a-DUM!",
+        "recipe": null,
+        "slug": "bigdrum"
       },
       {
         "name": "Big Nugget",
@@ -11005,6 +16210,12 @@ window.POKOPIA_DATA = {
         "slug": "tidalbell"
       },
       {
+        "name": "Ship's Wheel",
+        "description": "A wheel used to steer a ship. It spinds round and round when you touch it!",
+        "recipe": null,
+        "slug": "shipswheel"
+      },
+      {
         "name": "Spaceship",
         "description": "a vehicle meant for traveling to outerspace. Hermetically sealed so air doesn't escape.",
         "recipe": null,
@@ -11021,6 +16232,210 @@ window.POKOPIA_DATA = {
         "description": "A clock that resembles an Oran Berry cross section. Try mounting it on a wall",
         "recipe": null,
         "slug": "berryclock"
+      },
+      {
+        "name": "Firepit",
+        "description": "Set this ablaze to illuminate the surroundings with bright light. Fwoosh!",
+        "recipe": null,
+        "slug": "firepit"
+      },
+      {
+        "name": "Tire toy",
+        "description": "Tires used in parks as playground equipment. Put them on the ground and have fun hopping over them!",
+        "recipe": null,
+        "slug": "tiretoy"
+      },
+      {
+        "name": "Concrete pipe",
+        "description": "Link several of these to make the pipe as long as you want! The inside is pitch black",
+        "recipe": null,
+        "slug": "concretepipe"
+      },
+      {
+        "name": "Chansey plant",
+        "description": "A tree that looks just like a Chansey! Looking at it seems to fill you with a gentle energy",
+        "recipe": null,
+        "slug": "chanseyplant"
+      },
+      {
+        "name": "Small stage",
+        "description": "Get on and start dancing! You can power on the lights by hooking this up to electricity",
+        "recipe": null,
+        "slug": "smallstage"
+      },
+      {
+        "name": "Water basin",
+        "description": "Fill this with water so Pokémon can do some watering for you",
+        "recipe": null,
+        "slug": "waterbasin"
+      },
+      {
+        "name": "Canoe",
+        "description": "A paddle, bucket and rope is all you need for a journey out to sea",
+        "recipe": null,
+        "slug": "canoe"
+      },
+      {
+        "name": "Barrel",
+        "description": "It's totally empty inside. You could put something on top to make it look nice",
+        "recipe": null,
+        "slug": "barrel"
+      },
+      {
+        "name": "Tires",
+        "description": "This tire stack looks like it could collapse at any moment, but oddly enough it stays upright",
+        "recipe": null,
+        "slug": "tires"
+      },
+      {
+        "name": "Metal drum",
+        "description": "A smooth, clean canister. It's empty, so it's actually quite light",
+        "recipe": null,
+        "slug": "metaldrum"
+      },
+      {
+        "name": "Construction supplies",
+        "description": "Construction tools stored in a meta drum. Great for factories or warehouses.",
+        "recipe": null,
+        "slug": "constructionsupplies"
+      },
+      {
+        "name": "Poké Ball lamp",
+        "description": "Emits a brilliant light when powered on. This would look great on a shelf",
+        "recipe": null,
+        "slug": "pokeballlamp"
+      },
+      {
+        "name": "Model planet",
+        "description": "A model of some unexplored faraway planet. It looks jut like a piece of yummy candy",
+        "recipe": null,
+        "slug": "modelplanet"
+      },
+      {
+        "name": "Seedot Lamp",
+        "description": "When mounted to a wall, this looks just like a Seedot hanging from a branch!",
+        "recipe": null,
+        "slug": "seedotlamp"
+      },
+      {
+        "name": "Mirror ball",
+        "description": "Sparkles and twinkles when powered on. Quickly turns the whole area into a party zone",
+        "recipe": null,
+        "slug": "mirrorball"
+      },
+      {
+        "name": "Surface light",
+        "description": "Simple inconspicuous lights. You can embed them in ceilings and walls.",
+        "recipe": null,
+        "slug": "surfacelight"
+      },
+      {
+        "name": "Paint balloon (white)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonwhite"
+      },
+      {
+        "name": "Paint balloon (red)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonred"
+      },
+      {
+        "name": "Paint balloon (yellow)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonyellow"
+      },
+      {
+        "name": "Paint balloon (green)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoongreen"
+      },
+      {
+        "name": "Paint balloon (rose)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonrose"
+      },
+      {
+        "name": "Paint balloon (pink)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonpink"
+      },
+      {
+        "name": "Paint balloon (orange)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonorange"
+      },
+      {
+        "name": "Paint balloon (purple)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonpurple"
+      },
+      {
+        "name": "Paint balloon (brown)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonbrown"
+      },
+      {
+        "name": "Paint balloon (beige)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonbeige"
+      },
+      {
+        "name": "Paint balloon (black)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonblack"
+      },
+      {
+        "name": "Paint balloon (lime)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonlime"
+      },
+      {
+        "name": "Paint balloon (plum)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonplum"
+      },
+      {
+        "name": "Paint balloon (navy)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonnavy"
+      },
+      {
+        "name": "Paint balloon (blue)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonblue"
+      },
+      {
+        "name": "Paint balloon (cyan)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballooncyan"
+      },
+      {
+        "name": "Paint balloon (gray)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoongray"
+      },
+      {
+        "name": "Paint balloon (aquamarine)",
+        "description": "A colorful balloon filled with paint. You can use it to paint items or buildings",
+        "recipe": null,
+        "slug": "paintballoonaquamarine"
       },
       {
         "name": "Firework (white)",
@@ -11066,7 +16481,7 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Oak's Lab",
-        "description": "Music CD #3 If you have a music player, you can listen to",
+        "description": "Music CD #3 If you have a music player, you can listen to a tune that reminds you of research!",
         "recipe": null,
         "slug": "oakslab"
       },
@@ -11329,18 +16744,78 @@ window.POKOPIA_DATA = {
         "slug": "goldbottlecap"
       },
       {
+        "name": "Lucky Egg",
+        "description": "A round, white egg. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "luckyegg"
+      },
+      {
+        "name": "Life Orb",
+        "description": "A beautiful red orb. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "lifeorb"
+      },
+      {
+        "name": "Iron Ball",
+        "description": "A round, black iron ball. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "ironball"
+      },
+      {
+        "name": "Adrenaline Orb",
+        "description": "A round, blue ball. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "adrenalineorb"
+      },
+      {
+        "name": "Flame Orb",
+        "description": "A bizarre orb that always gives off heat. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "flameorb"
+      },
+      {
+        "name": "Ring Target",
+        "description": "A target with distinctive balck and white rings. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "ringtarget"
+      },
+      {
         "name": "Armor Fossil",
         "description": "An ancient Pokémon fossil. It looks like a smooth shield",
         "recipe": null,
         "slug": "armorfossil"
+      },
+      {
+        "name": "Moon clock",
+        "description": "A moon-shaped clock with a swaying pendulum. What will happen when it strikes the hour?",
+        "recipe": null,
+        "slug": "moonclock"
       }
     ],
     "Sharp Stuff": [
+      {
+        "name": "Fancy pen",
+        "description": "A high-class ballpoint pen that exudes luxury. A very important person could have used this",
+        "recipe": null,
+        "slug": "fancypen"
+      },
       {
         "name": "Vending machine",
         "description": "Connect this to electricity to make it light up! Looks like it still has some things inside for sale.",
         "recipe": null,
         "slug": "vendingmachine"
+      },
+      {
+        "name": "Frame",
+        "description": "A frame for hanging an item on a wall. Try putting different things inside!",
+        "recipe": null,
+        "slug": "frame"
+      },
+      {
+        "name": "Wall light",
+        "description": "A light that can be fixed to a wall. Power it on and it'll light the area with a warm glow",
+        "recipe": null,
+        "slug": "walllight"
       }
     ],
     "Shiny Stuff": [
@@ -11391,6 +16866,78 @@ window.POKOPIA_DATA = {
         "slug": "gamingbed"
       },
       {
+        "name": "Bathtime set",
+        "description": "Shampoo, towels and a toy-everything you need to make bath time a blast!",
+        "recipe": null,
+        "slug": "bathtimeset"
+      },
+      {
+        "name": "Cleaning supplies",
+        "description": "Detergent, a dust cloth, and a Mareep sponge are all you need to become a cleaning master!",
+        "recipe": null,
+        "slug": "cleaningsupplies"
+      },
+      {
+        "name": "Tablet",
+        "description": "A convenient, easy-to-carry computer. It's got a hard case so no worries if you drop it!",
+        "recipe": null,
+        "slug": "tablet"
+      },
+      {
+        "name": "Cell phone",
+        "description": "A device carefully protected inside a hard case. It can't make calls, even when powered on",
+        "recipe": null,
+        "slug": "cellphone"
+      },
+      {
+        "name": "Laptop",
+        "description": "A sleek, easy-to-carry laptop. Try displaying some photos on the monitor.",
+        "recipe": null,
+        "slug": "laptop"
+      },
+      {
+        "name": "Computer",
+        "description": "A computer that looks like it belongs in a laboratory. Some notes have been stuck to it here and there",
+        "recipe": null,
+        "slug": "computer"
+      },
+      {
+        "name": "Gaming PC",
+        "description": "A PC rig that even includes a headset. The monitor can display photos when powered on",
+        "recipe": null,
+        "slug": "gamingpc"
+      },
+      {
+        "name": "Television",
+        "description": "A large television that can be easily viewed from far away. It's a flatscreen, so carrying it is easy-peasy.",
+        "recipe": null,
+        "slug": "television"
+      },
+      {
+        "name": "Wall monitor",
+        "description": "A monitor that emits blue light when powered on. Try displaying your photographs on it",
+        "recipe": null,
+        "slug": "wallmonitor"
+      },
+      {
+        "name": "Crystal ball",
+        "description": "A large crystal ball used for fortune-telling. Give it to a Psychic-type Pokémon and see what happens",
+        "recipe": null,
+        "slug": "crystalball"
+      },
+      {
+        "name": "Tabletop mic",
+        "description": "A microphone like those used at recording studios or public speeches. Try putting it on a desk!",
+        "recipe": null,
+        "slug": "tabletopmic"
+      },
+      {
+        "name": "Standing mic",
+        "description": "A microphone meant for the stage. Standing before it makes you want to burst into song",
+        "recipe": null,
+        "slug": "standingmic"
+      },
+      {
         "name": "Gold Teeth",
         "description": "Their lustrous golden shine hasn't changed at all. Maybe someone dropped them long ago?",
         "recipe": null,
@@ -11409,10 +16956,70 @@ window.POKOPIA_DATA = {
         "slug": "auspiciousarmor"
       },
       {
-        "name": "Malicious Armor",
-        "description": "Heavy armor recreated from armor fragments. Malicious will lurks within it",
+        "name": "Clear Bell",
+        "description": "A very-old fashioned bell that makes a gentle ringing sound. Ring it in an open space to call Ho-Oh",
         "recipe": null,
-        "slug": "maliciousarmor"
+        "slug": "clearbell"
+      },
+      {
+        "name": "Gym emblem statue",
+        "description": "This stone statue makes you feel pumped up. Would look great on a pedestal",
+        "recipe": null,
+        "slug": "gymemblemstatue"
+      },
+      {
+        "name": "Spacesuit",
+        "description": "Clothing designed for living in outer space. Keeps the wearer safe even in an airless environment",
+        "recipe": null,
+        "slug": "spacesuit"
+      },
+      {
+        "name": "Model space shuttle",
+        "description": "A realistic model that looks like it could blast off at any second. Could it have been in some museum?",
+        "recipe": null,
+        "slug": "modelspaceshuttle"
+      },
+      {
+        "name": "Bell",
+        "description": "A golden, wall-mounted bell. When struck, it rings with a pleasant sound.",
+        "recipe": null,
+        "slug": "bell"
+      },
+      {
+        "name": "Signpost",
+        "description": "A sign that looks like it belongs at a bus stop. It could serve as a guiding landmark in cities or on roads!",
+        "recipe": null,
+        "slug": "signpost"
+      },
+      {
+        "name": "Information board",
+        "description": "A sign with information about the town written on it. Nobody knows what town it's for, though.",
+        "recipe": null,
+        "slug": "informationboard"
+      },
+      {
+        "name": "Fire hydrant",
+        "description": "This device spews water for putting out fires, but you're not really sure how to use it,...",
+        "recipe": null,
+        "slug": "firehydrant"
+      },
+      {
+        "name": "Mini generator",
+        "description": "Place this anywhere, and it will generate electricity all on its own. What a remarkable machine!",
+        "recipe": null,
+        "slug": "minigenerator"
+      },
+      {
+        "name": "Mushroom streetlight",
+        "description": "Darkness poses no problem when you've got a gentle mushroom glow.",
+        "recipe": null,
+        "slug": "mushroomstreetlight"
+      },
+      {
+        "name": "Chic streetlight",
+        "description": "When powered on, this light emits a gentle glow that faintly illuminates its surroundings",
+        "recipe": null,
+        "slug": "chicstreetlight"
       },
       {
         "name": "Red meteor lamp",
@@ -11455,6 +17062,18 @@ window.POKOPIA_DATA = {
         "description": "When powered on, this sparkles like a shooting star and instantly gives its surroundings a mystical vibe.",
         "recipe": null,
         "slug": "violetmeteorlamp"
+      },
+      {
+        "name": "Mirror ball",
+        "description": "Sparkles and twinkles when powered on. Quickly turns the whole area into a party zone",
+        "recipe": null,
+        "slug": "mirrorball"
+      },
+      {
+        "name": "Fluorescent light",
+        "description": "Shines brilliantly when powered on. Even nighttime feels like noon when this light is on",
+        "recipe": null,
+        "slug": "fluorescentlight"
       },
       {
         "name": "Music mat (low do)",
@@ -11511,6 +17130,36 @@ window.POKOPIA_DATA = {
         "slug": "starpiece"
       },
       {
+        "name": "Nugget",
+        "description": "It's made of pure gold that gives off a lustrous gleam. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "nugget"
+      },
+      {
+        "name": "Silver Bottle Cap",
+        "description": "A lovely silver bottle cap. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "silverbottlecap"
+      },
+      {
+        "name": "Gold Bottle Cap",
+        "description": "A lovely gold bottle cap. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "goldbottlecap"
+      },
+      {
+        "name": "Metal Powder",
+        "description": "An extremely fine, yet hard metal pwoder. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "metalpowder"
+      },
+      {
+        "name": "Clear Amulet",
+        "description": "An amulent that always stays clear and sparkling. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "clearamulet"
+      },
+      {
         "name": "Rainbow Feather",
         "description": "A mysterious feather that shines with a rainbow light. Looks like it fell from a Pokémon flying in the sky...",
         "recipe": null,
@@ -11521,6 +17170,48 @@ window.POKOPIA_DATA = {
         "description": "A mysterious feather that shines with a silver light. Looks like it fell from a Pokémon flying in the sky...",
         "recipe": null,
         "slug": "silverfeather"
+      },
+      {
+        "name": "Red crystal fragment",
+        "description": "A piece of broken red crystal. Bring it to Sableye!",
+        "recipe": null,
+        "slug": "redcrystalfragment"
+      },
+      {
+        "name": "Digital camera",
+        "description": "A single-lens digital camera. It's so high-tech that it looks tricky to use",
+        "recipe": null,
+        "slug": "digitalcamera"
+      },
+      {
+        "name": "Star closet",
+        "description": "A closet with many stars painted on it. Open the doors and store your stuff inside",
+        "recipe": null,
+        "slug": "starcloset"
+      },
+      {
+        "name": "Starry-sky bed",
+        "description": "A bed covered in sparkling stars. Sleeping in it might make you dream of flying through a starry sky.",
+        "recipe": null,
+        "slug": "starryskybed"
+      },
+      {
+        "name": "Star-shaped Dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look",
+        "recipe": null,
+        "slug": "starshapeddresser"
+      },
+      {
+        "name": "Star wall decoration",
+        "description": "A set of twinking stars. Decorate your wall with these for a touch of cuteness!",
+        "recipe": null,
+        "slug": "starwalldecoration"
+      },
+      {
+        "name": "Jirachi lamp",
+        "description": "A lamp with a sleeping Jirachi perched on top. Perfect for placing by your bedside!",
+        "recipe": null,
+        "slug": "jirachilamp"
       }
     ],
     "Slender Objects": [
@@ -11537,16 +17228,58 @@ window.POKOPIA_DATA = {
         "slug": "twine"
       },
       {
+        "name": "Small vase",
+        "description": "A vase with a single cute flower inside. Put it anywhere to add a splash of color to your life",
+        "recipe": null,
+        "slug": "smallvase"
+      },
+      {
+        "name": "Tall potted plant",
+        "description": "A small, thin palm tree. It comes in a planter so it won't make a mess even if it's placed indoors",
+        "recipe": null,
+        "slug": "tallpottedplant"
+      },
+      {
+        "name": "Flat-leaf plant",
+        "description": "A plant with flat leaves that look like planks. It's actually a type of succulent",
+        "recipe": null,
+        "slug": "flatleafplant"
+      },
+      {
+        "name": "Twisted potted plant",
+        "description": "A plant with a winding, twisted trunk. It doesn't look like it will get any bigger than it already is.",
+        "recipe": null,
+        "slug": "twistedpottedplant"
+      },
+      {
         "name": "Fancy pen",
         "description": "A high-class ballpoint pen that exudes luxury. A very important person could have used this",
         "recipe": null,
         "slug": "fancypen"
       },
       {
+        "name": "Shower",
+        "description": "A shower with a simple design. Place it next to a bathtub to make your bathroom complete",
+        "recipe": null,
+        "slug": "shower"
+      },
+      {
         "name": "Vine wall decoration",
         "description": "With just a few leaves and vine ropes, you can make a stylish wall decoration",
         "recipe": null,
         "slug": "vinewalldecoration"
+      },
+      {
+        "name": "Slender candle",
+        "description": "Light this up to get a flickering bright-red flame. It's small enough to fit on a desk",
+        "recipe": null,
+        "slug": "slendercandle"
+      },
+      {
+        "name": "Wooden birdhouse",
+        "description": "A birdhouse filled with dry, soft grass. Bird Pokémon would probably love lounging here.",
+        "recipe": null,
+        "slug": "woodenbirdhouse"
       },
       {
         "name": "Fishing rod",
@@ -11585,10 +17318,28 @@ window.POKOPIA_DATA = {
         "slug": "doublestreetlight"
       },
       {
-        "name": "Mushroom lamp",
-        "description": "The mushroom emits a gentle glow, illuminating the surroundings with soft light",
+        "name": "Desk light",
+        "description": "A light with a simple design. Perfect for brightening up your desk when you need to focus on work.",
         "recipe": null,
-        "slug": "mushroomlamp"
+        "slug": "desklight"
+      },
+      {
+        "name": "Luxury lamp",
+        "description": "When this lamp is powered on, it emits a gentle light, illuminating its surroundings",
+        "recipe": null,
+        "slug": "luxurylamp"
+      },
+      {
+        "name": "Fluorescent light",
+        "description": "Shines brilliantly when powered on. Even nighttime feels like noon when this light is on",
+        "recipe": null,
+        "slug": "fluorescentlight"
+      },
+      {
+        "name": "Berry hanging lamp",
+        "description": "When hung from the ceiling and powered on, the tip of the Chesto Berry emits a gentle light",
+        "recipe": null,
+        "slug": "berryhanginglamp"
       },
       {
         "name": "Wing Fossil (right wing)",
@@ -11688,9 +17439,21 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Broken streetlight",
-        "description": "This rusted streetlight doesn't even have a light bulb. It can't be powered on anymore.",
+        "description": "This rusted streetlight doesn't even have a light bulb. It can't be powered on anymore.Note: Not registered in collection",
         "recipe": null,
         "slug": "brokenstreetlight"
+      },
+      {
+        "name": "Inflatable Sudowoodo",
+        "description": "A balloon shaped like Sudowoodo. It stands up and dances around just like a real Sudowoodo too!",
+        "recipe": null,
+        "slug": "inflatablesudowoodo"
+      },
+      {
+        "name": "Telescope",
+        "description": "A tool for seeing faraway things. Place it outside and try taking a peek through it!",
+        "recipe": null,
+        "slug": "telescope"
       }
     ],
     "Soft Stuff": [
@@ -11699,6 +17462,287 @@ window.POKOPIA_DATA = {
         "description": "A soft malleable crafting material used for all sorts of things. It can also be fired and hardened into bricks",
         "recipe": null,
         "slug": "squishyclay"
+      },
+      {
+        "name": "Fluff",
+        "description": "An irresistibly soft tuft of fluff. Pokémon with the Litter specialty may scatter this",
+        "recipe": null,
+        "slug": "fluff"
+      },
+      {
+        "name": "Straw stool",
+        "description": "This is the perfect size for small Pokémon to take a seat!",
+        "recipe": [
+          {
+            "material": "Leaf",
+            "qty": 1
+          }
+        ],
+        "slug": "strawstool"
+      },
+      {
+        "name": "Berry chair",
+        "description": "When placed on the ground, it looks just like a buried Leppa Berry. The steam and leaves are a backrest.",
+        "recipe": [
+          {
+            "material": "Leppa Berry",
+            "qty": 1
+          },
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Copper ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "berrychair"
+      },
+      {
+        "name": "Simple cushion",
+        "description": "A simple practical cusion. It's filled with cotton and provides a soft seat.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "simplecushion"
+      },
+      {
+        "name": "Plain stool",
+        "description": "A stool with a simple design. Small Pokémon can use this as a seat",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainstool"
+      },
+      {
+        "name": "Resort stool",
+        "description": "While this stool looks stiff, the cotton padding inside makes it surprisingly soft",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine rope",
+            "qty": 1
+          }
+        ],
+        "slug": "resortstool"
+      },
+      {
+        "name": "Stylish stool",
+        "description": "A small, round stool with a stylish three-color cushion.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "stylishstool"
+      },
+      {
+        "name": "Soft seat",
+        "description": "A cushioned seat that's soft and fluffy-perfect for waiting rooms, relaxation spaces, and the like!",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "softseat"
+      },
+      {
+        "name": "Box Sofa",
+        "description": "A small square sofa. Line up several of them to make a wide chic sofa",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "boxsofa"
+      },
+      {
+        "name": "Plain chair",
+        "description": "This chair is just the right height for eating meals in the dining room",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainchair"
+      },
+      {
+        "name": "Resort chair",
+        "description": "A chair perfect for relaxing. Kick back on this to taste a bit of the resort life",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine Rope",
+            "qty": 1
+          }
+        ],
+        "slug": "resortchair"
+      },
+      {
+        "name": "Chic chair",
+        "description": "A luxurious loung chair. Sitting on its soft cushions is absolutely beyond compare!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "chicchair"
+      },
+      {
+        "name": "Fancy chair",
+        "description": "A high-class chair with a real dignified feel to it. Just sitting here will make you feel important.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "fancychair"
+      },
+      {
+        "name": "Antique chair",
+        "description": "A chair with a charming retro design. Its cushions are soft and fluffy",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "antiquechair"
+      },
+      {
+        "name": "Office chair",
+        "description": "With a gentle curve to support the body, this chair was designed to help you sit longer without tiring",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "officechair"
+      },
+      {
+        "name": "Cute chair",
+        "description": "The ruffle skirt is exceptionally cute and lovely",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "cutechair"
+      },
+      {
+        "name": "Pop art chair",
+        "description": "A chair with a soft design and rounded corners. The colors of the backrest and cushion can be changed",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "popartchair"
+      },
+      {
+        "name": "Gaming chair",
+        "description": "With its large backrest and cushions, you could sit comfortable in this chair for a long time.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "gamingchair"
       },
       {
         "name": "Plain sofa",
@@ -11769,6 +17813,80 @@ window.POKOPIA_DATA = {
         "slug": "antiquesofa"
       },
       {
+        "name": "Luxury sofa",
+        "description": "This sofa is sooo fluffy. It's like sitting on a cloud",
+        "recipe": [
+          {
+            "material": "Limestone",
+            "qty": 4
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurysofa"
+      },
+      {
+        "name": "Cute sofa",
+        "description": "A cute, slightly elegant sofa. The backrest is shaped like a Pokémon's wings.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "cutesofa"
+      },
+      {
+        "name": "Pop art sofa",
+        "description": "A soft-looking sofa with cute, rounded edges.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "popartsofa"
+      },
+      {
+        "name": "Pikachu sofa",
+        "description": "Pikachu's face is front and center. On the back, you can find a little tail sticking out.",
+        "recipe": null,
+        "slug": "pikachusofa"
+      },
+      {
+        "name": "Log Bed",
+        "description": "A bed made from small logs. You'll sleep soundly enveloped by a woodsy aroma",
+        "recipe": [
+          {
+            "material": "Small log",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "logbed"
+      },
+      {
         "name": "Mini plain bed",
         "description": "A small, plain bed. Great for solo sleepers!",
         "recipe": [
@@ -11784,6 +17902,55 @@ window.POKOPIA_DATA = {
         "slug": "miniplainbed"
       },
       {
+        "name": "Resort bed",
+        "description": "A refreshingly cool bed made of woven vines. Lying down on this makes you feel like you're at a resort",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Vine rope",
+            "qty": 2
+          }
+        ],
+        "slug": "resortbed"
+      },
+      {
+        "name": "Iron bed",
+        "description": "A slightly narrow bed. It's sturdy enough for a good night's sleep!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "ironbed"
+      },
+      {
+        "name": "Beach chair",
+        "description": "Lean back and relax in this chair. It pairs perfectly with a beach parasol",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          }
+        ],
+        "slug": "beachchair"
+      },
+      {
         "name": "Straw bed",
         "description": "It's a little itchy, but that doesn't bother Pokémon. They'll snooze away just fine on this.",
         "recipe": [
@@ -11795,6 +17962,21 @@ window.POKOPIA_DATA = {
         "slug": "strawbed"
       },
       {
+        "name": "Pop art bed",
+        "description": "lying on tthis bed feels like being inside of a pod. It's soft, fluffy, and easy to sleep on.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "popartbed"
+      },
+      {
         "name": "Poké Ball bed",
         "description": "A big bed. Even large Pokémon could sprawl out on it.",
         "recipe": [
@@ -11804,6 +17986,44 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "pokeballbed"
+      },
+      {
+        "name": "Berry bed",
+        "description": "A large Pecha Berry-themed bed. It's springy texture provides ultimate comfort at bedtime.",
+        "recipe": [
+          {
+            "material": "Pecha Berry",
+            "qty": 2
+          },
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Copper ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "berrybed"
+      },
+      {
+        "name": "Wooden Bed",
+        "description": "This bed gives any room a mountain lodge aesthetic. You'll sleep soudnly surrounded by the woodsy scent",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Leaf",
+            "qty": 2
+          }
+        ],
+        "slug": "woodenbed"
       },
       {
         "name": "Plain bed",
@@ -11819,6 +18039,25 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "plainbed"
+      },
+      {
+        "name": "Resort hammock",
+        "description": "The breeze feels so nice when you're lying on this hammock. It's perfect for dozing off!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Twine",
+            "qty": 2
+          },
+          {
+            "material": "Vine rope",
+            "qty": 2
+          }
+        ],
+        "slug": "resorthammock"
       },
       {
         "name": "Guest-room bed",
@@ -11853,6 +18092,96 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "antiquebed"
+      },
+      {
+        "name": "Industrial bed",
+        "description": "A nice, wide bed that works in any type of room. Even a large Pokémon could sleep in it",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "industrialbed"
+      },
+      {
+        "name": "Luxury bed",
+        "description": "An extravagantly crafted bed. It somehow reminds you of a Luxury Ball!",
+        "recipe": [
+          {
+            "material": "Limestone",
+            "qty": 4
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "luxurybed"
+      },
+      {
+        "name": "Cute bed",
+        "description": "You'll feel like royalty sleeping on this cute canopy bed.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 3
+          },
+          {
+            "material": "Fluff",
+            "qty": 3
+          }
+        ],
+        "slug": "cutebed"
+      },
+      {
+        "name": "Gaming bed",
+        "description": "A cool, stylish bed. Flip on the power switch to get a cyberspace vibe going",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "gamingbed"
+      },
+      {
+        "name": "Naptime bed",
+        "description": "Kick back right on top of Snorlax's belly. It feels so comfy you could snooze through the whole day",
+        "recipe": null,
+        "slug": "naptimebed"
+      },
+      {
+        "name": "Towel rack",
+        "description": "A simple wall rack with a towel hanging on it. This would look great next to a sink",
+        "recipe": null,
+        "slug": "towelrack"
+      },
+      {
+        "name": "Knitting supplies",
+        "description": "Tools for knitting hats, sweaters and the like. Pokémon are captivated by the round balls of yarn",
+        "recipe": null,
+        "slug": "knittingsupplies"
       },
       {
         "name": "Eevee doll",
@@ -11895,15 +18224,206 @@ window.POKOPIA_DATA = {
         "description": "Loose, silky sand. Try hanging it up in a frame!",
         "recipe": null,
         "slug": "softsand"
+      },
+      {
+        "name": "Light Clay",
+        "description": "Yellowish-green clay. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "lightclay"
+      },
+      {
+        "name": "Cotton Spores",
+        "description": "Small, white tufts of cotton. Bring them to Hoppip!",
+        "recipe": null,
+        "slug": "cottonspores"
+      },
+      {
+        "name": "Flower cushion",
+        "description": "A cute flower-shaped cushion. It would look nice on some grassy ground.",
+        "recipe": null,
+        "slug": "flowercushion"
+      },
+      {
+        "name": "Flowery table setting",
+        "description": "A set of cute tableward. The placemat has a Jumpluff pattern!",
+        "recipe": null,
+        "slug": "flowerytablesetting"
+      },
+      {
+        "name": "Flower garland",
+        "description": "An adorable wall decoration made with a variety of colorful flowers",
+        "recipe": null,
+        "slug": "flowergarland"
+      },
+      {
+        "name": "Flower backpack",
+        "description": "The big flower makes this backpack stand out! Looks like it could hold everything you need for a picnic",
+        "recipe": null,
+        "slug": "flowerbackpack"
+      },
+      {
+        "name": "Camping chair",
+        "description": "A simple seat that's perfect for resting on while camping or adventuring.",
+        "recipe": null,
+        "slug": "campingchair"
+      },
+      {
+        "name": "Sleeping bag",
+        "description": "A comfy sleeping bag with lots of soft, fluffy padding. Even on cold days, you'll feel warm and toasty inside!",
+        "recipe": null,
+        "slug": "sleepingbag"
+      },
+      {
+        "name": "Adventure kit",
+        "description": "A sleeping bag, a hat and a backpack stuffed full of supplies. All you need for an adventure is right here!",
+        "recipe": null,
+        "slug": "adventurekit"
+      },
+      {
+        "name": "Starry-sky bed",
+        "description": "A bed covered in sparkling stars. Sleeping in it might make you dream of flying through a starry sky.",
+        "recipe": null,
+        "slug": "starryskybed"
       }
     ],
-    "Spinning Stuff": [],
+    "Spinning Stuff": [
+      {
+        "name": "Fancy chair",
+        "description": "A high-class chair with a real dignified feel to it. Just sitting here will make you feel important.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "fancychair"
+      },
+      {
+        "name": "Office chair",
+        "description": "With a gentle curve to support the body, this chair was designed to help you sit longer without tiring",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "officechair"
+      },
+      {
+        "name": "Gaming chair",
+        "description": "With its large backrest and cushions, you could sit comfortable in this chair for a long time.",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          }
+        ],
+        "slug": "gamingchair"
+      },
+      {
+        "name": "Fan",
+        "description": "Power on this fan to make it swivel. Pokémon might stop by to watch it move",
+        "recipe": null,
+        "slug": "fan"
+      },
+      {
+        "name": "Pinwheels",
+        "description": "Pokémon like to spin these round and round. Wind-producing Pokémon especially like them!",
+        "recipe": null,
+        "slug": "pinwheels"
+      },
+      {
+        "name": "Ceiling fan",
+        "description": "Its blades spin round and round when powered on. Great for when you want to circulate air!",
+        "recipe": null,
+        "slug": "ceilingfan"
+      },
+      {
+        "name": "Castform weather charm",
+        "description": "A reversible Castform doll. Rumor has it, when the doll changes form, the weather changes too!",
+        "recipe": null,
+        "slug": "castformweathercharm"
+      },
+      {
+        "name": "Weather vane",
+        "description": "A decoration that spins around and around in the wind. Looks like a bird Pokémon perched on a post.",
+        "recipe": null,
+        "slug": "weathervane"
+      },
+      {
+        "name": "Small stage",
+        "description": "Get on and start dancing! You can power on the lights by hooking this up to electricity",
+        "recipe": null,
+        "slug": "smallstage"
+      },
+      {
+        "name": "Large ventilation fan",
+        "description": "A huge, flat ventilation fan-the kind you'd find on top of a building or a house.",
+        "recipe": null,
+        "slug": "largeventilationfan"
+      },
+      {
+        "name": "Model planet",
+        "description": "A model of some unexplored faraway planet. It looks jut like a piece of yummy candy",
+        "recipe": null,
+        "slug": "modelplanet"
+      }
+    ],
     "Spooky Stuff": [
+      {
+        "name": "Luxury chair",
+        "description": "A classy-looking seat with a gemstone embedded in it. Just sitting on it makes you feel rich.",
+        "recipe": [
+          {
+            "material": "Linestone",
+            "qty": 2
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurychair"
+      },
+      {
+        "name": "Pitcher-plant pot",
+        "description": "A flower vase with a pink lip that resembles a Pokémon's mouth. It emanates a faintly sweet aroma",
+        "recipe": null,
+        "slug": "pitcherplantpot"
+      },
+      {
+        "name": "Munna bank",
+        "description": "An especially heavy money box. It feels like it's full of coins",
+        "recipe": null,
+        "slug": "munnabank"
+      },
       {
         "name": "Boo-in-the-box",
         "description": "Open the box, and -BOING!-out pops the Gengar!",
         "recipe": null,
         "slug": "boointhebox"
+      },
+      {
+        "name": "Mysterious statue",
+        "description": "Doesn't seem like anyone knows exactly what this is a statue of...",
+        "recipe": null,
+        "slug": "mysteriousstatue"
       },
       {
         "name": "Slender candle",
@@ -11922,6 +18442,18 @@ window.POKOPIA_DATA = {
         "description": "A place where souls can rest in peace. Ghost-type Pokémon might enjoy this",
         "recipe": null,
         "slug": "gravestone"
+      },
+      {
+        "name": "Mushroom streetlight",
+        "description": "Darkness poses no problem when you've got a gentle mushroom glow.",
+        "recipe": null,
+        "slug": "mushroomstreetlight"
+      },
+      {
+        "name": "Spell Tag",
+        "description": "A sinister, eerie tag. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "spelltag"
       }
     ],
     "Stone Stuff": [
@@ -11930,17 +18462,6 @@ window.POKOPIA_DATA = {
         "description": "Just a normal stone you can find anywhere. It can be used as a material for a lot of things",
         "recipe": null,
         "slug": "stone"
-      },
-      {
-        "name": "Stone table",
-        "description": "A table made from stones. It's as hard as an Onix!",
-        "recipe": [
-          {
-            "material": "Stone",
-            "qty": 3
-          }
-        ],
-        "slug": "stonetable"
       },
       {
         "name": "Stone bench",
@@ -11973,10 +18494,76 @@ window.POKOPIA_DATA = {
         "slug": "luxurybed"
       },
       {
+        "name": "Small vase",
+        "description": "A vase with a single cute flower inside. Put it anywhere to add a splash of color to your life",
+        "recipe": null,
+        "slug": "smallvase"
+      },
+      {
+        "name": "Pitcher-plant pot",
+        "description": "A flower vase with a pink lip that resembles a Pokémon's mouth. It emanates a faintly sweet aroma",
+        "recipe": null,
+        "slug": "pitcherplantpot"
+      },
+      {
+        "name": "Extravagant flowers",
+        "description": "With robust orange flowers in full bloom, using this decoration is sure to add some color to an area",
+        "recipe": null,
+        "slug": "extravagantflowers"
+      },
+      {
+        "name": "Tall potted plant",
+        "description": "A small, thin palm tree. It comes in a planter so it won't make a mess even if it's placed indoors",
+        "recipe": null,
+        "slug": "tallpottedplant"
+      },
+      {
+        "name": "Munna bank",
+        "description": "An especially heavy money box. It feels like it's full of coins",
+        "recipe": null,
+        "slug": "munnabank"
+      },
+      {
+        "name": "Pencil holder",
+        "description": "A pencil holder with lots of poencils in it. Try putting this on top of a study desk",
+        "recipe": null,
+        "slug": "pencilholder"
+      },
+      {
         "name": "Stone fireplace",
         "description": "A huge fireplace. Light this up to make a space feel warm and cozy",
         "recipe": null,
         "slug": "stonefireplace"
+      },
+      {
+        "name": "Toilet",
+        "description": "Lift the cover and sit on the toilet for as long as you like",
+        "recipe": null,
+        "slug": "toilet"
+      },
+      {
+        "name": "Sink",
+        "description": "A stylish sink on a wooden stand. Turn on the faucet to make water pour out.",
+        "recipe": null,
+        "slug": "sink"
+      },
+      {
+        "name": "Bathtub",
+        "description": "A bathtub with a simple design. Fill it up with water to enjoy a nice soak",
+        "recipe": null,
+        "slug": "bathtub"
+      },
+      {
+        "name": "Gold Teeth",
+        "description": "Their lustrous golden shine hasn't changed at all. Maybe someone dropped them long ago?",
+        "recipe": null,
+        "slug": "goldteeth"
+      },
+      {
+        "name": "Big Nugget",
+        "description": "It's made of pure gold that gives off a lustrous gleam. It seems like it was popular among enthusiasts.",
+        "recipe": null,
+        "slug": "bignugget"
       },
       {
         "name": "Mysterious statue",
@@ -11991,14 +18578,68 @@ window.POKOPIA_DATA = {
         "slug": "fierymagbystatue"
       },
       {
+        "name": "Gym emblem statue",
+        "description": "This stone statue makes you feel pumped up. Would look great on a pedestal",
+        "recipe": null,
+        "slug": "gymemblemstatue"
+      },
+      {
+        "name": "Spacesuit",
+        "description": "Clothing designed for living in outer space. Keeps the wearer safe even in an airless environment",
+        "recipe": null,
+        "slug": "spacesuit"
+      },
+      {
+        "name": "Model space shuttle",
+        "description": "A realistic model that looks like it could blast off at any second. Could it have been in some museum?",
+        "recipe": null,
+        "slug": "modelspaceshuttle"
+      },
+      {
+        "name": "Spaceship",
+        "description": "a vehicle meant for traveling to outerspace. Hermetically sealed so air doesn't escape.",
+        "recipe": null,
+        "slug": "spaceship"
+      },
+      {
+        "name": "Decorative storage shelf",
+        "description": "A decorative shelf lined with ceramic bottles. Attach it to a wall to liven up any space!",
+        "recipe": null,
+        "slug": "decorativestorageshelf"
+      },
+      {
         "name": "Campfire",
         "description": "A campfire made from gathered sticks. When lit, it illuminates the area with a warm light.",
         "recipe": null,
         "slug": "campfire"
       },
       {
+        "name": "Slender candle",
+        "description": "Light this up to get a flickering bright-red flame. It's small enough to fit on a desk",
+        "recipe": null,
+        "slug": "slendercandle"
+      },
+      {
+        "name": "Eerie candle",
+        "description": "Fwoosh! This candle glows with a bluish flame when lit. It's small enough to fit on top of a desk.",
+        "recipe": null,
+        "slug": "eeriecandle"
+      },
+      {
+        "name": "Wall torch",
+        "description": "A simple light that looks appropriate even on rugged surfaces such as caves and rock walls",
+        "recipe": null,
+        "slug": "walltorch"
+      },
+      {
+        "name": "Firepit",
+        "description": "Set this ablaze to illuminate the surroundings with bright light. Fwoosh!",
+        "recipe": null,
+        "slug": "firepit"
+      },
+      {
         "name": "Concrete pipe",
-        "description": "Link several of these to make the pipe as long a syou want! The inside is pitch black",
+        "description": "Link several of these to make the pipe as long as you want! The inside is pitch black",
         "recipe": null,
         "slug": "concretepipe"
       },
@@ -12009,10 +18650,34 @@ window.POKOPIA_DATA = {
         "slug": "gardenornament"
       },
       {
-        "name": "Strength rock",
-        "description": "Though this boulder is incredibly big, it looks like you could use Strength to push it.",
+        "name": "Horsea fountain",
+        "description": "Installing this near water should raise the humidity of its surroundings",
         "recipe": null,
-        "slug": "strengthrock"
+        "slug": "horseafountain"
+      },
+      {
+        "name": "Signpost",
+        "description": "A sign that looks like it belongs at a bus stop. It could serve as a guiding landmark in cities or on roads!",
+        "recipe": null,
+        "slug": "signpost"
+      },
+      {
+        "name": "Information board",
+        "description": "A sign with information about the town written on it. Nobody knows what town it's for, though.",
+        "recipe": null,
+        "slug": "informationboard"
+      },
+      {
+        "name": "Ditto Flag",
+        "description": "A flag that marks Ditto's house. Place it on a house you want to live in.",
+        "recipe": null,
+        "slug": "dittoflag"
+      },
+      {
+        "name": "Sprinkler",
+        "description": "An irrigation device that sprays water in a wide area. Try putting one near the waterside",
+        "recipe": null,
+        "slug": "sprinkler"
       },
       {
         "name": "Stone tiling (wallpaper)",
@@ -12031,6 +18696,12 @@ window.POKOPIA_DATA = {
         "description": "Wallpaper that can be used in larger houses. You can appliy it to walls, floors and even ceilings",
         "recipe": null,
         "slug": "stonebrickwallwallpaper"
+      },
+      {
+        "name": "Light Clay",
+        "description": "Yellowish-green clay. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "lightclay"
       },
       {
         "name": "Stone brick wall",
@@ -12093,22 +18764,28 @@ window.POKOPIA_DATA = {
         "slug": "stoneroofdecoration"
       },
       {
-        "name": "Stone fencing",
-        "description": "Looks great on its own or arranged in a row.",
-        "recipe": null,
-        "slug": "stonefencing"
-      },
-      {
         "name": "Stone debris",
-        "description": "Sometimes found blocking the road. Break them to obtain stones.",
+        "description": "Sometimes found blocking the road. Break them to obtain stones.Note: Not registered in collection",
         "recipe": null,
         "slug": "stonedebris"
       },
       {
         "name": "Metal Debris",
-        "description": "It's hard to tell what these warn out objects were originally. They look difficult to process as is.",
+        "description": "It's hard to tell what these warn out objects were originally. They look difficult to process as is.Note: Not registered in collection",
         "recipe": null,
         "slug": "metaldebris"
+      },
+      {
+        "name": "Jewel wall decoration",
+        "description": "Put these multi-colored jewels up on the wall to add a little sparkle to your decore",
+        "recipe": null,
+        "slug": "jewelwalldecoration"
+      },
+      {
+        "name": "Treasure",
+        "description": "A pile of golden accessories and sparkling jewels. Use this as decor to add an air of luxury.",
+        "recipe": null,
+        "slug": "treasure"
       }
     ],
     "Strange Stuff": [
@@ -12125,10 +18802,168 @@ window.POKOPIA_DATA = {
         "slug": "polygonalshelf"
       },
       {
+        "name": "Wall mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "wallmirror"
+      },
+      {
+        "name": "Large mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 2
+          }
+        ],
+        "slug": "largemirror"
+      },
+      {
+        "name": "Luxury dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Limestone",
+            "qty": 4
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "luxurydresser"
+      },
+      {
+        "name": "Cute dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Pokémetal",
+            "qty": 2
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "cutedresser"
+      },
+      {
+        "name": "Wiggly mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": null,
+        "slug": "wigglymirror"
+      },
+      {
         "name": "CD rack",
         "description": "A rack with CDs on it. Sure to appeal to music lovers",
         "recipe": null,
         "slug": "cdrack"
+      },
+      {
+        "name": "Modern sink",
+        "description": "A state-of-the-art sink that even has a drain. Turn the handle to make water flow out",
+        "recipe": null,
+        "slug": "modernsink"
+      },
+      {
+        "name": "Cooking stove",
+        "description": "A simple stylish stove. Turn the dial and flames will shoot right out of it",
+        "recipe": null,
+        "slug": "cookingstove"
+      },
+      {
+        "name": "Microwave oven",
+        "description": "This lights up when powered on, but it doesn't seem like it can heat anything...",
+        "recipe": null,
+        "slug": "microwaveoven"
+      },
+      {
+        "name": "Refrigerator",
+        "description": "It emits a slight chill, but it doesn't seem like it can keep anything cold",
+        "recipe": null,
+        "slug": "refrigerator"
+      },
+      {
+        "name": "Air conditioner",
+        "description": "A state-of-the-art air conditioner. Press once for cold air, or press twice for hot",
+        "recipe": null,
+        "slug": "airconditioner"
+      },
+      {
+        "name": "Printer",
+        "description": "A large printer used by businesses. Perfect for an office or other workspaces!",
+        "recipe": null,
+        "slug": "printer"
+      },
+      {
+        "name": "Washing machine",
+        "description": "While this does make noise when powered on, it doesn't seem to actually wash clothes...",
+        "recipe": null,
+        "slug": "washingmachine"
+      },
+      {
+        "name": "Toilet",
+        "description": "Lift the cover and sit on the toilet for as long as you like",
+        "recipe": null,
+        "slug": "toilet"
+      },
+      {
+        "name": "Sink",
+        "description": "A stylish sink on a wooden stand. Turn on the faucet to make water pour out.",
+        "recipe": null,
+        "slug": "sink"
+      },
+      {
+        "name": "Shower",
+        "description": "A shower with a simple design. Place it next to a bathtub to make your bathroom complete",
+        "recipe": null,
+        "slug": "shower"
+      },
+      {
+        "name": "Bathtub",
+        "description": "A bathtub with a simple design. Fill it up with water to enjoy a nice soak",
+        "recipe": null,
+        "slug": "bathtub"
+      },
+      {
+        "name": "Bouncy blue bathtub",
+        "description": "A bathtub that lets you experience waves and bubbles, even without a single drop of water inside.",
+        "recipe": null,
+        "slug": "bouncybluebathtub"
+      },
+      {
+        "name": "Alarm Clock",
+        "description": "A loud noise rings out when you press this. Be careful! You might accidentally wake someone up",
+        "recipe": null,
+        "slug": "alarmclock"
+      },
+      {
+        "name": "Humidifier",
+        "description": "A humidifier with a distinct round shape. Turn it on to increase the humidity level nearby.",
+        "recipe": null,
+        "slug": "humidifier"
       },
       {
         "name": "Funky diffuser",
@@ -12137,16 +18972,208 @@ window.POKOPIA_DATA = {
         "slug": "funkydiffuser"
       },
       {
+        "name": "Crystal ball",
+        "description": "A large crystal ball used for fortune-telling. Give it to a Psychic-type Pokémon and see what happens",
+        "recipe": null,
+        "slug": "crystalball"
+      },
+      {
+        "name": "Microscope",
+        "description": "A microscope often found in chemistry labs and research institutions. Essential for experiments!",
+        "recipe": null,
+        "slug": "microscope"
+      },
+      {
+        "name": "Standing mic",
+        "description": "A microphone meant for the stage. Standing before it makes you want to burst into song",
+        "recipe": null,
+        "slug": "standingmic"
+      },
+      {
+        "name": "Cool electric guitar",
+        "description": "A snazzy guitat strung with strange strings. Holding it would make you feel pretty amped...",
+        "recipe": null,
+        "slug": "coolelectricguitar"
+      },
+      {
+        "name": "Cool bass guitar",
+        "description": "A snazzy bass guitar strung with strange strings. Holding it would make you feel pretty low-key...",
+        "recipe": null,
+        "slug": "coolbassguitar"
+      },
+      {
+        "name": "Audio mixer",
+        "description": "Plug it in and switch on the screen. DJ Ditto is in the house!",
+        "recipe": null,
+        "slug": "audiomixer"
+      },
+      {
+        "name": "Gold Teeth",
+        "description": "Their lustrous golden shine hasn't changed at all. Maybe someone dropped them long ago?",
+        "recipe": null,
+        "slug": "goldteeth"
+      },
+      {
         "name": "Repel",
         "description": "When you press the spray cap, a weird scent spritzes out and permeates the area",
         "recipe": null,
         "slug": "repel"
       },
       {
+        "name": "Boo-in-the-box",
+        "description": "Open the box, and -BOING!-out pops the Gengar!",
+        "recipe": null,
+        "slug": "boointhebox"
+      },
+      {
+        "name": "Wobbuffet Wobbler",
+        "description": "An exceptionally durable Wobbuffet doll. It gets back up no matter how many times you knock it over.",
+        "recipe": null,
+        "slug": "wobbuffetwobbler"
+      },
+      {
+        "name": "Auspicious Armor",
+        "description": "Heavy armor recreated from armor fragments. Auspicious wishes live within it",
+        "recipe": null,
+        "slug": "auspiciousarmor"
+      },
+      {
+        "name": "Malicious Armor",
+        "description": "Heavy armor recreated from armor fragments. Malicious will lurks within it",
+        "recipe": null,
+        "slug": "maliciousarmor"
+      },
+      {
+        "name": "Clear Bell",
+        "description": "A very-old fashioned bell that makes a gentle ringing sound. Ring it in an open space to call Ho-Oh",
+        "recipe": null,
+        "slug": "clearbell"
+      },
+      {
+        "name": "Tidal Bell",
+        "description": "A very-old fashioned bell that makes a gentle ringing sound. Ring it in an open space to call Lugia",
+        "recipe": null,
+        "slug": "tidalbell"
+      },
+      {
+        "name": "Mysterious statue",
+        "description": "Doesn't seem like anyone knows exactly what this is a statue of...",
+        "recipe": null,
+        "slug": "mysteriousstatue"
+      },
+      {
+        "name": "Fiery Magby statue",
+        "description": "If you place a switch nearby and activate it, Magby will shoot fire out of their mouth! Fwooosh!",
+        "recipe": null,
+        "slug": "fierymagbystatue"
+      },
+      {
+        "name": "Decorative storage shelf",
+        "description": "A decorative shelf lined with ceramic bottles. Attach it to a wall to liven up any space!",
+        "recipe": null,
+        "slug": "decorativestorageshelf"
+      },
+      {
+        "name": "Rowlet clock",
+        "description": "A wall clock shaped like a small house. Rowlet will pop out to let you know what time it is",
+        "recipe": null,
+        "slug": "rowletclock"
+      },
+      {
+        "name": "Hanging scroll",
+        "description": "A scrol with phenomenal brushwork. Hang it on a wall to create a solemn atmosphere",
+        "recipe": null,
+        "slug": "hangingscroll"
+      },
+      {
+        "name": "Ceiling fan",
+        "description": "Its blades spin round and round when powered on. Great for when you want to circulate air!",
+        "recipe": null,
+        "slug": "ceilingfan"
+      },
+      {
+        "name": "Castform weather charm",
+        "description": "A reversible Castform doll. Rumor has it, when the doll changes form, the weather changes too!",
+        "recipe": null,
+        "slug": "castformweathercharm"
+      },
+      {
+        "name": "Bike",
+        "description": "A cool bicycle that looks high-end. It sparkles as if it's brand-new",
+        "recipe": null,
+        "slug": "bike"
+      },
+      {
         "name": "Gravestone",
         "description": "A place where souls can rest in peace. Ghost-type Pokémon might enjoy this",
         "recipe": null,
         "slug": "gravestone"
+      },
+      {
+        "name": "Cannon",
+        "description": "Put fireworks or a Pokémon with the Explode specialty inside, light the fuse, and watch 'em fly!",
+        "recipe": null,
+        "slug": "cannon"
+      },
+      {
+        "name": "Bell",
+        "description": "A golden, wall-mounted bell. When struck, it rings with a pleasant sound.",
+        "recipe": null,
+        "slug": "bell"
+      },
+      {
+        "name": "Small stage",
+        "description": "Get on and start dancing! You can power on the lights by hooking this up to electricity",
+        "recipe": null,
+        "slug": "smallstage"
+      },
+      {
+        "name": "Horsea fountain",
+        "description": "Installing this near water should raise the humidity of its surroundings",
+        "recipe": null,
+        "slug": "horseafountain"
+      },
+      {
+        "name": "Excavation tools",
+        "description": "A sturdy-looking pickax and shovel. They're wasted on any Pokémon who can already dig, though.",
+        "recipe": null,
+        "slug": "excavationtools"
+      },
+      {
+        "name": "Large ventilation fan",
+        "description": "A huge, flat ventilation fan-the kind you'd find on top of a building or a house.",
+        "recipe": null,
+        "slug": "largeventilationfan"
+      },
+      {
+        "name": "Cash register",
+        "description": "Place this on a table and power it on, and Pokémon will come by to conduct trades!",
+        "recipe": null,
+        "slug": "cashregister"
+      },
+      {
+        "name": "Sprinkler",
+        "description": "An irrigation device that sprays water in a wide area. Try putting one near the waterside",
+        "recipe": null,
+        "slug": "sprinkler"
+      },
+      {
+        "name": "Mini generator",
+        "description": "Place this anywhere, and it will generate electricity all on its own. What a remarkable machine!",
+        "recipe": null,
+        "slug": "minigenerator"
+      },
+      {
+        "name": "Card reader",
+        "description": "A machine that reads key cards or Pokédexes. Mount it to a wall.",
+        "recipe": null,
+        "slug": "cardreader"
+      },
+      {
+        "name": "Poké Ball lamp",
+        "description": "Emits a brilliant light when powered on. This would look great on a shelf",
+        "recipe": null,
+        "slug": "pokeballlamp"
       },
       {
         "name": "Music mat (low do)",
@@ -12207,6 +19234,18 @@ window.POKOPIA_DATA = {
         "description": "It looks like canned food but doesn't seem to have anything isnide. Show it to Professor Tangrowth",
         "recipe": null,
         "slug": "smalllostrelic"
+      },
+      {
+        "name": "Twisted Spoon",
+        "description": "A spoon imbued with telekinetic energy. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "twistedspoon"
+      },
+      {
+        "name": "Town map",
+        "description": "A map of...somewhere. You can't make heads or tails of it but it looks pretty nice on a wall",
+        "recipe": null,
+        "slug": "townmap"
       },
       {
         "name": "Skull Fossil",
@@ -12300,7 +19339,7 @@ window.POKOPIA_DATA = {
       },
       {
         "name": "Despot Fossil (head)",
-        "description": "A fossil of an ancient Pokémon's headf. Its large fangs are as sharp as knives",
+        "description": "A fossil of an ancient Pokémon's head. Its large fangs are as sharp as knives",
         "recipe": null,
         "slug": "despotfossilhead"
       },
@@ -12339,9 +19378,45 @@ window.POKOPIA_DATA = {
         "description": "A fossil of an ancient Pokémon's tail. The tip is curled up and looks like a spring",
         "recipe": null,
         "slug": "tundrafossiltail"
+      },
+      {
+        "name": "Inflatable Sudowoodo",
+        "description": "A balloon shaped like Sudowoodo. It stands up and dances around just like a real Sudowoodo too!",
+        "recipe": null,
+        "slug": "inflatablesudowoodo"
+      },
+      {
+        "name": "Digital camera",
+        "description": "A single-lens digital camera. It's so high-tech that it looks tricky to use",
+        "recipe": null,
+        "slug": "digitalcamera"
+      },
+      {
+        "name": "Star-shaped Dresser",
+        "description": "Look into the mirror to change your transformation and perfect your look",
+        "recipe": null,
+        "slug": "starshapeddresser"
+      },
+      {
+        "name": "Telescope",
+        "description": "A tool for seeing faraway things. Place it outside and try taking a peek through it!",
+        "recipe": null,
+        "slug": "telescope"
+      },
+      {
+        "name": "Cloud cannon",
+        "description": "Put fireworks or a Pokémon with the Explode specialty inside, light the fuse, and watch 'em fly!",
+        "recipe": null,
+        "slug": "cloudcannon"
       }
     ],
     "Symbols": [
+      {
+        "name": "Mug",
+        "description": "A simple, easy-to-use mug. You could change up the colors, and it would still look great.",
+        "recipe": null,
+        "slug": "mug"
+      },
       {
         "name": "Sign",
         "description": "A sign made out of wood. There's an important message witten on it... Probably!",
@@ -12369,10 +19444,141 @@ window.POKOPIA_DATA = {
     ],
     "Watching Stuff": [
       {
+        "name": "Wall mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": [
+          {
+            "material": "Glass",
+            "qty": 1
+          }
+        ],
+        "slug": "wallmirror"
+      },
+      {
+        "name": "Wiggly mirror",
+        "description": "Look into the mirror to change your transformation and perfect your look!",
+        "recipe": null,
+        "slug": "wigglymirror"
+      },
+      {
+        "name": "Small vase",
+        "description": "A vase with a single cute flower inside. Put it anywhere to add a splash of color to your life",
+        "recipe": null,
+        "slug": "smallvase"
+      },
+      {
+        "name": "Leafy plant",
+        "description": "A plant with glossy leaves. It's actually related to the taro root",
+        "recipe": null,
+        "slug": "leafyplant"
+      },
+      {
+        "name": "Pitcher-plant pot",
+        "description": "A flower vase with a pink lip that resembles a Pokémon's mouth. It emanates a faintly sweet aroma",
+        "recipe": null,
+        "slug": "pitcherplantpot"
+      },
+      {
         "name": "Extravagant flowers",
         "description": "With robust orange flowers in full bloom, using this decoration is sure to add some color to an area",
         "recipe": null,
         "slug": "extravagantflowers"
+      },
+      {
+        "name": "Tall potted plant",
+        "description": "A small, thin palm tree. It comes in a planter so it won't make a mess even if it's placed indoors",
+        "recipe": null,
+        "slug": "tallpottedplant"
+      },
+      {
+        "name": "Flat-leaf plant",
+        "description": "A plant with flat leaves that look like planks. It's actually a type of succulent",
+        "recipe": null,
+        "slug": "flatleafplant"
+      },
+      {
+        "name": "Twisted potted plant",
+        "description": "A plant with a winding, twisted trunk. It doesn't look like it will get any bigger than it already is.",
+        "recipe": null,
+        "slug": "twistedpottedplant"
+      },
+      {
+        "name": "Letter",
+        "description": "A simple sealed letter. It has a Poké Ball stamp on it",
+        "recipe": null,
+        "slug": "letter"
+      },
+      {
+        "name": "Notepad",
+        "description": "It's full of important-looking notes, so there's no space to write anything else!",
+        "recipe": null,
+        "slug": "notepad"
+      },
+      {
+        "name": "Book",
+        "description": "A thick hardcover book. The pages inside were written in small print",
+        "recipe": null,
+        "slug": "book"
+      },
+      {
+        "name": "Open Book",
+        "description": "A classic hardcover book. It's probably got a lot of difficult words inside",
+        "recipe": null,
+        "slug": "openbook"
+      },
+      {
+        "name": "Papers",
+        "description": "Lots of tiny words are written on the white pages along with drawings of colorful shapes",
+        "recipe": null,
+        "slug": "papers"
+      },
+      {
+        "name": "Newspaper",
+        "description": "Its pages are filled with small, tightly-packed letters. What could be written here?",
+        "recipe": null,
+        "slug": "newspaper"
+      },
+      {
+        "name": "Photo frame",
+        "description": "You can put one of your photos in this frame and place it on a table or stand",
+        "recipe": null,
+        "slug": "photoframe"
+      },
+      {
+        "name": "Wall photo frame",
+        "description": "You can put one of your photos in this frame and hang it on a wall.",
+        "recipe": null,
+        "slug": "wallphotoframe"
+      },
+      {
+        "name": "Corkboard",
+        "description": "Choose one of your favorite photos to hang on this corkboard!",
+        "recipe": null,
+        "slug": "corkboard"
+      },
+      {
+        "name": "CD rack",
+        "description": "A rack with CDs on it. Sure to appeal to music lovers",
+        "recipe": null,
+        "slug": "cdrack"
+      },
+      {
+        "name": "Magazine rack",
+        "description": "This stand has a great selection of weekly magazines and photo books.",
+        "recipe": null,
+        "slug": "magazinerack"
+      },
+      {
+        "name": "Mini bookcase",
+        "description": "A small bookcase packed with books. It's tiny enough to fit in tight spaces!",
+        "recipe": null,
+        "slug": "minibookcase"
+      },
+      {
+        "name": "Bookcase",
+        "description": "Furniture with colorful books arranged on the shelves. It looks like there's room for even MORE books!",
+        "recipe": null,
+        "slug": "bookcase"
       },
       {
         "name": "Television",
@@ -12381,10 +19587,52 @@ window.POKOPIA_DATA = {
         "slug": "television"
       },
       {
+        "name": "Wall monitor",
+        "description": "A monitor that emits blue light when powered on. Try displaying your photographs on it",
+        "recipe": null,
+        "slug": "wallmonitor"
+      },
+      {
         "name": "Pinwheels",
         "description": "Pokémon like to spin these round and round. Wind-producing Pokémon especially like them!",
         "recipe": null,
         "slug": "pinwheels"
+      },
+      {
+        "name": "Microscope",
+        "description": "A microscope often found in chemistry labs and research institutions. Essential for experiments!",
+        "recipe": null,
+        "slug": "microscope"
+      },
+      {
+        "name": "Wall Calendar",
+        "description": "A calendar that's simple and easy to use. It meshes well with pretty much any wall.",
+        "recipe": null,
+        "slug": "wallcalendar"
+      },
+      {
+        "name": "Rowlet clock",
+        "description": "A wall clock shaped like a small house. Rowlet will pop out to let you know what time it is",
+        "recipe": null,
+        "slug": "rowletclock"
+      },
+      {
+        "name": "Berry wall decoration",
+        "description": "The six swaying berries look incredibly tasty. Alas, they're inedible",
+        "recipe": null,
+        "slug": "berrywalldecoration"
+      },
+      {
+        "name": "Grubby newspaper",
+        "description": "A newspaper with noticeable dirt and grime. It smells like old paper",
+        "recipe": null,
+        "slug": "grubbynewspaper"
+      },
+      {
+        "name": "Bonfire",
+        "description": "When the wood in the center catches fire, this provides warmth and light to a large nearby area",
+        "recipe": null,
+        "slug": "bonfire"
       },
       {
         "name": "Blank canvas",
@@ -12409,9 +19657,90 @@ window.POKOPIA_DATA = {
         "description": "One of Smearguru's passion projects. Each and every object looks just like the real thing",
         "recipe": null,
         "slug": "paintingstilllife"
+      },
+      {
+        "name": "Photo cutout board",
+        "description": "Put your fac through the hole to become Plusle or Minun!",
+        "recipe": null,
+        "slug": "photocutoutboard"
+      },
+      {
+        "name": "Frame",
+        "description": "A frame for hanging an item on a wall. Try putting different things inside!",
+        "recipe": null,
+        "slug": "frame"
+      },
+      {
+        "name": "Town map",
+        "description": "A map of...somewhere. You can't make heads or tails of it but it looks pretty nice on a wall",
+        "recipe": null,
+        "slug": "townmap"
+      },
+      {
+        "name": "Team Rocket Wall Hanging",
+        "description": "The symbol of a certain organization. Just looking at it makes you want to get up to some mischief",
+        "recipe": null,
+        "slug": "teamrocketwallhanging"
+      },
+      {
+        "name": "Water pillar quarter",
+        "description": "A fancy pillar filled with water. Its faint glow is beautiful, even in darkness",
+        "recipe": null,
+        "slug": "waterpillarquarter"
+      },
+      {
+        "name": "Flower garland",
+        "description": "An adorable wall decoration made with a variety of colorful flowers",
+        "recipe": null,
+        "slug": "flowergarland"
+      },
+      {
+        "name": "Inflatable Sudowoodo",
+        "description": "A balloon shaped like Sudowoodo. It stands up and dances around just like a real Sudowoodo too!",
+        "recipe": null,
+        "slug": "inflatablesudowoodo"
+      },
+      {
+        "name": "Jewel wall decoration",
+        "description": "Put these multi-colored jewels up on the wall to add a little sparkle to your decore",
+        "recipe": null,
+        "slug": "jewelwalldecoration"
+      },
+      {
+        "name": "Telescope",
+        "description": "A tool for seeing faraway things. Place it outside and try taking a peek through it!",
+        "recipe": null,
+        "slug": "telescope"
+      },
+      {
+        "name": "Moon clock",
+        "description": "A moon-shaped clock with a swaying pendulum. What will happen when it strikes the hour?",
+        "recipe": null,
+        "slug": "moonclock"
+      },
+      {
+        "name": "Star wall decoration",
+        "description": "A set of twinking stars. Decorate your wall with these for a touch of cuteness!",
+        "recipe": null,
+        "slug": "starwalldecoration"
       }
     ],
     "Wobbly Stuff": [
+      {
+        "name": "Folding chair",
+        "description": "A foldable chair that's simple and easy to carry. Set these up at event venues or similar spaces!",
+        "recipe": [
+          {
+            "material": "Iron ingot",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "foldingchair"
+      },
       {
         "name": "Resort hammock",
         "description": "The breeze feels so nice when you're lying on this hammock. It's perfect for dozing off!",
@@ -12432,13 +19761,85 @@ window.POKOPIA_DATA = {
         "slug": "resorthammock"
       },
       {
+        "name": "Balloons",
+        "description": "Balloons of many vibrant colors. They sway back and forth even in the most gentle of breezes",
+        "recipe": null,
+        "slug": "balloons"
+      },
+      {
+        "name": "Punching game",
+        "description": "Slug this machine real good with your first, and it'll tell you how strong your punch is",
+        "recipe": null,
+        "slug": "punchinggame"
+      },
+      {
         "name": "Wobbuffet Wobbler",
         "description": "An exceptionally durable Wobbuffet doll. It gets back up no matter how many times you knock it over.",
         "recipe": null,
         "slug": "wobbuffetwobbler"
+      },
+      {
+        "name": "Punching bag",
+        "description": "Heavy and packed full of sand. Perfect for practicing punches and kicks!",
+        "recipe": null,
+        "slug": "punchingbag"
+      },
+      {
+        "name": "Bell",
+        "description": "A golden, wall-mounted bell. When struck, it rings with a pleasant sound.",
+        "recipe": null,
+        "slug": "bell"
+      },
+      {
+        "name": "Fishing rod",
+        "description": "A must-have item for fishing up Pokémon. Set one by the water and wait patiently for a bite!",
+        "recipe": null,
+        "slug": "fishingrod"
+      },
+      {
+        "name": "Silk Scarf",
+        "description": "A sumptuous scarf. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "silkscarf"
+      },
+      {
+        "name": "Lagging Tail",
+        "description": "A tremendously heavy tail of something. Try hanging it up in a frame!",
+        "recipe": null,
+        "slug": "laggingtail"
+      },
+      {
+        "name": "Inflatable Sudowoodo",
+        "description": "A balloon shaped like Sudowoodo. It stands up and dances around just like a real Sudowoodo too!",
+        "recipe": null,
+        "slug": "inflatablesudowoodo"
+      },
+      {
+        "name": "Moon clock",
+        "description": "A moon-shaped clock with a swaying pendulum. What will happen when it strikes the hour?",
+        "recipe": null,
+        "slug": "moonclock"
       }
     ],
     "Wooden Stuff": [
+      {
+        "name": "Sturdy stick",
+        "description": "A branch that fell off a tree somewhere. Perfect for making various toys and everyday items",
+        "recipe": null,
+        "slug": "sturdystick"
+      },
+      {
+        "name": "Small log",
+        "description": "These can be processed into lumber, but they can also be used as is for certain crafting projects",
+        "recipe": null,
+        "slug": "smalllog"
+      },
+      {
+        "name": "Lumber",
+        "description": "Wood that's been cut so it's easy to use. If you're making something out of wood, this is for you",
+        "recipe": null,
+        "slug": "lumber"
+      },
       {
         "name": "Storage box",
         "description": "A convenient box you can store items in. It's made of wood and easy to move things in and out of.",
@@ -12649,6 +20050,66 @@ window.POKOPIA_DATA = {
         "slug": "logchair"
       },
       {
+        "name": "Plain stool",
+        "description": "A stool with a simple design. Small Pokémon can use this as a seat",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Twine",
+            "qty": 1
+          }
+        ],
+        "slug": "plainstool"
+      },
+      {
+        "name": "Resort stool",
+        "description": "While this stool looks stiff, the cotton padding inside makes it surprisingly soft",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine rope",
+            "qty": 1
+          }
+        ],
+        "slug": "resortstool"
+      },
+      {
+        "name": "Stylish stool",
+        "description": "A small, round stool with a stylish three-color cushion.",
+        "recipe": [
+          {
+            "material": "Twine",
+            "qty": 1
+          },
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "stylishstool"
+      },
+      {
+        "name": "Wooden stool",
+        "description": "It's a little chipped but surprisingly sturdyy. Even if a Pokémon sits on it, it won't break. Probably.",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          }
+        ],
+        "slug": "woodenstool"
+      },
+      {
         "name": "Plain chair",
         "description": "This chair is just the right height for eating meals in the dining room",
         "recipe": [
@@ -12662,6 +20123,108 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "plainchair"
+      },
+      {
+        "name": "Resort chair",
+        "description": "A chair perfect for relaxing. Kick back on this to taste a bit of the resort life",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine Rope",
+            "qty": 1
+          }
+        ],
+        "slug": "resortchair"
+      },
+      {
+        "name": "Chic chair",
+        "description": "A luxurious loung chair. Sitting on its soft cushions is absolutely beyond compare!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "chicchair"
+      },
+      {
+        "name": "Plain sofa",
+        "description": "If you see small Pokémon on this sofa, try sitting down next to them",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "plainsofa"
+      },
+      {
+        "name": "Resort sofa",
+        "description": "Sitting on this makes you feel like you're in the tropics! Feel free to just laze the day away...",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Vine rope",
+            "qty": 2
+          }
+        ],
+        "slug": "resortsofa"
+      },
+      {
+        "name": "Chic sofa",
+        "description": "A luxurious high-class sofa. It looks exactly like the ones on the S.S. Anne",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 2
+          }
+        ],
+        "slug": "chicsofa"
+      },
+      {
+        "name": "Antique sofa",
+        "description": "A retro sofa with Poké Ball designs here and there",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 2
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          },
+          {
+            "material": "Gold ingot",
+            "qty": 2
+          }
+        ],
+        "slug": "antiquesofa"
       },
       {
         "name": "Log Bed",
@@ -12683,6 +20246,21 @@ window.POKOPIA_DATA = {
         "slug": "logbed"
       },
       {
+        "name": "Mini plain bed",
+        "description": "A small, plain bed. Great for solo sleepers!",
+        "recipe": [
+          {
+            "material": "Lumber",
+            "qty": 1
+          },
+          {
+            "material": "Fluff",
+            "qty": 1
+          }
+        ],
+        "slug": "miniplainbed"
+      },
+      {
         "name": "Guest-room bed",
         "description": "A bed with a rather high-class vibe. It looks like it belongs on a luxury ship or in a fancy hotel.",
         "recipe": [
@@ -12696,6 +20274,12 @@ window.POKOPIA_DATA = {
           }
         ],
         "slug": "guest-roombed"
+      },
+      {
+        "name": "Wooden plate",
+        "description": "If you put some food on this plate, Pokémon might stop by to eat.",
+        "recipe": null,
+        "slug": "woodenplate"
       },
       {
         "name": "CD rack",
@@ -12746,12 +20330,6 @@ window.POKOPIA_DATA = {
         "slug": "antiqueclock"
       },
       {
-        "name": "Vine wall decoration",
-        "description": "With just a few leaves and vine ropes, you can make a stylish wall decoration",
-        "recipe": null,
-        "slug": "vinewalldecoration"
-      },
-      {
         "name": "Slide",
         "description": "An essential part of any playground. Its imposing size leaves a real impression",
         "recipe": null,
@@ -12770,6 +20348,18 @@ window.POKOPIA_DATA = {
         "slug": "arrowsign"
       },
       {
+        "name": "Menu board",
+        "description": "Specials are written on this board, but it doesn't seem like Pokémon can actually read them.",
+        "recipe": null,
+        "slug": "menuboard"
+      },
+      {
+        "name": "Sign",
+        "description": "A sign made out of wood. There's an important message witten on it... Probably!",
+        "recipe": null,
+        "slug": "sign"
+      },
+      {
         "name": "Worn wooden crate",
         "description": "A sturdy but somewhat shabby box. Stack a bunch of them to create a warehouse vibe.",
         "recipe": null,
@@ -12780,6 +20370,12 @@ window.POKOPIA_DATA = {
         "description": "You have absolutely no idea how to open this box...But you can put stuff on top of it at least!",
         "recipe": null,
         "slug": "woodencrate"
+      },
+      {
+        "name": "Barrel",
+        "description": "It's totally empty inside. You could put something on top to make it look nice",
+        "recipe": null,
+        "slug": "barrel"
       },
       {
         "name": "Frame",
@@ -12800,10 +20396,16 @@ window.POKOPIA_DATA = {
         "slug": "mushroomlamp"
       },
       {
-        "name": "Worn lumber",
-        "description": "Pieces of wood that are cracked and peeling. They look difficult to process as is",
+        "name": "Stone fragments",
+        "description": "These fragments are so small that it'd be tough to process them into anything...Note: Not registered in collection",
         "recipe": null,
-        "slug": "wornlumber"
+        "slug": "stonefragments"
+      },
+      {
+        "name": "Star closet",
+        "description": "A closet with many stars painted on it. Open the doors and store your stuff inside",
+        "recipe": null,
+        "slug": "starcloset"
       }
     ]
   }

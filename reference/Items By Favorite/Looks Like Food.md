@@ -1,4 +1,4 @@
-﻿# Looks Like Food
+# Looks Like Food
 
 | Name | Description |
 |------|-------------|
@@ -6,10 +6,22 @@
 | Berry table | A large Aspear Berry table. It looks real enough to make you want to bite into it. |
 | Berry chair | When placed on the ground, it looks just like a buried Leppa Berry. The steam and leaves are a backrest. |
 | Berry bed | A large Pecha Berry-themed bed. It's springy texture provides ultimate comfort at bedtime. |
+| Table setting | This cutlery immediately makes any table look like it belongs in a high-class restaurant |
+| Pizza | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
+| Fried potatoes | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
+| Soda float | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
+| Afternoon tea set | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
+| Chocolate cookies | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
+| Sandwiches | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
+| Shaved ice | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
+| Ribbon cake | Food loved by one of Eevee's friends. Be sure to prepare a table and chair too! |
 | Berry basket | A basket packed with berries. Line up a few to make your very own fruit stand! |
 | Berry clock | A clock that resembles an Oran Berry cross section. Try mounting it on a wall |
 | Berry wall decoration | The six swaying berries look incredibly tasty. Alas, they're inedible |
 | Berry table lamp | A Rawst Berry made of glass. Power it on to illuminate the area with pale blue light |
 | Berry hanging lamp | When hung from the ceiling and powered on, the tip of the Chesto Berry emits a gentle light |
 | Berry print (wallpaper) | Wallpaper that can be used in larger houses. You can appliy it to walls, floors and even ceilings |
+| Leftovers | Someone's leftover food. Try hanging it up in a frame! |
 | Berry print | Sweeyt berries, spicy berries, bitter berries... This pattern has berry flavors for everyone |
+| Lunch box | A lunch box packed with Pokémon-shaped food. The perfect meal for a picnic lunch |
+| Juice trio | Bottles of colored juices. One of them is capped off nicely with a flower-shaped lid. |

@@ -1,4 +1,4 @@
-﻿# Pretty Flowers
+# Pretty Flowers
 
 | Name | Description |
 |------|-------------|
@@ -8,14 +8,16 @@
 | Tall potted plant | A small, thin palm tree. It comes in a planter so it won't make a mess even if it's placed indoors |
 | Flat-leaf plant | A plant with flat leaves that look like planks. It's actually a type of succulent |
 | Twisted potted plant | A plant with a winding, twisted trunk. It doesn't look like it will get any bigger than it already is. |
-| Tire toy | Tires used in parks as playground equipment. Put them on the ground and have fun hopping over them! |
+| Decorative plant shelf | A long vine droops from the potted plant on this decorative shelf. Perfect for livening up any wall! |
+| Wall-mounted flowers | A planter with colorful flowers. Hang one on a wall to create a vibrant space. |
+| Chansey plant | A tree that looks just like a Chansey! Looking at it seems to fill you with a gentle energy |
 | Garden flowers | A styish flower pot with cute flowers in full bloom. It would look great as a desk ornament |
 | Wildflowers | Beautiful flowers blooming on fresh dirt. Looking at them seems to soothe the mind |
 | Seashore flowers | The symbol of a port town. Looking at these seems to refresh you. |
 | Mountain flowers | Flowers that bloom elegantly, even in rugged, rocky environments. They are sublimely beautiful. |
 | Skyland flowers | Puffy flowers often found at the skylands. Their blossoms are cute and ethereal. |
 | Beautiful flower | Gorgeous and extravagant flowers in full bloom. Be wary of the thorns on their stems |
-| Cute flower | Cute flowers that bloom in port towns. They would surely be a delisghtful gift to any Pokémon |
+| Cute flower | Cute flowers that bloom in port towns. They would surely be a delightful gift to any Pokémon |
 | Elegant flower | Flowers that stand tall, even in rugged mountains. Their majestic elegance fills your heart with resolve |
 | Robust flower | Flowers resolutely blooming toward the sky. Looking at them seems to fill you with energy. |
 | Wildflowers (orange) | Beautiful flowers blooming on fresh dirt. Looking at them seems to soothe the mind |
@@ -50,3 +52,7 @@
 | Robust flower (orange) | Flowers resolutely blooming toward the sky. Looking at them seems to fill you with energy. |
 | Robust flower (purple) | Flowers resolutely blooming toward the sky. Looking at them seems to fill you with energy. |
 | Robust flower (white) | Flowers resolutely blooming toward the sky. Looking at them seems to fill you with energy. |
+| Flower cushion | A cute flower-shaped cushion. It would look nice on some grassy ground. |
+| Flowery table setting | A set of cute tableward. The placemat has a Jumpluff pattern! |
+| Flower garland | An adorable wall decoration made with a variety of colorful flowers |
+| Flower backpack | The big flower makes this backpack stand out! Looks like it could hold everything you need for a picnic |

@@ -1,31 +1,31 @@
 Appraise	You can show lost relics you've found to Professor Tangrowth, who will appraise them for you
-Build	Pokemon with the Build specialty will lead your building projects
-Bulldoze	Pokemon with the Bulldoze specialty can lead your demolition, rebuilding or relocation projects
-Burn	Pokemon with the Burn specialty can set fire to Flammable objects
-Chop	Pokemon with the Chop specialty can process small logs into lumber
-Collect	Pokemon with the Collect specialty will trade you rare things for certain items
-Crush	Pokemon with the Crush specialty can mash materials into different things
+Build	Pokémon with the Build specialty will lead your building projects
+Bulldoze	Pokémon with the Bulldoze specialty can lead your demolition, rebuilding or relocation projects
+Burn	Pokémon with the Burn specialty can set fire to Flammable objects. They can also turn Squish clay into Brick
+Chop	Pokémon with the Chop specialty can process small logs into lumber
+Collect	Pokémon with the Collect specialty will trade you rare things for certain items
+Crush	Pokémon with the Crush specialty can mash materials into different things
 DJ	DJ Rotom can use the DJ specialty to play music CDs for you
-Dream Island	Pokemon with the Dream Island specialty can transport you to a Dream Island
+Dream Island	Pokémon with the Dream Island specialty can transport you to a Dream Island
 Eat	Mosslax has the Eat specialty. Something good may happen if you offer them food
-Engineer	Tinkaton has the Engineer specialty and can lead huge building projects
-Explode	Pokemon with the Explode specialty can be fired out of a cannon, destroying everything around them on impact
-Fly	Pokemon with the Fly specialty can fly you to a Pokemon you're searching for
-Gather	Pokemon with the Gather specialty will pick up items on the ground and put them inside a community box
-Gather Honey	Pokemon with the Gather Honey specialty will give you special furniture if you bring them honey
-Generate	Pokemon with the Generate specialty can power machines with electricity
-Grow	Pokemon with the Grow specialty can make plants grow faster
-Hype	Pokemon with the Hype specialty will start dancing when they hear music, improving the mood
+Engineer	Tinkmaster has the Engineer specialty and can lead huge building projects
+Explode	Pokémon with the Explode specialty can be fired out of a cannon, destroying everything around them on impact
+Fly	Pokémon with the Fly spceialty can fly you to a Pokémon you're searching fo
+Gather	Pokémon with the Gather specialty will pick up items on the ground and put them inside a community box
+Gather Honey	Pokémon with the Gather Honey specialty will give you special furniture if you bring them honey
+Generate	Pokémon with the Generate specialty can power machines with electricty
+Grow	Pokémon with the Grow specialty can make plants grow faster
+Hype	Pokémon with the Hype specialty will start dancing when they hear music, improving the mood
 Illuminate	Peakychu can use the Illuminate specialty to light up the whole town for you
-Litter	Pokemon with the Litter specialty will drop useful materials near their homes
+Litter	Pokémon with the Litter specialty will drop useful materials near their homes
 Paint	Smearguru has the Paint specialty and can recolor certain items, such as furniture
 Party	Chef Dente can use the Party specialty to help you prepare food for parties
-Rarify	Pokemon with the Rarify specialty can turn Star Pieces into rare Pokemetal
-Recycle	Pokemon with the Recycle specialty can process nonburnable garbage into iron ore and wastepaper into paper
-Search	Pokemon with the Search specialty can help you find buried items
-Storage	Pokemon with the Storage specialty can hold on to your items for you
-Teleport	Pokemon with the Teleport specialty can instantly take you to a Pokemon you're searching for
-Trade	Pokemon with the Trade specialty can exchange items with you at a cash register
+Rarify	Pokémon with the Rarify specialty can turn Star Pieces into rare Pokémetal
+Recycle	Pokémon with the Recycle specialty can process nonburnable garbage into iron ore and wastepaper into paper
+Search	Pokémon with the Search specialty can help you find buried items
+Storage	Pokémon with the Storage specialty can hold on to your items for you
+Teleport	Pokémon with the Teleport specialty can instantly take you to a Pokémon you're searching for
+Trade	Pokémon with the Trade speicalty can exchange items with you at a cash register
 Transform	Ditto can improve its moves by using Transform
-Water	Pokemon with the Water specialty can use a full water basin to spray water on nearby fields and plants
-Yawn	Pokemon with the Yawn specialty can tell you how humid it is
+Water	Pokémon with the Water specialty can use a full water basin to spray water on nearby fields and plants
+Yawn	Pokémon with the Yawn specialty can tell you how humid it is

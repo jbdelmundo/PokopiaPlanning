@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Planning toolkit for building Pokopia cities across five areas. The project covers house group assignments, district layout, architecture, landscaping, and item/habitat reference data for 87 houses across 305 Pokemon.
+Planning toolkit for building Pokopia cities across five areas. The project covers house group assignments, district layout, architecture, landscaping, and item/habitat reference data for 87 houses across 308 Pokemon.
 
 # Data Sources
 Check first if the data needed is already present in the `reference` directory. 
@@ -24,11 +24,11 @@ PokopiaPlanning/
 │   ├── City Planning.txt              # Working input file for batch analysis
 │   └── FloorPlanner_Stackable.xlsx    # Floor plan spreadsheet
 ├── reference/              # Game data and lookup tables
-│   ├── Pokopia.csv                    # Full 305-Pokemon database
+│   ├── Pokopia.csv                    # Full 308-Pokemon database
 │   ├── Item List.txt                  # Complete item catalog
 │   ├── Items By Favorite.md           # 43 favorite categories → item lists
 │   ├── Items By Favorite/             # Per-category item breakdowns
-│   ├── Habitats.md                    # 209 regular + 3 event habitats
+│   ├── Habitats.md                    # 209 regular + 5 event habitats
 │   ├── Locations.md                   # 6 area overviews with available materials
 │   └── Specialties.txt                # 31 Pokemon specialty types
 ├── standalone-pages/       # Deployable web tools (GitHub Pages)
@@ -112,7 +112,7 @@ Deployable browser tools hosted via GitHub Pages (branch `gh-pages`).
 "Who Can Live Together?" — pick a Pokémon, see all compatible housemates ranked by shared favorites.
 
 **Architecture:**
-- `data.js` is a generated JS bundle (`window.POKOPIA_DATA`) containing all 305 Pokémon, their habitats, specialties, favorites (43 categories + 5 flavors), and the full item lists per category.
+- `data.js` is a generated JS bundle (`window.POKOPIA_DATA`) containing all 308 Pokémon, their habitats, specialties, favorites (43 categories + 5 flavors), and the full item lists per category.
 - `app.js` handles all UI: two-screen SPA (picker list → detail view), habitat filter, search, compatibility scoring, and item modal.
 - No build toolchain — pure HTML/JS/CSS, no dependencies.
 
@@ -133,7 +133,7 @@ The item modal renders these as a table (sprite · name · description · recipe
 python standalone-pages/build_data.py
 ```
 
-Reads `reference/Pokopia.csv`, `reference/Items By Favorite/*.md`, and `reference/Recipes.json`. Joins recipes to items by **case-insensitive name match** (Serebii recipe casing differs from the item-file casing). Validates 305 Pokémon, 43 categories, 5 flavors. Fails loudly on unknown favorite values; warns (does not fail) on items with no recipe.
+Reads `reference/Pokopia.csv`, `reference/Items By Favorite/*.md`, and `reference/Recipes.json`. Joins recipes to items by **case-insensitive name match** (Serebii recipe casing differs from the item-file casing). Validates 308 Pokémon, 43 categories, 5 flavors. Fails loudly on unknown favorite values; warns (does not fail) on items with no recipe.
 
 ## Scraper Usage
 

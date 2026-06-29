@@ -325,10 +325,10 @@ def main():
     print("=" * 50)
     print("VALIDATION SUMMARY")
     print("=" * 50)
-    print(f"  Pokémon count      : {n_pokemon}  (expect 305)")
+    print(f"  Pokémon count      : {n_pokemon}  (expect 308)")
     print(f"  Category count     : {n_categories}  (expect 43)")
     print(f"  Flavor count       : {n_flavors}  (expect 5)")
-    print(f"  No-favorites count : {len(no_fav_pokemon)}  (expect 2)")
+    print(f"  No-favorites count : {len(no_fav_pokemon)}  (expect 1)")
     for p in no_fav_pokemon:
         print(f"    - {p['name']} ({p['dex']})")
     print(f"  Total distinct items across all categories: {total_items}")
@@ -341,11 +341,11 @@ def main():
     # ---------------------------------------------------------------------------
     # Assertions
     # ---------------------------------------------------------------------------
-    assert n_pokemon == 305, f"FAIL: expected 305 pokemon, got {n_pokemon}"
+    assert n_pokemon == 308, f"FAIL: expected 308 pokemon, got {n_pokemon}"
     assert n_categories == 43, f"FAIL: expected 43 categories, got {n_categories}"
     assert n_flavors == 5, f"FAIL: expected 5 flavors, got {n_flavors}"
 
-    expected_no_fav = {"Ditto", "Tatsugiri Curly Form"}
+    expected_no_fav = {"Ditto"}
     actual_no_fav = {p["name"] for p in no_fav_pokemon}
     if actual_no_fav != expected_no_fav:
         print(
@@ -353,7 +353,7 @@ def main():
             f"got {actual_no_fav}"
         )
     else:
-        print("  Assertion passed: exactly Ditto and Tatsugiri Curly Form have no favorites.")
+        print("  Assertion passed: only Ditto has no favorites.")
 
     print()
     print("Build complete. Output written to:", OUTPUT_PATH)

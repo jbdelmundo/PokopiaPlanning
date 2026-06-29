@@ -1,4 +1,4 @@
-﻿# Lots of Nature
+# Lots of Nature
 
 | Name | Description |
 |------|-------------|
@@ -16,9 +16,17 @@
 | Berry bed | A large Pecha Berry-themed bed. It's springy texture provides ultimate comfort at bedtime. |
 | Wooden Bed | This bed gives any room a mountain lodge aesthetic. You'll sleep soudnly surrounded by the woodsy scent |
 | Berry basket | A basket packed with berries. Line up a few to make your very own fruit stand! |
+| Tall potted plant | A small, thin palm tree. It comes in a planter so it won't make a mess even if it's placed indoors |
+| Flat-leaf plant | A plant with flat leaves that look like planks. It's actually a type of succulent |
+| Twisted potted plant | A plant with a winding, twisted trunk. It doesn't look like it will get any bigger than it already is. |
 | Berry clock | A clock that resembles an Oran Berry cross section. Try mounting it on a wall |
+| Vine wall decoration | With just a few leaves and vine ropes, you can make a stylish wall decoration |
 | Berry wall decoration | The six swaying berries look incredibly tasty. Alas, they're inedible |
 | Berry table lamp | A Rawst Berry made of glass. Power it on to illuminate the area with pale blue light |
+| Seedot Lamp | When mounted to a wall, this looks just like a Seedot hanging from a branch! |
 | Berry hanging lamp | When hung from the ceiling and powered on, the tip of the Chesto Berry emits a gentle light |
 | Berry print (wallpaper) | Wallpaper that can be used in larger houses. You can appliy it to walls, floors and even ceilings |
+| Miracle Seed | A seed imbued with life force. Try hanging it up in a frame! |
+| Silver Powder | A shiny silver powder. Try hanging it up in a frame! |
+| Big Root | The root of some plant. Try hanging it up in a frame! |
 | Berry print | Sweeyt berries, spicy berries, bitter berries... This pattern has berry flavors for everyone |
