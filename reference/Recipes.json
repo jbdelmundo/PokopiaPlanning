@@ -1,0 +1,1380 @@
+{
+  "Antique bed": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "antiquebed"
+  },
+  "Antique chair": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 1
+      }
+    ],
+    "slug": "antiquechair"
+  },
+  "Antique chest": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Iron Ore",
+        "qty": 1
+      }
+    ],
+    "slug": "antiquechest"
+  },
+  "Antique closet": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Iron Ore",
+        "qty": 2
+      }
+    ],
+    "slug": "antiquecloset"
+  },
+  "Antique dresser": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Iron ore",
+        "qty": 2
+      },
+      {
+        "material": "Glass",
+        "qty": 1
+      }
+    ],
+    "slug": "antiquedresser"
+  },
+  "Antique sofa": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "antiquesofa"
+  },
+  "Antique table": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Iron ore",
+        "qty": 1
+      }
+    ],
+    "slug": "antiquetable"
+  },
+  "Beach chair": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 2
+      }
+    ],
+    "slug": "beachchair"
+  },
+  "Berry bed": {
+    "materials": [
+      {
+        "material": "Pecha Berry",
+        "qty": 2
+      },
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      },
+      {
+        "material": "Copper ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "berrybed"
+  },
+  "Berry chair": {
+    "materials": [
+      {
+        "material": "Leppa Berry",
+        "qty": 1
+      },
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Copper ingot",
+        "qty": 1
+      }
+    ],
+    "slug": "berrychair"
+  },
+  "Berry table": {
+    "materials": [
+      {
+        "material": "Aspear Berry",
+        "qty": 2
+      },
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Copper ingot",
+        "qty": 1
+      }
+    ],
+    "slug": "berrytable"
+  },
+  "Big Storage Box": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 3
+      }
+    ],
+    "slug": "bigstoragebox"
+  },
+  "Box sofa": {
+    "materials": [
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "boxsofa"
+  },
+  "Chic chair": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "chicchair"
+  },
+  "Chic sofa": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "chicsofa"
+  },
+  "Chic table": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 2
+      }
+    ],
+    "slug": "chictable"
+  },
+  "Counter": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "counter"
+  },
+  "Cute bed": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 3
+      },
+      {
+        "material": "Fluff",
+        "qty": 3
+      }
+    ],
+    "slug": "cutebed"
+  },
+  "Cute chair": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "cutechair"
+  },
+  "Cute dresser": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Glass",
+        "qty": 1
+      }
+    ],
+    "slug": "cutedresser"
+  },
+  "Cute sofa": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "cutesofa"
+  },
+  "Cute table": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "cutetable"
+  },
+  "Deck chair": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      }
+    ],
+    "slug": "deckchair"
+  },
+  "Exhibition stand": {
+    "materials": [
+      {
+        "material": "Stone",
+        "qty": 1
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "exhibitionstand"
+  },
+  "Fancy chair": {
+    "materials": [
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "fancychair"
+  },
+  "Folding chair": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "foldingchair"
+  },
+  "Food counter": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 2
+      }
+    ],
+    "slug": "foodcounter"
+  },
+  "Gaming bed": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "gamingbed"
+  },
+  "Gaming chair": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 1
+      }
+    ],
+    "slug": "gamingchair"
+  },
+  "Gaming fridge": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 1
+      },
+      {
+        "material": "Glass",
+        "qty": 1
+      }
+    ],
+    "slug": "gamingfridge"
+  },
+  "Garden bench": {
+    "materials": [
+      {
+        "material": "Iron ore",
+        "qty": 3
+      }
+    ],
+    "slug": "gardenbench"
+  },
+  "Garden chair": {
+    "materials": [
+      {
+        "material": "Iron ore",
+        "qty": 2
+      }
+    ],
+    "slug": "gardenchair"
+  },
+  "Garden table": {
+    "materials": [
+      {
+        "material": "Iron ore",
+        "qty": 2
+      }
+    ],
+    "slug": "gardentable"
+  },
+  "Guest-room bed": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "guest-roombed"
+  },
+  "Industrial bed": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      },
+      {
+        "material": "Lumber",
+        "qty": 2
+      }
+    ],
+    "slug": "industrialbed"
+  },
+  "Industrial bench": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "industrialbench"
+  },
+  "Industrial chair": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 1
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "industrialchair"
+  },
+  "Industrial desk": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "industrialdesk"
+  },
+  "Iron Stand": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "ironstand"
+  },
+  "Iron bed": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "ironbed"
+  },
+  "Iron bench": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "ironbench"
+  },
+  "Iron chair": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 1
+      }
+    ],
+    "slug": "ironchair"
+  },
+  "Iron rack": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "ironrack"
+  },
+  "Iron table": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "irontable"
+  },
+  "Kitchen table": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      }
+    ],
+    "slug": "kitchentable"
+  },
+  "Large mirror": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      },
+      {
+        "material": "Lumber",
+        "qty": 2
+      }
+    ],
+    "slug": "largemirror"
+  },
+  "Log bed": {
+    "materials": [
+      {
+        "material": "Small log",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "logbed"
+  },
+  "Log chair": {
+    "materials": [
+      {
+        "material": "Small log",
+        "qty": 1
+      }
+    ],
+    "slug": "logchair"
+  },
+  "Log table": {
+    "materials": [
+      {
+        "material": "Small log",
+        "qty": 1
+      }
+    ],
+    "slug": "logtable"
+  },
+  "Luxury bed": {
+    "materials": [
+      {
+        "material": "Limestone",
+        "qty": 4
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "luxurybed"
+  },
+  "Luxury chair": {
+    "materials": [
+      {
+        "material": "Linestone",
+        "qty": 2
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "luxurychair"
+  },
+  "Luxury dresser": {
+    "materials": [
+      {
+        "material": "Limestone",
+        "qty": 4
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 2
+      },
+      {
+        "material": "Glass",
+        "qty": 1
+      }
+    ],
+    "slug": "luxurydresser"
+  },
+  "Luxury sofa": {
+    "materials": [
+      {
+        "material": "Limestone",
+        "qty": 4
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "luxurysofa"
+  },
+  "Luxury table": {
+    "materials": [
+      {
+        "material": "Limestone",
+        "qty": 4
+      },
+      {
+        "material": "Gold ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "luxurytable"
+  },
+  "Mini plain bed": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "miniplainbed"
+  },
+  "Office cabinet": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      }
+    ],
+    "slug": "officecabinet"
+  },
+  "Office chair": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "officechair"
+  },
+  "Office desk": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      }
+    ],
+    "slug": "officedesk"
+  },
+  "Office locker": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      }
+    ],
+    "slug": "officelocker"
+  },
+  "Office shelf": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Glass",
+        "qty": 2
+      }
+    ],
+    "slug": "officeshelf"
+  },
+  "Office table": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Glass",
+        "qty": 2
+      }
+    ],
+    "slug": "officetable"
+  },
+  "Plain bed": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "plainbed"
+  },
+  "Plain chair": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "plainchair"
+  },
+  "Plain chest": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "plainchest"
+  },
+  "Plain closet": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "plaincloset"
+  },
+  "Plain sofa": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "plainsofa"
+  },
+  "Plain stand": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "plainstand"
+  },
+  "Plain stool": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "plainstool"
+  },
+  "Plain table": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 2
+      }
+    ],
+    "slug": "plaintable"
+  },
+  "Poké Ball Chest": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Iron Ingot",
+        "qty": 1
+      }
+    ],
+    "slug": "pokeballchest"
+  },
+  "Poké Ball bed": {
+    "materials": [
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "pokeballbed"
+  },
+  "Poké Ball sofa": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "pokeballsofa"
+  },
+  "Poké Ball table": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "pokeballtable"
+  },
+  "Pokémon Center counter": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      }
+    ],
+    "slug": "pokemoncentercounter"
+  },
+  "Pop art bed": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      }
+    ],
+    "slug": "popartbed"
+  },
+  "Pop art chair": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Twine",
+        "qty": 1
+      }
+    ],
+    "slug": "popartchair"
+  },
+  "Pop art sofa": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "popartsofa"
+  },
+  "Pop art table": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      }
+    ],
+    "slug": "poparttable"
+  },
+  "Public seat": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      }
+    ],
+    "slug": "publicseat"
+  },
+  "Push cart": {
+    "materials": [
+      {
+        "material": "Gold ingot",
+        "qty": 1
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "pushcart"
+  },
+  "Resort bed": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 2
+      },
+      {
+        "material": "Vine rope",
+        "qty": 2
+      }
+    ],
+    "slug": "resortbed"
+  },
+  "Resort chair": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      },
+      {
+        "material": "Vine Rope",
+        "qty": 1
+      }
+    ],
+    "slug": "resortchair"
+  },
+  "Resort hammock": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 2
+      },
+      {
+        "material": "Vine rope",
+        "qty": 2
+      }
+    ],
+    "slug": "resorthammock"
+  },
+  "Resort sofa": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      },
+      {
+        "material": "Vine rope",
+        "qty": 2
+      }
+    ],
+    "slug": "resortsofa"
+  },
+  "Resort stool": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      },
+      {
+        "material": "Vine rope",
+        "qty": 1
+      }
+    ],
+    "slug": "resortstool"
+  },
+  "Resort table": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Twine",
+        "qty": 2
+      },
+      {
+        "material": "Vine Rope",
+        "qty": 2
+      }
+    ],
+    "slug": "resorttable"
+  },
+  "Side table": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 1
+      },
+      {
+        "material": "Stone",
+        "qty": 1
+      }
+    ],
+    "slug": "sidetable"
+  },
+  "Simple cushion": {
+    "materials": [
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "simplecushion"
+  },
+  "Soft seat": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      },
+      {
+        "material": "Fluff",
+        "qty": 1
+      }
+    ],
+    "slug": "softseat"
+  },
+  "Spectator chair": {
+    "materials": [
+      {
+        "material": "Iron ingot",
+        "qty": 2
+      }
+    ],
+    "slug": "spectatorchair"
+  },
+  "Stone bench": {
+    "materials": [
+      {
+        "material": "Stone",
+        "qty": 2
+      }
+    ],
+    "slug": "stonebench"
+  },
+  "Stone table": {
+    "materials": [
+      {
+        "material": "Stone",
+        "qty": 3
+      }
+    ],
+    "slug": "stonetable"
+  },
+  "Storage Box": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "storagebox"
+  },
+  "Straw bed": {
+    "materials": [
+      {
+        "material": "Leaf",
+        "qty": 2
+      }
+    ],
+    "slug": "strawbed"
+  },
+  "Straw stool": {
+    "materials": [
+      {
+        "material": "Leaf",
+        "qty": 1
+      }
+    ],
+    "slug": "strawstool"
+  },
+  "Straw table": {
+    "materials": [
+      {
+        "material": "Leaf",
+        "qty": 1
+      },
+      {
+        "material": "Stone",
+        "qty": 1
+      }
+    ],
+    "slug": "strawtable"
+  },
+  "Study desk": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      }
+    ],
+    "slug": "studydesk"
+  },
+  "Stylish stool": {
+    "materials": [
+      {
+        "material": "Twine",
+        "qty": 1
+      },
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "stylishstool"
+  },
+  "Wall Mirror": {
+    "materials": [
+      {
+        "material": "Glass",
+        "qty": 1
+      }
+    ],
+    "slug": "wallmirror"
+  },
+  "Wall storage box": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 2
+      }
+    ],
+    "slug": "wallstoragebox"
+  },
+  "Wall-mounted table": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      },
+      {
+        "material": "Iron ingot",
+        "qty": 1
+      }
+    ],
+    "slug": "wall-mountedtable"
+  },
+  "Waterproof seat": {
+    "materials": [
+      {
+        "material": "Pokémetal",
+        "qty": 1
+      }
+    ],
+    "slug": "waterproofseat"
+  },
+  "Wooden bed": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      },
+      {
+        "material": "Leaf",
+        "qty": 2
+      }
+    ],
+    "slug": "woodenbed"
+  },
+  "Wooden bench": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 2
+      }
+    ],
+    "slug": "woodenbench"
+  },
+  "Wooden stool": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "woodenstool"
+  },
+  "Wooden table": {
+    "materials": [
+      {
+        "material": "Lumber",
+        "qty": 1
+      }
+    ],
+    "slug": "woodentable"
+  }
+}

@@ -12,6 +12,7 @@ import csv
 import json
 import os
 import sys
+import unicodedata
 
 # ---------------------------------------------------------------------------
 # Paths (relative to repo root, i.e. where this script is invoked from)
@@ -20,6 +21,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_PATH = os.path.join(REPO_ROOT, "reference", "Pokopia.csv")
 ITEMS_INDEX_PATH = os.path.join(REPO_ROOT, "reference", "Items By Favorite.md")
 ITEMS_DIR = os.path.join(REPO_ROOT, "reference", "Items By Favorite")
+RECIPES_PATH = os.path.join(REPO_ROOT, "reference", "Recipes.json")
 OUTPUT_PATH = os.path.join(REPO_ROOT, "standalone-pages", "data.js")
 
 # ---------------------------------------------------------------------------
@@ -81,7 +83,7 @@ def read_canonical_categories(index_path):
 # Step 2: Read items from each category .md file
 # ---------------------------------------------------------------------------
 def read_category_items(items_dir, canonical_categories):
-    """Return dict: canonical_name -> [item_name, ...]"""
+    """Return dict: canonical_name -> [{"name": str, "description": str}, ...]"""
     items = {}
     for cat in canonical_categories:
         md_path = os.path.join(items_dir, f"{cat}.md")
@@ -102,9 +104,11 @@ def read_category_items(items_dir, canonical_categories):
                         continue
                     if past_separator and line.startswith("|"):
                         parts = [p.strip() for p in line.split("|")]
-                        # parts[1] = item name
+                        # parts[1] = item name, parts[2] = description (if present)
                         if len(parts) >= 2 and parts[1]:
-                            cat_items.append(parts[1])
+                            name = parts[1]
+                            description = parts[2] if len(parts) >= 3 and parts[2] else ""
+                            cat_items.append({"name": name, "description": description})
                     elif past_separator:
                         break
         items[cat] = cat_items
@@ -112,7 +116,64 @@ def read_category_items(items_dir, canonical_categories):
 
 
 # ---------------------------------------------------------------------------
-# Step 3: Process CSV
+# Step 3: Load recipes from Recipes.json (case-insensitive keyed lookup)
+# ---------------------------------------------------------------------------
+def load_recipes(path):
+    """
+    Read Recipes.json and return a case-insensitive lookup dict.
+
+    Parameters
+    ----------
+    path : str
+        Absolute path to Recipes.json.
+
+    Returns
+    -------
+    dict
+        Maps item_name.lower().strip() -> {"slug": str, "materials": [...]}
+    """
+    if not os.path.isfile(path):
+        raise FileNotFoundError(
+            f"Recipes.json not found at {path}. This file is required."
+        )
+    with open(path, encoding="utf-8") as f:
+        raw = json.load(f)
+    # Build case-insensitive lookup
+    lookup = {}
+    for key, entry in raw.items():
+        lookup[key.lower().strip()] = entry
+    return lookup
+
+
+# ---------------------------------------------------------------------------
+# Step 4: Slug helper for items without a recipe
+# ---------------------------------------------------------------------------
+def item_slug(name):
+    """
+    Derive an image slug from an item name.
+
+    Lowercases the name, strips Unicode accents, then removes every character
+    that is not a-z or 0-9 (no hyphens, no spaces).
+
+    Parameters
+    ----------
+    name : str
+        Item display name (e.g. "Cutting board").
+
+    Returns
+    -------
+    str
+        URL-safe slug (e.g. "cuttingboard").
+    """
+    # Normalize to NFD to decompose accented characters, then drop combining marks
+    nfd = unicodedata.normalize("NFD", name.lower())
+    ascii_approx = "".join(c for c in nfd if unicodedata.category(c) != "Mn")
+    # Keep only a-z and 0-9
+    return "".join(c for c in ascii_approx if c.isalnum() and (c.isdigit() or c.isascii()))
+
+
+# ---------------------------------------------------------------------------
+# Step 5: Process CSV
 # ---------------------------------------------------------------------------
 def process_csv(csv_path, canonical_categories):
     """Return list of pokemon dicts."""
@@ -197,18 +258,50 @@ def main():
     print("Reading item lists from .md files...")
     items = read_category_items(ITEMS_DIR, canonical_categories)
 
+    print("Loading recipes from Recipes.json...")
+    recipe_lookup = load_recipes(RECIPES_PATH)
+    print(f"  Loaded {len(recipe_lookup)} recipe entries.")
+
     print("Processing Pokémon CSV...")
     pokemon_list = process_csv(CSV_PATH, canonical_categories)
 
-    # Build output structure
+    # Build output structure — transform items into rich objects
     categories_sorted = sorted(canonical_categories)
-    items_sorted_keys = {cat: items[cat] for cat in categories_sorted}
+
+    # Enrich each item with recipe data and slug
+    n_with_recipe = 0
+    n_without_recipe = 0
+    items_enriched = {}
+    for cat in categories_sorted:
+        enriched_list = []
+        for item in items[cat]:
+            name = item["name"]
+            description = item["description"]
+            key = name.lower().strip()
+            if key in recipe_lookup:
+                recipe_entry = recipe_lookup[key]
+                recipe = recipe_entry["materials"]
+                slug = recipe_entry["slug"]
+                n_with_recipe += 1
+            else:
+                recipe = None
+                slug = item_slug(name)
+                n_without_recipe += 1
+            enriched_list.append(
+                {
+                    "name": name,
+                    "description": description,
+                    "recipe": recipe,
+                    "slug": slug,
+                }
+            )
+        items_enriched[cat] = enriched_list
 
     data = {
         "pokemon": pokemon_list,
         "categories": categories_sorted,
         "flavors": FLAVORS_CANONICAL,
-        "items": items_sorted_keys,
+        "items": items_enriched,
     }
 
     print("Writing data.js...")
@@ -226,7 +319,7 @@ def main():
     n_categories = len(categories_sorted)
     n_flavors = len(FLAVORS_CANONICAL)
     no_fav_pokemon = [p for p in pokemon_list if p["data_note"] == "no favorites recorded"]
-    total_items = sum(len(v) for v in items.values())
+    total_items = sum(len(v) for v in items_enriched.values())
 
     print()
     print("=" * 50)
@@ -239,6 +332,10 @@ def main():
     for p in no_fav_pokemon:
         print(f"    - {p['name']} ({p['dex']})")
     print(f"  Total distinct items across all categories: {total_items}")
+    print(f"  Items with recipe  : {n_with_recipe}")
+    print(f"  Items without recipe (recipe=null, slug derived): {n_without_recipe}")
+    if n_without_recipe > 0:
+        print(f"  NOTE: {n_without_recipe} items have no recipe entry — this is normal.")
     print("=" * 50)
 
     # ---------------------------------------------------------------------------

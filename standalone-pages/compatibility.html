@@ -112,7 +112,19 @@
         <h2 id="modal-title" class="modal-title"></h2>
         <button id="modal-close" class="modal-close-btn" aria-label="Close item list">&#10005;</button>
       </div>
-      <ul id="modal-item-list" class="modal-item-list" aria-label="Items in this category"></ul>
+      <div class="modal-table-wrap">
+        <table id="modal-item-table" class="modal-item-table" aria-label="Items in this category">
+          <thead>
+            <tr>
+              <th scope="col" class="item-cell-sprite">Item</th>
+              <th scope="col" class="item-cell-name">Name</th>
+              <th scope="col" class="item-cell-desc">Description</th>
+              <th scope="col" class="item-cell-recipe">Recipe</th>
+            </tr>
+          </thead>
+          <tbody id="modal-item-tbody"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 

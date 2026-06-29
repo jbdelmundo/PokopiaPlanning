@@ -172,6 +172,77 @@
     return container;
   }
 
+  /**
+   * itemSpriteSlug(name) — converts an item name to the Serebii URL slug.
+   * Rules:
+   *   - lowercase
+   *   - strip diacritics (é → e, etc.)
+   *   - remove everything that is not a-z or 0-9 (spaces, hyphens, punctuation all vanish)
+   *   - overrides object for irregular slugs that don't follow the standard rule
+   */
+  function itemSpriteSlug(name) {
+    // Patch table for item names that don't follow the standard slug rule
+    const overrides = {};
+    if (overrides[name]) return overrides[name];
+
+    let s = name.toLowerCase();
+    // Strip diacritics
+    s = s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+    // Remove everything except a-z and 0-9 (spaces, hyphens, punctuation, symbols all gone)
+    s = s.replace(/[^a-z0-9]/g, '');
+    return s;
+  }
+
+  function itemSpriteUrl(name) {
+    return 'https://www.serebii.net/pokemonpokopia/items/' + itemSpriteSlug(name) + '.png';
+  }
+
+  /**
+   * buildItemSpriteElement(item, sizeClass) — returns a .sprite-container div for an item.
+   * item must have at least a .name property; if .slug is present and truthy it is used
+   * directly for the image URL instead of computing from the name.
+   * Shows shimmer while loading; swaps to img on load or monogram on error.
+   */
+  function buildItemSpriteElement(item, sizeClass) {
+    sizeClass = sizeClass || 'sprite-small';
+    const container = el('div', { class: 'sprite-container ' + sizeClass });
+
+    const shimmer = el('div', { class: 'sprite-shimmer' });
+    container.appendChild(shimmer);
+
+    const src = item.slug
+      ? 'https://www.serebii.net/pokemonpokopia/items/' + item.slug + '.png'
+      : itemSpriteUrl(item.name);
+
+    const img = el('img', {
+      src: src,
+      alt: item.name,
+      loading: 'lazy',
+      class: 'sprite-img loading',
+    });
+
+    img.addEventListener('load', function () {
+      img.classList.remove('loading');
+      img.classList.add('loaded');
+      shimmer.remove();
+    });
+
+    img.addEventListener('error', function () {
+      // Replace with monogram fallback (items have no habitat, use generic class)
+      shimmer.remove();
+      img.remove();
+      const fb = el('div', {
+        class: 'sprite-fallback sprite-item',
+        'aria-hidden': 'true',
+      });
+      fb.textContent = item.name.charAt(0).toUpperCase();
+      container.appendChild(fb);
+    });
+
+    container.appendChild(img);
+    return container;
+  }
+
   /* ── 4. DOM helpers ─────────────────────────────────────── */
 
   function el(tag, attrs, ...children) {
@@ -652,21 +723,52 @@
   function openItemModal(category) {
     const modal = document.getElementById('item-modal');
     const title = document.getElementById('modal-title');
-    const itemList = document.getElementById('modal-item-list');
+    const tbody = document.getElementById('modal-item-tbody');
 
     title.textContent = category;
-    itemList.innerHTML = '';
+    tbody.innerHTML = '';
 
     const items = (window.POKOPIA_DATA.items && window.POKOPIA_DATA.items[category]) || [];
     if (items.length === 0) {
-      const li = el('li');
-      li.textContent = 'No items recorded for this category.';
-      itemList.appendChild(li);
+      const tr = el('tr');
+      const td = el('td', { colspan: '4' });
+      td.textContent = 'No items recorded for this category.';
+      tr.appendChild(td);
+      tbody.appendChild(tr);
     } else {
       items.forEach(function (item) {
-        const li = el('li');
-        li.textContent = item;
-        itemList.appendChild(li);
+        const tr = el('tr');
+
+        // Sprite cell
+        const tdSprite = el('td', { class: 'item-cell-sprite' });
+        tdSprite.appendChild(buildItemSpriteElement(item, 'sprite-small'));
+        tr.appendChild(tdSprite);
+
+        // Name cell
+        const tdName = el('td', { class: 'item-cell-name' });
+        tdName.textContent = item.name;
+        tr.appendChild(tdName);
+
+        // Description cell
+        const tdDesc = el('td', { class: 'item-cell-desc' });
+        tdDesc.textContent = item.description || '';
+        tr.appendChild(tdDesc);
+
+        // Recipe cell
+        const tdRecipe = el('td', { class: 'item-cell-recipe' });
+        if (item.recipe && item.recipe.length > 0) {
+          item.recipe.forEach(function (mat) {
+            const chip = el('span', { class: 'recipe-chip' });
+            chip.appendChild(document.createTextNode(mat.material));
+            chip.appendChild(el('span', { class: 'recipe-chip-qty' }, '×' + mat.qty));
+            tdRecipe.appendChild(chip);
+          });
+        } else {
+          tdRecipe.appendChild(el('span', { class: 'recipe-empty' }, '—'));
+        }
+        tr.appendChild(tdRecipe);
+
+        tbody.appendChild(tr);
       });
     }
 

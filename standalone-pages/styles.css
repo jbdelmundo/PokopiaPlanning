@@ -569,20 +569,170 @@ body {
   transition: background 0.1s;
 }
 .modal-close-btn:hover { background: #333; }
-.modal-item-list {
-  list-style: none;
-  overflow-y: auto;
-  padding: 8px 0 24px;
+
+/* ── Item modal table ─────────────────────────────────────── */
+
+/* Widen the modal box so a 4-column table breathes on desktop.
+   Max-width raised from --page-max (680px) to 720px.            */
+.modal-box {
+  max-width: 720px;
+}
+
+/* Scroll wrapper: keeps the modal-header fixed while body scrolls */
+.modal-table-wrap {
   flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  max-height: 60vh;
+  -webkit-overflow-scrolling: touch;
 }
-.modal-item-list li {
-  padding: 10px 16px;
+
+/* Table shell */
+.modal-item-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  table-layout: auto;
+}
+
+/* Sticky column headers */
+.modal-item-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--color-surface);
+  border-bottom: 2px solid var(--color-border);
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* Zebra striping via subtle surface2 tint on odd rows */
+.modal-item-table tbody tr:nth-child(odd) {
+  background: rgba(42, 42, 42, 0.45); /* --color-surface2 at ~45% */
+}
+.modal-item-table tbody tr:nth-child(even) {
+  background: transparent;
+}
+.modal-item-table tbody tr:hover {
+  background: var(--color-surface2);
+}
+
+/* Cell baseline */
+.modal-item-table td {
+  vertical-align: middle;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--color-border);
-  font-size: 0.9rem;
-  min-height: var(--tap-min);
-  display: flex; align-items: center;
+  color: var(--color-text);
 }
-.modal-item-list li:last-child { border-bottom: none; }
+.modal-item-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Sprite cell — narrow, centred; hosts .sprite-container.sprite-small */
+.item-cell-sprite {
+  width: 60px;
+  min-width: 60px;
+  text-align: center;
+  padding: 6px 4px;
+}
+.item-cell-sprite .sprite-container {
+  margin: 0 auto;
+}
+
+/* Name cell — semibold, avoids awkward single-word wraps */
+.item-cell-name {
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 110px;
+  color: var(--color-text);
+}
+
+/* Description cell — widest column, muted, wraps freely */
+.item-cell-desc {
+  color: var(--color-text-muted);
+  font-size: 0.83rem;
+  line-height: 1.4;
+  min-width: 140px;
+}
+
+/* Recipe cell — holds .recipe-chip elements */
+.item-cell-recipe {
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+/* Recipe chip: visually distinct from .chip-category / .chip-flavor.
+   Uses a warm-tinted dark background + amber border to separate it
+   from the green category chips and the brown flavor chips.         */
+.recipe-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  background: #1C1600;
+  border: 1px solid #5D4300;
+  color: #FFD180;
+  margin: 2px 2px 2px 0;
+  vertical-align: middle;
+}
+
+/* The "×N" quantity suffix — muted, slightly bold */
+.recipe-chip-qty {
+  color: #A08050;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+/* Empty recipe placeholder */
+.recipe-empty {
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* ── Item modal table — narrow screens ────────────────────── */
+@media (max-width: 520px) {
+  .modal-item-table {
+    font-size: 0.8rem;
+  }
+  .modal-item-table thead th {
+    padding: 6px 6px;
+    font-size: 0.65rem;
+  }
+  .modal-item-table td {
+    padding: 6px 6px;
+  }
+  .item-cell-sprite {
+    width: 48px;
+    min-width: 48px;
+    padding: 4px 2px;
+  }
+  .item-cell-name {
+    min-width: 80px;
+  }
+  .item-cell-desc {
+    min-width: 90px;
+    font-size: 0.75rem;
+  }
+  .item-cell-recipe {
+    min-width: 80px;
+  }
+  .recipe-chip {
+    font-size: 0.68rem;
+    padding: 2px 6px;
+  }
+}
 
 /* ── Desktop enhancements ─────────────────────────────────── */
 @media (min-width: 640px) {
