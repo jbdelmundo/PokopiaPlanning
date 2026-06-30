@@ -82,6 +82,8 @@
           <!-- Comfy + shared-infrastructure notes injected by farm-app.js -->
         </section>
       </main>
+
+      <button id="scroll-top-btn" class="scroll-top-btn" type="button" aria-label="Scroll to top">&#8593;</button>
     </div>
 
   </div><!-- /#app -->
@@ -111,6 +113,52 @@
       </div>
       <div class="modal-table-wrap">
         <div id="roster-list" class="roster-list" role="list" aria-label="All Pokémon"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pokémon detail modal -->
+  <div id="pokemon-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="pk-modal-title">
+    <div class="modal-box pk-modal-box">
+      <div class="modal-header">
+        <span class="modal-grab" aria-hidden="true"></span>
+        <h2 id="pk-modal-title" class="modal-title"></h2>
+        <button id="pk-modal-close" class="modal-close-btn" aria-label="Close Pokémon details">&#10005;</button>
+      </div>
+      <div class="modal-table-wrap pk-modal-body">
+        <div class="pk-modal-top">
+          <div id="pk-modal-sprite" class="pk-modal-sprite"></div>
+          <p id="pk-modal-habitat" class="habitat-line"></p>
+        </div>
+        <h3 class="pk-modal-subhead">Specialties</h3>
+        <div id="pk-modal-specialties" class="chip-row" aria-label="Specialties"></div>
+        <h3 class="pk-modal-subhead">Favorites</h3>
+        <div id="pk-modal-favorites" class="chip-row" aria-label="Favorite items and flavors"></div>
+        <p id="pk-modal-fav-notice" class="favorites-notice hidden" role="alert"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item-list modal -->
+  <div id="item-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-grab" aria-hidden="true"></span>
+        <h2 id="modal-title" class="modal-title"></h2>
+        <button id="modal-close" class="modal-close-btn" aria-label="Close item list">&#10005;</button>
+      </div>
+      <div class="modal-table-wrap">
+        <table id="modal-item-table" class="modal-item-table" aria-label="Items in this category">
+          <thead>
+            <tr>
+              <th scope="col" class="item-cell-sprite">Item</th>
+              <th scope="col" class="item-cell-name">Name</th>
+              <th scope="col" class="item-cell-desc">Description</th>
+              <th scope="col" class="item-cell-recipe">Recipe</th>
+            </tr>
+          </thead>
+          <tbody id="modal-item-tbody"></tbody>
+        </table>
       </div>
     </div>
   </div>

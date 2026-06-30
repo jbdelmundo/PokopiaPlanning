@@ -139,6 +139,65 @@
     return tag;
   }
 
+  /* ── 3b. Favorites / item helpers (ported from app.js) ──── */
+
+  // True unless data_note is set (Ditto / Tatsugiri Curly edge cases) or no favorites.
+  function hasFavorites(pk) {
+    return !pk.data_note && allFavorites(pk).size > 0;
+  }
+
+  // Item name → Serebii item-sprite slug (lowercase, accents & non-alphanumerics stripped).
+  function itemSpriteSlug(name) {
+    let s = name.toLowerCase();
+    s = s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+    s = s.replace(/[^a-z0-9]/g, '');
+    return s;
+  }
+
+  // Item sprite container with shimmer + monogram fallback (mirrors buildSpriteElement).
+  function buildItemSpriteElement(item, sizeClass) {
+    sizeClass = sizeClass || 'sprite-small';
+    const container = el('div', { class: 'sprite-container ' + sizeClass });
+    const shimmer = el('div', { class: 'sprite-shimmer' });
+    container.appendChild(shimmer);
+    const src = item.slug
+      ? 'https://www.serebii.net/pokemonpokopia/items/' + item.slug + '.png'
+      : 'https://www.serebii.net/pokemonpokopia/items/' + itemSpriteSlug(item.name) + '.png';
+    const img = el('img', { src: src, alt: item.name, loading: 'lazy', class: 'sprite-img loading' });
+    img.addEventListener('load', function () {
+      img.classList.remove('loading'); img.classList.add('loaded'); shimmer.remove();
+    });
+    img.addEventListener('error', function () {
+      shimmer.remove(); img.remove();
+      const fb = el('div', { class: 'sprite-fallback sprite-item', 'aria-hidden': 'true' });
+      fb.textContent = item.name.charAt(0).toUpperCase();
+      container.appendChild(fb);
+    });
+    container.appendChild(img);
+    return container;
+  }
+
+  /**
+   * buildCategoryChip(cat, classes, opts) — a clickable favorite-category chip that opens
+   * the item-list modal. opts.icon (default true) toggles the 📦 prefix; the compact
+   * "Shares:" overlap chips pass { icon: false }.
+   */
+  function buildCategoryChip(cat, classes, opts) {
+    opts = opts || {};
+    const c = el('button', { class: classes, type: 'button', 'aria-label': cat + ' — tap to see items' });
+    if (opts.icon !== false) {
+      const icon = el('span', { class: 'chip-icon', 'aria-hidden': 'true' });
+      icon.textContent = '📦';
+      c.appendChild(icon);
+    }
+    c.appendChild(document.createTextNode(cat));
+    c.addEventListener('click', function (e) {
+      e.stopPropagation();
+      openItemModal(cat);
+    });
+    return c;
+  }
+
   /* ── 4. Roster (localStorage) ───────────────────────────── */
 
   function loadRoster() {
@@ -323,9 +382,14 @@
     const card = el('button', { class: 'farm-card', type: 'button',
       'aria-label': module.material + ' farm' });
 
-    // Sprites of up to 3 litter Pokémon
+    // Sprites of up to 3 litter Pokémon — each opens that Pokémon's detail modal.
     const sprites = el('div', { class: 'farm-card-sprites' });
-    module.litters.slice(0, 3).forEach(function (l) { sprites.appendChild(buildSpriteElement(l.pk, 'sprite-small')); });
+    module.litters.slice(0, 3).forEach(function (l) {
+      const s = buildSpriteElement(l.pk, 'sprite-small');
+      s.classList.add('pk-open');
+      s.addEventListener('click', function (e) { e.stopPropagation(); openPokemonModal(l.pk); });
+      sprites.appendChild(s);
+    });
     card.appendChild(sprites);
 
     const body = el('div', { class: 'farm-card-body' });
@@ -507,11 +571,20 @@
   function buildRoleRow(pk, module, overlap, extras, rel) {
     const row = el('div', { class: 'role-row' });
 
-    row.appendChild(buildSpriteElement(pk, 'sprite-small'));
+    const sprite = buildSpriteElement(pk, 'sprite-small');
+    sprite.classList.add('pk-open');
+    sprite.addEventListener('click', function () { openPokemonModal(pk); });
+    row.appendChild(sprite);
 
     const info = el('div', { class: 'role-row-info' });
     const topLine = el('div', { class: 'role-row-top' });
-    topLine.appendChild(el('span', { class: 'role-row-name' }, pk.name));
+    const nameBtn = el('button', {
+      class: 'role-row-name pk-open-btn', type: 'button',
+      'aria-label': 'View ' + pk.name + ' details',
+    });
+    nameBtn.textContent = pk.name;
+    nameBtn.addEventListener('click', function () { openPokemonModal(pk); });
+    topLine.appendChild(nameBtn);
     topLine.appendChild(habitatBadge(pk.habitat));
     if (rel) topLine.appendChild(compatTag(rel));
     info.appendChild(topLine);
@@ -523,7 +596,7 @@
       const label = el('span', { class: 'role-overlap-label' }, 'Shares: ');
       chips.appendChild(label);
       overlap.slice(0, 4).forEach(function (fav) {
-        chips.appendChild(el('span', { class: 'overlap-chip' }, fav));
+        chips.appendChild(buildCategoryChip(fav, 'overlap-chip overlap-chip-btn', { icon: false }));
       });
       if (overlap.length > 4) chips.appendChild(el('span', { class: 'overlap-more' }, '+' + (overlap.length - 4)));
       info.appendChild(chips);
@@ -623,6 +696,143 @@
     });
   }
 
+  /* ── 9b. Pokémon detail modal ───────────────────────────── */
+
+  function openPokemonModal(pk) {
+    const modal = document.getElementById('pokemon-modal');
+
+    // Title: name + habitat badge
+    const title = document.getElementById('pk-modal-title');
+    title.innerHTML = '';
+    title.appendChild(document.createTextNode(pk.name + ' '));
+    title.appendChild(habitatBadge(pk.habitat));
+
+    // Sprite
+    const spriteWrap = document.getElementById('pk-modal-sprite');
+    spriteWrap.innerHTML = '';
+    spriteWrap.appendChild(buildSpriteElement(pk, 'sprite-large'));
+
+    // Habitat guide line
+    const opp = OPPOSITE[pk.habitat];
+    const neutralOthers = HABITATS.filter(function (h) { return h !== pk.habitat && h !== opp; });
+    document.getElementById('pk-modal-habitat').textContent =
+      'Ideal habitat: ' + pk.habitat + '. Incompatible with ' + opp + '. ' +
+      neutralOthers.join(', ') + ' are neutral.';
+
+    // Specialties
+    const specRow = document.getElementById('pk-modal-specialties');
+    specRow.innerHTML = '';
+    if (pk.specialties && pk.specialties.length) {
+      pk.specialties.forEach(function (spec) {
+        specRow.appendChild(el('span', { class: 'chip chip-specialty' }, spec));
+      });
+    } else {
+      specRow.textContent = 'None';
+    }
+
+    // Favorites
+    const favRow = document.getElementById('pk-modal-favorites');
+    const favNotice = document.getElementById('pk-modal-fav-notice');
+    favRow.innerHTML = '';
+    if (!hasFavorites(pk)) {
+      favRow.classList.add('hidden');
+      favNotice.classList.remove('hidden');
+      favNotice.textContent = pk.data_note
+        ? 'No favorites recorded for this Pokémon (' + pk.data_note + ').'
+        : 'No favorites recorded for this Pokémon.';
+    } else {
+      favRow.classList.remove('hidden');
+      favNotice.classList.add('hidden');
+      const cats = (pk.favorites && pk.favorites.categories) || [];
+      const flavs = (pk.favorites && pk.favorites.flavors) || [];
+      cats.forEach(function (cat) {
+        favRow.appendChild(buildCategoryChip(cat, 'chip chip-category'));
+      });
+      flavs.forEach(function (flav) {
+        const wrap = el('div', { class: 'fav-chip-wrap' });
+        const c = el('span', { class: 'chip chip-flavor' });
+        const icon = el('span', { class: 'chip-icon', 'aria-hidden': 'true' });
+        icon.textContent = '🍴';
+        c.appendChild(icon);
+        c.appendChild(document.createTextNode(flav));
+        wrap.appendChild(c);
+        wrap.appendChild(el('span', { class: 'chip-flavor-hint' }, 'Food preference — no item list'));
+        favRow.appendChild(wrap);
+      });
+    }
+
+    modal.classList.remove('hidden');
+    modal.setAttribute('aria-hidden', 'false');
+    document.getElementById('pk-modal-close').focus();
+  }
+
+  function closePokemonModal() {
+    const modal = document.getElementById('pokemon-modal');
+    modal.classList.add('hidden');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  /* ── 9c. Item-list modal (ported from app.js) ───────────── */
+
+  function openItemModal(category) {
+    const modal = document.getElementById('item-modal');
+    const title = document.getElementById('modal-title');
+    const tbody = document.getElementById('modal-item-tbody');
+
+    title.textContent = category;
+    tbody.innerHTML = '';
+
+    const items = (window.POKOPIA_DATA.items && window.POKOPIA_DATA.items[category]) || [];
+    if (items.length === 0) {
+      const tr = el('tr');
+      const td = el('td', { colspan: '4' });
+      td.textContent = 'No items recorded for this category.';
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+    } else {
+      items.forEach(function (item) {
+        const tr = el('tr');
+
+        const tdSprite = el('td', { class: 'item-cell-sprite', 'data-label': 'Item' });
+        tdSprite.appendChild(buildItemSpriteElement(item, 'sprite-small'));
+        tr.appendChild(tdSprite);
+
+        const tdName = el('td', { class: 'item-cell-name', 'data-label': 'Name' });
+        tdName.textContent = item.name;
+        tr.appendChild(tdName);
+
+        const tdDesc = el('td', { class: 'item-cell-desc', 'data-label': 'Description' });
+        tdDesc.textContent = item.description || '';
+        tr.appendChild(tdDesc);
+
+        const tdRecipe = el('td', { class: 'item-cell-recipe', 'data-label': 'Recipe' });
+        if (item.recipe && item.recipe.length > 0) {
+          item.recipe.forEach(function (mat) {
+            const chip = el('span', { class: 'recipe-chip' });
+            chip.appendChild(document.createTextNode(mat.material));
+            chip.appendChild(el('span', { class: 'recipe-chip-qty' }, '×' + mat.qty));
+            tdRecipe.appendChild(chip);
+          });
+        } else {
+          tdRecipe.appendChild(el('span', { class: 'recipe-empty' }, '—'));
+        }
+        tr.appendChild(tdRecipe);
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    modal.classList.remove('hidden');
+    modal.setAttribute('aria-hidden', 'false');
+    document.getElementById('modal-close').focus();
+  }
+
+  function closeItemModal() {
+    const modal = document.getElementById('item-modal');
+    modal.classList.add('hidden');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
   /* ── 10. Event wiring & init ────────────────────────────── */
 
   function wireEvents() {
@@ -662,11 +872,36 @@
       renderRosterList();
     });
 
+    // Pokémon detail modal
+    document.getElementById('pk-modal-close').addEventListener('click', closePokemonModal);
+    document.getElementById('pokemon-modal').addEventListener('click', function (e) {
+      if (e.target === this) closePokemonModal();
+    });
+
+    // Item-list modal
+    document.getElementById('modal-close').addEventListener('click', closeItemModal);
+    document.getElementById('item-modal').addEventListener('click', function (e) {
+      if (e.target === this) closeItemModal();
+    });
+
+    // Floating scroll-to-top (shown on long farm chains, mobile)
+    const topBtn = document.getElementById('scroll-top-btn');
+    window.addEventListener('scroll', function () {
+      topBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+    topBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Esc closes the top-most open modal first (item → pokemon → roster).
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        const modal = document.getElementById('roster-modal');
-        if (!modal.classList.contains('hidden')) closeRosterModal();
-      }
+      if (e.key !== 'Escape') return;
+      const item = document.getElementById('item-modal');
+      if (!item.classList.contains('hidden')) { closeItemModal(); return; }
+      const pkm = document.getElementById('pokemon-modal');
+      if (!pkm.classList.contains('hidden')) { closePokemonModal(); return; }
+      const roster = document.getElementById('roster-modal');
+      if (!roster.classList.contains('hidden')) closeRosterModal();
     });
   }
 
