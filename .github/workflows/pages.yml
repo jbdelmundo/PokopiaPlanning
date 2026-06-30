@@ -19,12 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Stage site (app only)
+      - name: Stage site (both planners + landing page)
         run: |
           mkdir -p _site
-          cp standalone-pages/compatibility.html standalone-pages/styles.css \
-             standalone-pages/app.js standalone-pages/data.js _site/
-          cp _site/compatibility.html _site/index.html
+          cp standalone-pages/index.html \
+             standalone-pages/compatibility.html standalone-pages/app.js \
+             standalone-pages/farm-planner.html standalone-pages/farm-app.js \
+             standalone-pages/farm-styles.css \
+             standalone-pages/styles.css standalone-pages/data.js _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

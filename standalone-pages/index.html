@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pokopia planning tools — choose a planner: housemate compatibility or automation farms.">
+  <title>Pokopia Planners</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Landing page (this page only) ──────────────────────── */
+    .home {
+      max-width: var(--page-max);
+      margin: 0 auto;
+      min-height: 100dvh;
+      padding: 32px 16px 64px;
+      display: flex;
+      flex-direction: column;
+    }
+    .home-header { text-align: center; margin-bottom: 28px; }
+    .home-title {
+      font-size: 1.6rem; font-weight: 800;
+      color: var(--color-accent);
+      margin-bottom: 6px;
+    }
+    .home-subtitle { font-size: 0.9rem; color: var(--color-text-muted); }
+    .home-cards { display: flex; flex-direction: column; gap: 16px; }
+    .home-card {
+      display: flex; align-items: center; gap: 16px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      min-height: var(--tap-min);
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, transform 0.1s;
+    }
+    .home-card:hover, .home-card:focus-visible {
+      border-color: var(--color-accent);
+      outline: none;
+      transform: translateY(-1px);
+    }
+    .home-card-icon {
+      font-size: 2rem; line-height: 1;
+      flex-shrink: 0;
+      width: 56px; height: 56px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--color-surface2);
+      border-radius: var(--radius);
+    }
+    .home-card-body { flex: 1; min-width: 0; }
+    .home-card-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+    .home-card-desc { font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.4; }
+    .home-card-arrow { color: var(--color-text-muted); font-size: 1.2rem; flex-shrink: 0; }
+    .home-footer {
+      margin-top: auto; padding-top: 32px;
+      text-align: center;
+      font-size: 0.72rem; color: var(--color-text-muted);
+    }
+    .home-footer a { color: var(--color-accent); }
+    @media (min-width: 640px) {
+      .home-title { font-size: 2rem; }
+      .home-card-title { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="home">
+    <header class="home-header">
+      <h1 class="home-title">Pokopia Planners</h1>
+      <p class="home-subtitle">Pick a tool to plan your city.</p>
+    </header>
+
+    <nav class="home-cards" aria-label="Planner tools">
+      <a class="home-card" href="compatibility.html">
+        <span class="home-card-icon" aria-hidden="true">🏠</span>
+        <span class="home-card-body">
+          <span class="home-card-title">Who Can Live Together?</span>
+          <span class="home-card-desc">Pick a Pokémon and see its compatible housemates, ranked by habitat and shared favorites.</span>
+        </span>
+        <span class="home-card-arrow" aria-hidden="true">&#8594;</span>
+      </a>
+
+      <a class="home-card" href="farm-planner.html">
+        <span class="home-card-icon" aria-hidden="true">⚙️</span>
+        <span class="home-card-body">
+          <span class="home-card-title">Automation Farm Planner</span>
+          <span class="home-card-desc">Build Litter → Process → Gather material farms that can live together — filtered by who's already in your town.</span>
+        </span>
+        <span class="home-card-arrow" aria-hidden="true">&#8594;</span>
+      </a>
+    </nav>
+
+    <footer class="home-footer">
+      Pokémon data sourced from <a href="https://www.serebii.net/pokemonpokopia/" rel="noreferrer">Serebii</a>.
+    </footer>
+  </main>
+</body>
+</html>
