@@ -158,6 +158,12 @@ python standalone-pages/build_data.py
 
 Reads `reference/Pokopia.csv`, `reference/Items By Favorite/*.md`, and `reference/Recipes.json`. Joins recipes to items by **case-insensitive name match** (Serebii recipe casing differs from the item-file casing). Validates 308 Pokémon, 43 categories, 5 flavors. Fails loudly on unknown favorite values; warns (does not fail) on items with no recipe.
 
+> **Cache-busting:** both planners load the shared `data.js` via a versioned tag
+> (`<script src="data.js?v=N">`). Because the two pages reuse the same filename, a returning
+> visitor's browser can serve a stale `data.js` to whichever page it didn't load first (this
+> caused a "Farm data missing" error when the farm bundle was new). **After regenerating
+> `data.js`, bump `?v=N` in `compatibility.html` and `farm-planner.html`** so browsers refetch.
+
 ### Automation Farm Planner (`farm-planner.html`)
 
 "Which Pokémon can I group into a working material farm?" A farm is a 3-role chain: a
