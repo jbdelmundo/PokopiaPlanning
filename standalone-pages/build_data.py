@@ -22,6 +22,7 @@ CSV_PATH = os.path.join(REPO_ROOT, "reference", "Pokopia.csv")
 ITEMS_INDEX_PATH = os.path.join(REPO_ROOT, "reference", "Items By Favorite.md")
 ITEMS_DIR = os.path.join(REPO_ROOT, "reference", "Items By Favorite")
 RECIPES_PATH = os.path.join(REPO_ROOT, "reference", "Recipes.json")
+GAME_MECHANICS_PATH = os.path.join(REPO_ROOT, "reference", "Game Mechanics.md")
 OUTPUT_PATH = os.path.join(REPO_ROOT, "standalone-pages", "data.js")
 
 # ---------------------------------------------------------------------------
@@ -146,6 +147,91 @@ def load_recipes(path):
 
 
 # ---------------------------------------------------------------------------
+# Step 3b: Automation-farm data
+# ---------------------------------------------------------------------------
+# Materials whose farm is worth boosting in the planner (late-game bottlenecks).
+HIGH_VALUE_MATERIALS = {"Iron Ore", "Iron Ingot"}
+
+# Processing rules: a Pokémon whose specialty == `specialty` turns `input` into
+# `output`. Curated constant — the transformation rules are partly externally
+# sourced (see the note atop reference/Game Mechanics.md) and documented in
+# §7c + reference/Item List.txt. Keep small and in sync with those files.
+PROCESSING_RULES = [
+    {"input": "Squishy Clay", "specialty": "Burn", "output": "Brick"},
+    {"input": "Small Log", "specialty": "Chop", "output": "Lumber"},
+    {"input": "Nonburnable Garbage", "specialty": "Recycle", "output": "Iron Ore"},
+    {"input": "Wastepaper", "specialty": "Recycle", "output": "Paper"},
+    {"input": "Stone", "specialty": "Crush", "output": "Crushed materials"},
+    {"input": "Iron Ore", "specialty": "Burn", "output": "Iron Ingot"},
+    {"input": "Copper Ore", "specialty": "Burn", "output": "Copper Ingot"},
+    {"input": "Gold Ore", "specialty": "Burn", "output": "Gold Ingot"},
+]
+
+
+def _clean_cell(text):
+    """Strip markdown bold/markers and decorative symbols from a table cell."""
+    text = text.replace("**", "").replace("⭐", "")
+    return text.strip()
+
+
+def read_litter_table(game_mechanics_path):
+    """
+    Parse §7b of Game Mechanics.md — the Litter Pokémon → dropped-material table.
+
+    Columns: Pokémon | Ideal Habitat | Material Dropped | 2nd Specialty.
+    Returns a list of dicts:
+        {"pokemon", "habitat", "material", "secondSpecialty" (str|None), "highValue" (bool)}
+
+    The "Quick lookup by material" table that follows shares the same `| ... |`
+    shape, so we stop at the first row whose 2nd-specialty cell is missing
+    (that table only has two columns) or when the table block ends.
+    """
+    if not os.path.isfile(game_mechanics_path):
+        raise FileNotFoundError(f"Game Mechanics file not found at {game_mechanics_path}")
+
+    litter = []
+    with open(game_mechanics_path, encoding="utf-8") as f:
+        in_table = False
+        past_separator = False
+        for line in f:
+            line = line.rstrip("\n")
+            # The §7b table header is the only one with both these column labels.
+            if "| Pokémon |" in line and "Material Dropped" in line:
+                in_table = True
+                past_separator = False
+                continue
+            if not in_table:
+                continue
+            if line.startswith("|---") or line.startswith("| ---"):
+                past_separator = True
+                continue
+            if past_separator and line.startswith("|"):
+                parts = [p.strip() for p in line.split("|")]
+                # parts[0] empty, parts[1..4] = name, habitat, material, 2nd specialty
+                if len(parts) < 5:
+                    break  # different table shape → end of §7b
+                name = _clean_cell(parts[1])
+                habitat = _clean_cell(parts[2])
+                material = _clean_cell(parts[3])
+                second = _clean_cell(parts[4])
+                if not name:
+                    continue
+                second_specialty = None if second in ("", "—", "-") else second
+                litter.append(
+                    {
+                        "pokemon": name,
+                        "habitat": habitat,
+                        "material": material,
+                        "secondSpecialty": second_specialty,
+                        "highValue": material in HIGH_VALUE_MATERIALS,
+                    }
+                )
+            elif past_separator:
+                break  # blank line / prose → table finished
+    return litter
+
+
+# ---------------------------------------------------------------------------
 # Step 4: Slug helper for items without a recipe
 # ---------------------------------------------------------------------------
 def item_slug(name):
@@ -265,6 +351,18 @@ def main():
     print("Processing Pokémon CSV...")
     pokemon_list = process_csv(CSV_PATH, canonical_categories)
 
+    print("Reading Litter drop table from Game Mechanics.md...")
+    litter = read_litter_table(GAME_MECHANICS_PATH)
+    print(f"  Found {len(litter)} Litter Pokémon.")
+    # Cross-check every litter Pokémon exists in the CSV roster (fail loudly on drift).
+    csv_names = {p["name"] for p in pokemon_list}
+    missing_litter = [l["pokemon"] for l in litter if l["pokemon"] not in csv_names]
+    if missing_litter:
+        raise ValueError(
+            f"Litter Pokémon not found in Pokopia.csv: {missing_litter}. "
+            "The §7b table in Game Mechanics.md is out of sync with the roster."
+        )
+
     # Build output structure — transform items into rich objects
     categories_sorted = sorted(canonical_categories)
 
@@ -302,6 +400,10 @@ def main():
         "categories": categories_sorted,
         "flavors": FLAVORS_CANONICAL,
         "items": items_enriched,
+        "farm": {
+            "litter": litter,
+            "processing": PROCESSING_RULES,
+        },
     }
 
     print("Writing data.js...")
@@ -336,6 +438,8 @@ def main():
     print(f"  Items without recipe (recipe=null, slug derived): {n_without_recipe}")
     if n_without_recipe > 0:
         print(f"  NOTE: {n_without_recipe} items have no recipe entry — this is normal.")
+    print(f"  Litter Pokémon     : {len(litter)}  (expect 33)")
+    print(f"  Processing rules   : {len(PROCESSING_RULES)}")
     print("=" * 50)
 
     # ---------------------------------------------------------------------------
@@ -344,6 +448,7 @@ def main():
     assert n_pokemon == 308, f"FAIL: expected 308 pokemon, got {n_pokemon}"
     assert n_categories == 43, f"FAIL: expected 43 categories, got {n_categories}"
     assert n_flavors == 5, f"FAIL: expected 5 flavors, got {n_flavors}"
+    assert len(litter) == 33, f"FAIL: expected 33 Litter Pokémon, got {len(litter)}"
 
     expected_no_fav = {"Ditto"}
     actual_no_fav = {p["name"] for p in no_fav_pokemon}

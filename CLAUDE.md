@@ -33,11 +33,15 @@ PokopiaPlanning/
 │   ├── Specialties.txt                # 31 Pokemon specialty types
 │   └── Game Mechanics.md              # Mechanics codex + Litter automation-farm table
 ├── standalone-pages/       # Deployable web tools (GitHub Pages)
-│   ├── compatibility.html             # "Who Can Live Together?" app entry point
-│   ├── app.js                         # All UI logic (picker + detail screens)
-│   ├── styles.css                     # App styles
+│   ├── index.html                     # Landing page (GitHub Pages entry) → routes to both planners
+│   ├── compatibility.html             # "Who Can Live Together?" planner
+│   ├── app.js                         # Compatibility UI logic (picker + detail screens)
+│   ├── farm-planner.html              # "Automation Farm Planner" planner
+│   ├── farm-app.js                    # Farm planner UI logic (material farms + roster)
+│   ├── farm-styles.css                # Farm-planner-only styles (loaded after styles.css)
+│   ├── styles.css                     # Shared app styles / theme
 │   ├── data.js                        # Generated data bundle (window.POKOPIA_DATA)
-│   └── build_data.py                  # Reads Pokopia.csv + Items By Favorite → data.js
+│   └── build_data.py                  # Reads Pokopia.csv + Items By Favorite + Game Mechanics → data.js
 └── tools/                  # Scraping utilities
     ├── pokopia scraper.py             # Web scraper for Pokemon data
     ├── pokopia_urls.txt               # Target URLs for scraping
@@ -120,7 +124,11 @@ Full mechanics codex + the 33-Pokemon Litter drop table → `reference/Game Mech
 
 ## Standalone Pages
 
-Deployable browser tools hosted via GitHub Pages (branch `gh-pages`).
+Deployable browser tools hosted via GitHub Pages (branch `gh-pages`). `index.html` is the
+landing page / Pages entry point and routes between the two planners; the
+`.github/workflows/pages.yml` workflow stages every page + `data.js` into `_site`. All pages
+are pure HTML/JS/CSS that also run by opening the file directly (`file://`) — no web server,
+no build step at page-load time.
 
 ### Compatibility Tool (`compatibility.html`)
 
@@ -149,6 +157,46 @@ python standalone-pages/build_data.py
 ```
 
 Reads `reference/Pokopia.csv`, `reference/Items By Favorite/*.md`, and `reference/Recipes.json`. Joins recipes to items by **case-insensitive name match** (Serebii recipe casing differs from the item-file casing). Validates 308 Pokémon, 43 categories, 5 flavors. Fails loudly on unknown favorite values; warns (does not fail) on items with no recipe.
+
+### Automation Farm Planner (`farm-planner.html`)
+
+"Which Pokémon can I group into a working material farm?" A farm is a 3-role chain: a
+**Litter** Pokémon drops a raw material, an optional **Processor** (Burn / Chop / Crush /
+Recycle) refines it, and a **Gather** Pokémon sweeps drops into the Community Box.
+
+**Architecture (clones the compatibility tool):** `farm-app.js` builds **material-centric
+modules** — one per dropped material — from `POKOPIA_DATA.farm` + the per-Pokémon
+`specialties`/`favorites`/`habitat` already in the bundle. Two-screen SPA (farm-card picker →
+chain detail), reusing the `el()` helper, sprite/monogram fallback, and habitat-relation +
+shared-favorite scoring patterns from `app.js`. `farm-styles.css` adds only farm-specific
+classes on top of the shared `styles.css`.
+
+- **Roster** ("already in my town") is an editable set saved in `localStorage`
+  (`pokopia_roster`); a mode toggle switches between *All Pokémon* and *Buildable now* (a
+  farm is buildable when a Litter **and** a Gatherer are both in the roster — a Processor is
+  a bonus).
+- **Ranking:** modules score on producing a high-value material (Iron Ore/Ingot),
+  self-chaining availability, best shared-favorite overlap (comfy), capacity (number of
+  Litter Pokémon for that material), and fewest Pokémon. Role candidates rank by shared
+  favorites with the Litter cluster, then habitat compatibility.
+- **Self-chaining** is computed from data: a Litter whose 2nd specialty matches its
+  material's processing rule (Garbodor→Recycle, Haxorus→Chop, Rampardos&c.→Crush) refines
+  its own drop, so no extra Pokémon is needed.
+
+**`farm` data shape** in `POKOPIA_DATA` (emitted by `build_data.py`):
+
+```js
+POKOPIA_DATA.farm = {
+  litter: [ { pokemon, habitat, material, secondSpecialty /* str|null */, highValue } ],
+  processing: [ { input, specialty, output } ]   // e.g. Squishy Clay --Burn--> Brick
+}
+```
+
+`build_data.py` parses the **33-row Litter table in `reference/Game Mechanics.md` §7b** (via
+`read_litter_table()`, fails loudly if a Litter name is missing from the CSV or the row count
+drifts from 33). `processing` is a small curated constant (`PROCESSING_RULES`) seeded from
+§7c + `reference/Item List.txt`; keep it in sync with those files. Pokémon sprites hotlink
+from pokemondb (monogram fallback on miss), same tradeoff as the compatibility tool.
 
 ## Scraper Usage
 

@@ -20408,5 +20408,282 @@ window.POKOPIA_DATA = {
         "slug": "starcloset"
       }
     ]
+  },
+  "farm": {
+    "litter": [
+      {
+        "pokemon": "Glimmet",
+        "habitat": "Dark",
+        "material": "Iron Ore",
+        "secondSpecialty": null,
+        "highValue": true
+      },
+      {
+        "pokemon": "Glimmora",
+        "habitat": "Dark",
+        "material": "Iron Ore",
+        "secondSpecialty": null,
+        "highValue": true
+      },
+      {
+        "pokemon": "Combee",
+        "habitat": "Bright",
+        "material": "Honey",
+        "secondSpecialty": null,
+        "highValue": false
+      },
+      {
+        "pokemon": "Blissey",
+        "habitat": "Bright",
+        "material": "Stone",
+        "secondSpecialty": "Trade",
+        "highValue": false
+      },
+      {
+        "pokemon": "Rampardos",
+        "habitat": "Dry",
+        "material": "Stone",
+        "secondSpecialty": "Crush",
+        "highValue": false
+      },
+      {
+        "pokemon": "Bastiodon",
+        "habitat": "Dry",
+        "material": "Stone",
+        "secondSpecialty": "Crush",
+        "highValue": false
+      },
+      {
+        "pokemon": "Tyrantrum",
+        "habitat": "Dry",
+        "material": "Stone",
+        "secondSpecialty": "Crush",
+        "highValue": false
+      },
+      {
+        "pokemon": "Aurorus",
+        "habitat": "Cool",
+        "material": "Stone",
+        "secondSpecialty": "Crush",
+        "highValue": false
+      },
+      {
+        "pokemon": "Bellsprout",
+        "habitat": "Humid",
+        "material": "Vine Rope",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Weepinbell",
+        "habitat": "Humid",
+        "material": "Vine Rope",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Snivy",
+        "habitat": "Humid",
+        "material": "Vine Rope",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Servine",
+        "habitat": "Humid",
+        "material": "Vine Rope",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Serperior",
+        "habitat": "Humid",
+        "material": "Vine Rope",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Tangela",
+        "habitat": "Bright",
+        "material": "Vine Rope",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Tangrowth",
+        "habitat": "Humid",
+        "material": "Vine Rope",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Venusaur",
+        "habitat": "Bright",
+        "material": "Leaf",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Vileplume",
+        "habitat": "Humid",
+        "material": "Leaf",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      },
+      {
+        "pokemon": "Mareep",
+        "habitat": "Bright",
+        "material": "Fluff",
+        "secondSpecialty": "Generate",
+        "highValue": false
+      },
+      {
+        "pokemon": "Flaaffy",
+        "habitat": "Bright",
+        "material": "Fluff",
+        "secondSpecialty": "Generate",
+        "highValue": false
+      },
+      {
+        "pokemon": "Swablu",
+        "habitat": "Bright",
+        "material": "Fluff",
+        "secondSpecialty": null,
+        "highValue": false
+      },
+      {
+        "pokemon": "Altaria",
+        "habitat": "Bright",
+        "material": "Fluff",
+        "secondSpecialty": "Fly",
+        "highValue": false
+      },
+      {
+        "pokemon": "Grimer",
+        "habitat": "Dark",
+        "material": "Nonburnable Garbage",
+        "secondSpecialty": null,
+        "highValue": false
+      },
+      {
+        "pokemon": "Muk",
+        "habitat": "Dark",
+        "material": "Nonburnable Garbage",
+        "secondSpecialty": null,
+        "highValue": false
+      },
+      {
+        "pokemon": "Garbodor",
+        "habitat": "Humid",
+        "material": "Nonburnable Garbage",
+        "secondSpecialty": "Recycle",
+        "highValue": false
+      },
+      {
+        "pokemon": "Spinarak",
+        "habitat": "Humid",
+        "material": "Twine",
+        "secondSpecialty": null,
+        "highValue": false
+      },
+      {
+        "pokemon": "Ariados",
+        "habitat": "Humid",
+        "material": "Twine",
+        "secondSpecialty": null,
+        "highValue": false
+      },
+      {
+        "pokemon": "Larvesta",
+        "habitat": "Dry",
+        "material": "Twine",
+        "secondSpecialty": "Burn",
+        "highValue": false
+      },
+      {
+        "pokemon": "Volcarona",
+        "habitat": "Dry",
+        "material": "Twine",
+        "secondSpecialty": "Burn",
+        "highValue": false
+      },
+      {
+        "pokemon": "Paldean Wooper",
+        "habitat": "Humid",
+        "material": "Squishy Clay",
+        "secondSpecialty": null,
+        "highValue": false
+      },
+      {
+        "pokemon": "Clodsire",
+        "habitat": "Humid",
+        "material": "Squishy Clay",
+        "secondSpecialty": "Bulldoze",
+        "highValue": false
+      },
+      {
+        "pokemon": "Trapinch",
+        "habitat": "Dry",
+        "material": "Squishy Clay",
+        "secondSpecialty": "Bulldoze",
+        "highValue": false
+      },
+      {
+        "pokemon": "Haxorus",
+        "habitat": "Dark",
+        "material": "Small Log",
+        "secondSpecialty": "Chop",
+        "highValue": false
+      },
+      {
+        "pokemon": "Cacturne",
+        "habitat": "Dry",
+        "material": "Sturdy Stick",
+        "secondSpecialty": "Grow",
+        "highValue": false
+      }
+    ],
+    "processing": [
+      {
+        "input": "Squishy Clay",
+        "specialty": "Burn",
+        "output": "Brick"
+      },
+      {
+        "input": "Small Log",
+        "specialty": "Chop",
+        "output": "Lumber"
+      },
+      {
+        "input": "Nonburnable Garbage",
+        "specialty": "Recycle",
+        "output": "Iron Ore"
+      },
+      {
+        "input": "Wastepaper",
+        "specialty": "Recycle",
+        "output": "Paper"
+      },
+      {
+        "input": "Stone",
+        "specialty": "Crush",
+        "output": "Crushed materials"
+      },
+      {
+        "input": "Iron Ore",
+        "specialty": "Burn",
+        "output": "Iron Ingot"
+      },
+      {
+        "input": "Copper Ore",
+        "specialty": "Burn",
+        "output": "Copper Ingot"
+      },
+      {
+        "input": "Gold Ore",
+        "specialty": "Burn",
+        "output": "Gold Ingot"
+      }
+    ]
   }
 };
