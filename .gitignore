@@ -1,0 +1,5 @@
+# Python / uv tooling artifacts
+.venv/
+uv.lock
+__pycache__/
+*.pyc

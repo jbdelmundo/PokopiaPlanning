@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pokopia automation farm planner — build Litter → Process → Gather material farms from Pokémon that can live together, filtered by your current roster.">
+  <title>Automation Farm Planner — Pokopia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="farm-styles.css">
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay" class="loading-overlay" aria-live="polite" aria-label="Loading Pokopia data">
+    <div class="spinner" aria-hidden="true"></div>
+    <p class="loading-text">Loading Pokopia data…</p>
+  </div>
+
+  <!-- App root -->
+  <div id="app" class="app hidden">
+
+    <!-- ======================== SCREEN A — FARM PICKER ======================== -->
+    <div id="screen-picker" class="screen screen-picker">
+      <header class="picker-header">
+        <div class="site-titlebar">
+          <h1 class="site-title">Automation Farm Planner</h1>
+          <a class="btn-home" href="index.html" aria-label="Back to planner menu">&#8592; Home</a>
+        </div>
+        <p class="site-subtitle">Litter drops a material, a Processor refines it, a Gatherer collects it. Pick a material to plan its farm.</p>
+
+        <div class="search-wrap">
+          <label for="search-input" class="sr-only">Search by material or output</label>
+          <input
+            id="search-input"
+            type="search"
+            class="search-input"
+            placeholder="Search by material or output…"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Search by material or output"
+          >
+          <span id="result-count" class="result-count" aria-live="polite"></span>
+        </div>
+
+        <div class="picker-controls">
+          <div id="mode-toggle" class="filter-toggle-group" role="group" aria-label="Roster mode">
+            <button data-mode="all"       class="filter-btn mode-btn active" aria-pressed="true">All Pokémon</button>
+            <button data-mode="buildable" class="filter-btn mode-btn"        aria-pressed="false">Buildable now</button>
+          </div>
+          <button id="roster-btn" class="btn-ghost" type="button">
+            Edit roster <span id="roster-count" class="roster-count-badge">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="farm-list" class="farm-list" aria-label="Farm recommendations">
+        <!-- Farm cards injected by farm-app.js -->
+      </main>
+    </div>
+
+    <!-- ======================== SCREEN B — FARM DETAIL ======================== -->
+    <div id="screen-detail" class="screen screen-detail hidden">
+
+      <header id="detail-header" class="detail-header sticky-header">
+        <div class="header-row header-top">
+          <button id="back-btn" class="btn-back" aria-label="Back to farm list">
+            <span aria-hidden="true">&#8592;</span> Back
+          </button>
+          <div class="header-pokemon-info">
+            <span id="header-material" class="header-name"></span>
+          </div>
+        </div>
+        <div id="header-badges" class="farm-badge-row" aria-label="Farm attributes"></div>
+      </header>
+
+      <main class="detail-main">
+        <div id="chain-container" class="chain-container">
+          <!-- Role sections injected by farm-app.js -->
+        </div>
+
+        <section id="farm-notes" class="card farm-notes" aria-label="Planning notes">
+          <!-- Comfy + shared-infrastructure notes injected by farm-app.js -->
+        </section>
+      </main>
+    </div>
+
+  </div><!-- /#app -->
+
+  <!-- Roster editor modal -->
+  <div id="roster-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="roster-modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="roster-modal-title" class="modal-title">Your roster</h2>
+        <button id="roster-modal-close" class="modal-close-btn" aria-label="Close roster editor">&#10005;</button>
+      </div>
+      <div class="roster-modal-controls">
+        <p class="roster-modal-hint">Tick the Pokémon already befriended in your town. Saved on this device.</p>
+        <label for="roster-search" class="sr-only">Search Pokémon by name</label>
+        <input
+          id="roster-search"
+          type="search"
+          class="search-input"
+          placeholder="Search Pokémon by name…"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <div class="roster-modal-actions">
+          <span id="roster-modal-count" class="roster-modal-count"></span>
+          <button id="roster-clear" class="btn-ghost" type="button">Clear all</button>
+        </div>
+      </div>
+      <div class="modal-table-wrap">
+        <div id="roster-list" class="roster-list" role="list" aria-label="All Pokémon"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="farm-app.js"></script>
+</body>
+</html>

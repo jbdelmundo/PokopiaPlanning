@@ -1,8 +1,7 @@
-﻿# Construction
+# Construction
 
 | Name | Description |
 |------|-------------|
-| Toy blocks | Stacking toys that are fun to play with. Discover all the different combinations you can make! |
 | Sandbags | A cloth sack filled with dirt and sand. It's pretty bulky and looks heavy |
 | Metal drum | A smooth, clean canister. It's empty, so it's actually quite light |
 | Construction supplies | Construction tools stored in a meta drum. Great for factories or warehouses. |

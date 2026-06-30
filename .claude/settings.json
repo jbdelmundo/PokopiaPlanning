@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run *)",
+      "Bash(awk -F',' '{print NF}')",
+      "Bash(xxd)",
+      "Bash(awk '/^### /{c++} c<=2{print} c>2{exit}' \"reference/Pokopia.csv.UPDATE.md\")",
+      "Bash(awk '/^## Substantive/{f=1;next}/^## Casing/{f=0}f&&/^### /{c++}END{print c}' \"reference/Pokopia.csv.UPDATE.md\")",
+      "Bash(awk '/^## Casing/{f=1;next}/^## /{if\\(f\\)f=0}f&&/^### /{c++}END{print c}' \"reference/Pokopia.csv.UPDATE.md\")",
+      "Bash(awk '/## Event Habitats/{f=1} f' reference/Habitats.md)",
+      "Bash(awk '/^\\\\| [0-9]/{c++} END{print c\" regular habitat rows\"}' reference/Habitats.md)"
+    ]
+  }
+}

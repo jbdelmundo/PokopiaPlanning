@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pokopia compatibility tool — find which Pokémon can live together by habitat and shared favorites.">
+  <title>Who Can Live Together? — Pokopia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay" class="loading-overlay" aria-live="polite" aria-label="Loading Pokopia data">
+    <div class="spinner" aria-hidden="true"></div>
+    <p class="loading-text">Loading Pokopia data…</p>
+  </div>
+
+  <!-- App root -->
+  <div id="app" class="app hidden">
+
+    <!-- ======================== SCREEN A — PICKER ======================== -->
+    <div id="screen-picker" class="screen screen-picker">
+      <header class="picker-header">
+        <div class="site-titlebar">
+          <h1 class="site-title">Who Can Live Together?</h1>
+          <a class="btn-home" href="index.html" aria-label="Back to planner menu">&#8592; Home</a>
+        </div>
+        <p class="site-subtitle">Pick a Pokémon to see its compatible housemates.</p>
+        <div class="search-wrap">
+          <label for="search-input" class="sr-only">Search Pokémon by name</label>
+          <input
+            id="search-input"
+            type="search"
+            class="search-input"
+            placeholder="Search by name…"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Search Pokémon by name"
+          >
+          <span id="result-count" class="result-count" aria-live="polite"></span>
+        </div>
+        <div class="picker-controls">
+          <button id="group-toggle" class="btn-ghost" aria-pressed="false">
+            Group by habitat
+          </button>
+        </div>
+      </header>
+
+      <main id="pokemon-list" class="pokemon-list" role="list" aria-label="Pokémon roster">
+        <!-- Rows injected by app.js -->
+      </main>
+    </div>
+
+    <!-- ======================== SCREEN B — DETAIL ======================== -->
+    <div id="screen-detail" class="screen screen-detail hidden">
+
+      <!-- Sticky header -->
+      <header id="detail-header" class="detail-header sticky-header">
+        <div class="header-row header-top">
+          <button id="back-btn" class="btn-back" aria-label="Back to Pokémon list">
+            <span aria-hidden="true">&#8592;</span> Back
+          </button>
+          <div class="header-pokemon-info">
+            <span id="header-name" class="header-name"></span>
+            <span id="header-habitat-badge" class="habitat-badge"></span>
+            <span id="header-trade-star" class="trade-star hidden" title="Trade specialty — earns +50% value from matching gift items" aria-label="Trade specialty">&#9733;</span>
+          </div>
+        </div>
+        <div class="header-row header-filter-row">
+          <span class="filter-label">Show:</span>
+          <div id="habitat-filter" class="filter-toggle-group" role="group" aria-label="Habitat compatibility filter">
+            <button data-filter="compatible"   class="filter-btn active" aria-pressed="true">Compatible</button>
+            <button data-filter="neutral"      class="filter-btn"        aria-pressed="false">Neutral</button>
+            <button data-filter="incompatible" class="filter-btn"        aria-pressed="false">Incompatible</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="detail-main">
+
+        <!-- About card -->
+        <section id="about-card" class="about-card card" aria-label="About this Pokémon">
+          <div class="about-sprite-wrap">
+            <div id="about-sprite-container" class="sprite-container sprite-large"></div>
+          </div>
+          <div class="about-info">
+            <h2 id="about-name" class="about-name"></h2>
+            <p id="habitat-line" class="habitat-line"></p>
+            <div id="specialty-chips" class="chip-row chip-row-scroll" aria-label="Specialties"></div>
+            <div id="about-favorites" class="about-favorites">
+              <h3 class="favorites-heading">Favorites</h3>
+              <div id="favorite-chips" class="chip-row chip-row-scroll" aria-label="Favorite items and flavors"></div>
+              <p id="favorites-notice" class="favorites-notice hidden" role="alert"></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tiers accordion -->
+        <section id="tiers-section" class="tiers-section" aria-label="Compatibility tiers">
+          <h2 class="tiers-heading">Compatibility by Shared Favorites</h2>
+          <div id="tiers-container" class="tiers-container">
+            <!-- Tiers injected by app.js -->
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+  </div><!-- /#app -->
+
+  <!-- Item modal -->
+  <div id="item-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="modal-title" class="modal-title"></h2>
+        <button id="modal-close" class="modal-close-btn" aria-label="Close item list">&#10005;</button>
+      </div>
+      <div class="modal-table-wrap">
+        <table id="modal-item-table" class="modal-item-table" aria-label="Items in this category">
+          <thead>
+            <tr>
+              <th scope="col" class="item-cell-sprite">Item</th>
+              <th scope="col" class="item-cell-name">Name</th>
+              <th scope="col" class="item-cell-desc">Description</th>
+              <th scope="col" class="item-cell-recipe">Recipe</th>
+            </tr>
+          </thead>
+          <tbody id="modal-item-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-﻿# Electronics
+# Electronics
 
 | Name | Description |
 |------|-------------|
@@ -75,3 +75,4 @@
 | Surface light | Simple inconspicuous lights. You can embed them in ceilings and walls. |
 | Spotlight | When powered on, this light shines brightly on whatever is in front of it |
 | Antique chandelier | Hang this from the ceiling to illuminate a room with gentle light. Perfeect for a mansion aesthetic! |
+| Jirachi lamp | A lamp with a sleeping Jirachi perched on top. Perfect for placing by your bedside! |

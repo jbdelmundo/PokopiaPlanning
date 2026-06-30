@@ -1,7 +1,8 @@
-﻿# Symbols
+# Symbols
 
 | Name | Description |
 |------|-------------|
+| Mug | A simple, easy-to-use mug. You could change up the colors, and it would still look great. |
 | Sign | A sign made out of wood. There's an important message witten on it... Probably! |
 | Signpost | A sign that looks like it belongs at a bus stop. It could serve as a guiding landmark in cities or on roads! |
 | Information board | A sign with information about the town written on it. Nobody knows what town it's for, though. |
