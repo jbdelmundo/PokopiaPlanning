@@ -30,7 +30,8 @@ PokopiaPlanning/
 │   ├── Items By Favorite/             # Per-category item breakdowns
 │   ├── Habitats.md                    # 209 regular + 5 event habitats
 │   ├── Locations.md                   # 6 area overviews with available materials
-│   └── Specialties.txt                # 31 Pokemon specialty types
+│   ├── Specialties.txt                # 31 Pokemon specialty types
+│   └── Game Mechanics.md              # Mechanics codex + Litter automation-farm table
 ├── standalone-pages/       # Deployable web tools (GitHub Pages)
 │   ├── compatibility.html             # "Who Can Live Together?" app entry point
 │   ├── app.js                         # All UI logic (picker + detail screens)
@@ -53,6 +54,20 @@ PokopiaPlanning/
 | House size | Max 10×10 blocks, at least 3 unique furniture items, up to 4 Pokemon |
 | Map height | 127 blocks vertical across all areas |
 | Habitat types | Bright, Cool, Dark, Dry, Humid, Warm — never mix habitats in one house |
+
+## Game Mechanics & Automation Farm
+
+Comfy Levels (Iffy → Awesome) are raised by matching a Pokemon's favorites/flavors with
+house furniture in a correct habitat; rising Comfy Levels drive each area's Environment
+Level (1–10), which unlocks shops, gifts, and infrastructure (Pokemon Center at Env Lv 3).
+
+**Automation farm** — passive material generation via the **Litter** specialty: a Litter
+Pokemon drops a material near its home, a nearby **Gather** Pokemon sweeps drops into the
+**Community Box**. Marquee farms: **Iron Ore** via Glimmet/Glimmora (late-game ingot
+bottleneck), **Honey** via Combee, and **self-chaining** dual-specialty Pokemon like
+Garbodor (Litter+Recycle → iron ore) and Haxorus (Litter+Chop → lumber).
+
+Full mechanics codex + the 33-Pokemon Litter drop table → `reference/Game Mechanics.md`.
 
 ## Area Summary
 
